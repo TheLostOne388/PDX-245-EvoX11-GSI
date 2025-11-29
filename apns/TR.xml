@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="286"
+        mnc="01"
+        carrier="CEPTEN KKTCELL"
+        apn="cepten.kktcell"
+        authtype="1"
+        mvno_match_data="28601590"
+        mvno_type="imsi"
+        type="default,supl"
+    />
+    <apn
+        mcc="286"
+        mnc="01"
+        carrier="KKTCELL IMS"
+        apn="ims"
+        authtype="0"
+        mvno_match_data="28601590"
+        mvno_type="imsi"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+        user_visible="false"
+    />
+    <apn
+        mcc="286"
+        mnc="01"
+        carrier="KKTCELL MMS"
+        apn="mms.kktcell"
+        authtype="1"
+        mmsc="http://mms.kktcell.com/cmmsc/post"
+        mmsport="8080"
+        mmsproxy="212.252.169.99"
+        mvno_match_data="28601590"
+        mvno_type="imsi"
+        type="mms"
+    />
+    <apn
+        mcc="286"
+        mnc="01"
+        carrier="Turkcell IMS"
+        apn="ims"
+        authtype="0"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+        user_visible="false"
+    />
+    <apn
+        mcc="286"
+        mnc="01"
+        carrier="Turkcell Internet"
+        apn="internet"
+        authtype="1"
+        password="gprs"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,supl"
+        user="gprs"
+    />
+    <apn
+        mcc="286"
+        mnc="01"
+        carrier="Turkcell MMS"
+        apn="mms"
+        authtype="1"
+        mmsc="http://mms.turkcell.com.tr/servlets/mms"
+        mmsport="8080"
+        mmsproxy="212.252.169.217"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="286"
+        mnc="02"
+        carrier="Vodafone IMS"
+        apn="ims"
+        authtype="0"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+        user_visible="false"
+    />
+    <apn
+        mcc="286"
+        mnc="02"
+        carrier="Vodafone Internet"
+        apn="internet"
+        authtype="1"
+        password="vodafone"
+        protocol="IPV4V6"
+        type="default,supl"
+        user="vodafone"
+    />
+    <apn
+        mcc="286"
+        mnc="02"
+        carrier="Vodafone MMS"
+        apn="mms"
+        authtype="1"
+        mmsc="http://217.31.233.18:6001/MM1Servlet"
+        mmsport="9401"
+        mmsproxy="217.31.233.18"
+        password="vodafone"
+        type="mms"
+        user="vodafone"
+    />
+    <apn
+        mcc="286"
+        mnc="03"
+        carrier="Turk Telekom IMS"
+        apn="ims"
+        authtype="0"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+    />
+    <apn
+        mcc="286"
+        mnc="03"
+        carrier="Turk Telekom Internet"
+        apn="internet"
+        authtype="1"
+        password="wap"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,supl"
+        user="wap"
+    />
+    <apn
+        mcc="286"
+        mnc="03"
+        carrier="Turk Telekom MMS"
+        apn="mms"
+        authtype="1"
+        mmsc="http://mms.avea.com.tr/servlets/mms"
+        mmsport="8080"
+        mmsproxy="217.174.44.80"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="286"
+        mnc="299"
+        carrier="Netgsm"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+</apns>

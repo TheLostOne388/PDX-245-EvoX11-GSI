@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="226"
+        mnc="01"
+        carrier="Vodafone Internet"
+        apn="internet.vodafone.ro"
+        mmsc=""
+        password="vodafone"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="internet.vodafone.ro"
+    />
+    <apn
+        mcc="226"
+        mnc="01"
+        carrier="Vodafone RO"
+        apn="internet.vodafone.ro"
+        mmsc=""
+        password="vodafone"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="internet.vodafone.ro"
+    />
+    <apn
+        mcc="226"
+        mnc="01"
+        carrier="Vodafone RO MMS"
+        apn="mms.vodafone.ro"
+        mmsc="http://multimedia/servlets/mms"
+        mmsport="8080"
+        mmsproxy="193.230.161.231"
+        password="vodafone"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="226"
+        mnc="01"
+        carrier="Vodafone RO MMS PRE"
+        apn="mms.pre.vodafone.ro"
+        mmsc="http://multimedia/servlets/mms"
+        mmsport="8080"
+        mmsproxy="193.230.161.231"
+        password="vodafone"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="226"
+        mnc="01"
+        carrier="Vodafone RO live!"
+        apn="live.vodafone.com"
+        mmsc=""
+        password="vodafone"
+        port="8080"
+        proxy="193.230.161.231"
+        type="default,supl"
+        user="live"
+    />
+    <apn
+        mcc="226"
+        mnc="01"
+        carrier="Vodafone RO live! PRE"
+        apn="live.pre.vodafone.com"
+        mmsc=""
+        password="vodafone"
+        port="8080"
+        proxy="193.230.161.231"
+        type="default,supl"
+        user="live"
+    />
+    <apn
+        mcc="226"
+        mnc="03"
+        carrier="Telekom Romania Broadband"
+        apn="broadband"
+        type="default,supl"
+    />
+    <apn
+        mcc="226"
+        mnc="05"
+        carrier="DIGI Proxy"
+        apn="internet"
+        authtype="1"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="10.10.3.130"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="226"
+        mnc="05"
+        carrier="Digi Mobil"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="226"
+        mnc="05"
+        carrier="MMS"
+        apn="mms"
+        mmsc="http://10.10.3.133:8002"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="226"
+        mnc="10"
+        carrier="Orange Internet"
+        apn="net"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="226"
+        mnc="10"
+        carrier="Orange MMS"
+        apn="mms"
+        mmsc="http://wap.mms.orange.ro:8002"
+        mmsport="8799"
+        mmsproxy="62.217.247.252"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+</apns>

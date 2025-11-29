@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="525"
+        mnc="01"
+        carrier="Singtel (Postpaid)"
+        apn="e-ideas"
+        carrier_id="31"
+        mmsc="http://mms.singtel.com:10021/mmsc"
+        mmsport="8080"
+        mmsproxy="165.21.42.84"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl,mms"
+    />
+    <apn
+        mcc="525"
+        mnc="01"
+        carrier="Singtel (Prepaid)"
+        apn="hicard"
+        carrier_id="31"
+        mmsc="http://mms.singtel.com:10021/mmsc"
+        mmsport="8080"
+        mmsproxy="165.21.42.84"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl,mms"
+    />
+    <apn
+        mcc="525"
+        mnc="01"
+        carrier="Singtel IMS"
+        apn="ims"
+        carrier_id="31"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+        user_visible="false"
+    />
+    <apn
+        mcc="525"
+        mnc="01"
+        carrier="Singtel Ut"
+        apn="stm-ut"
+        carrier_id="31"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="xcap"
+        user_visible="false"
+    />
+    <apn
+        mcc="525"
+        mnc="03"
+        carrier="M1 IMS"
+        apn="IMS"
+        carrier_id="1706"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+        user_visible="false"
+    />
+    <apn
+        mcc="525"
+        mnc="03"
+        carrier="M1 MMS"
+        apn="miworld"
+        authtype="1"
+        carrier_id="1706"
+        mmsc="http://mmsgw:8002"
+        mmsport="8080"
+        mmsproxy="172.16.14.10"
+        password="user123"
+        type="mms"
+        user="65"
+    />
+    <apn
+        mcc="525"
+        mnc="03"
+        carrier="M1 XCAP"
+        apn="XCAP"
+        carrier_id="1706"
+        network_type_bitmask="18"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="xcap"
+        user_visible="false"
+    />
+    <apn
+        mcc="525"
+        mnc="03"
+        carrier="M1 hos"
+        apn="hos"
+        carrier_id="1706"
+        network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="xcap"
+        user_visible="false"
+    />
+    <apn
+        mcc="525"
+        mnc="03"
+        carrier="Sunsurf Mobile"
+        apn="sunsurf"
+        carrier_id="1706"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl"
+    />
+    <apn
+        mcc="525"
+        mnc="05"
+        carrier="SH Data Postpaid"
+        apn="shwap"
+        carrier_id="1707"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl"
+    />
+    <apn
+        mcc="525"
+        mnc="05"
+        carrier="SH Data Prepaid"
+        apn="shppd"
+        carrier_id="1707"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl"
+    />
+    <apn
+        mcc="525"
+        mnc="05"
+        carrier="SH IMS"
+        apn="ims"
+        carrier_id="1707"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+        user_visible="false"
+    />
+    <apn
+        mcc="525"
+        mnc="05"
+        carrier="SH XCAP"
+        apn="shxcap"
+        carrier_id="1707"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="xcap"
+        user_visible="false"
+    />
+    <apn
+        mcc="525"
+        mnc="05"
+        carrier="giga"
+        apn="giga"
+        carrier_id="2434"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl"
+    />
+    <apn
+        mcc="525"
+        mnc="05"
+        carrier="亞太電信(APT) (Internet)"
+        apn="gtnet"
+        carrier_id="1707"
+        mvno_match_data="0A"
+        mvno_type="gid"
+        protocol="IPV4V6"
+        roaming_protocol="IP"
+        type="default,ia,supl"
+    />
+    <apn
+        mcc="525"
+        mnc="10"
+        carrier="SIMBA"
+        apn="tpg"
+        protocol="IPV4V6"
+        type="default,ia,supl"
+    />
+</apns>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="450"
+        mnc="05"
+        carrier="SKT 3G INTERNET"
+        apn="web.sktelecom.com"
+        mmsc="http://omms.nate.com:9082/oma_mms"
+        mmsport="9093"
+        mmsproxy="smart.nate.com"
+        server="*"
+        type="default,mms,supl,fota,cbs"
+    />
+    <apn
+        mcc="450"
+        mnc="05"
+        carrier="SKT 3G Roaming"
+        apn="roaming.sktelecom.com"
+        mmsc="http://omms.nate.com:9082/oma_mms"
+        mmsport="9093"
+        mmsproxy="smart.nate.com"
+        server="*"
+    />
+    <apn
+        mcc="450"
+        mnc="05"
+        carrier="SKT IA"
+        apn=""
+        protocol="IPV4V6"
+        roaming_protocol="IP"
+        type="ia"
+    />
+    <apn
+        mcc="450"
+        mnc="05"
+        carrier="SKT IMS"
+        apn="IMS"
+        protocol="IPV4V6"
+        type="ims"
+    />
+    <apn
+        mcc="450"
+        mnc="05"
+        carrier="SKT LTE INTERNET"
+        apn="lte.sktelecom.com"
+        mmsc="http://omms.nate.com:9082/oma_mms"
+        mmsport="9093"
+        mmsproxy="smart.nate.com"
+        protocol="IPV4V6"
+        server="*"
+        type="default,mms,supl,fota,cbs"
+    />
+    <apn
+        mcc="450"
+        mnc="05"
+        carrier="SKT LTE Roaming"
+        apn="lte-roaming.sktelecom.com"
+        mmsc="http://omms.nate.com:9082/oma_mms"
+        mmsport="9093"
+        mmsproxy="smart.nate.com"
+        server="*"
+    />
+    <apn
+        mcc="450"
+        mnc="06"
+        carrier="LG U+"
+        apn="internet.lguplus.co.kr"
+        mmsc="http://omammsc.uplus.co.kr:9084"
+        protocol="IPV4V6"
+        type="default,mms,supl,fota,cbs"
+    />
+    <apn
+        mcc="450"
+        mnc="06"
+        carrier="LG U+ IA"
+        apn=""
+        protocol="IPV4V6"
+        roaming_protocol="IP"
+        type="ia"
+    />
+    <apn
+        mcc="450"
+        mnc="06"
+        carrier="LG U+ IMS"
+        apn="IMS"
+        mmsc="http://omammsc.uplus.co.kr:9084"
+        protocol="IPV4V6"
+        type="ims"
+    />
+    <apn
+        mcc="450"
+        mnc="06"
+        carrier="LG U+ LTE Roaming"
+        apn="lte-roaming.lguplus.co.kr"
+        authtype="0"
+        mmsc="http://omammsc.uplus.co.kr:9084"
+    />
+    <apn
+        mcc="450"
+        mnc="06"
+        carrier="LG U+ Roaming"
+        apn="wroaming.lguplus.co.kr"
+        authtype="0"
+        mmsc="http://omammsc.uplus.co.kr:9084"
+    />
+    <apn
+        mcc="450"
+        mnc="08"
+        carrier="KT"
+        apn="lte.ktfwing.com"
+        mmsc="http://mmsc.ktfwing.com:9082"
+        port="80"
+        server="*"
+        type="default,mms,supl,fota,cbs"
+    />
+    <apn
+        mcc="450"
+        mnc="08"
+        carrier="KT IA"
+        apn=""
+        protocol="IPV4V6"
+        type="ia"
+    />
+    <apn
+        mcc="450"
+        mnc="08"
+        carrier="KT IMS"
+        apn="IMS"
+        protocol="IPV4V6"
+        type="ims"
+    />
+    <apn
+        mcc="450"
+        mnc="11"
+        carrier="SKT 3G INTERNET"
+        apn="web.sktelecom.com"
+        mmsc="http://omms.nate.com:9082/oma_mms"
+        mmsport="9093"
+        mmsproxy="smart.nate.com"
+        server="*"
+        type="default,mms,supl,fota,cbs"
+    />
+    <apn
+        mcc="450"
+        mnc="11"
+        carrier="SKT 3G Roaming"
+        apn="roaming.sktelecom.com"
+        mmsc="http://omms.nate.com:9082/oma_mms"
+        mmsport="9093"
+        mmsproxy="smart.nate.com"
+        server="*"
+    />
+    <apn
+        mcc="450"
+        mnc="11"
+        carrier="SKT LTE Roaming"
+        apn="lte-roaming.sktelecom.com"
+        mmsc="http://omms.nate.com:9082/oma_mms"
+        mmsport="9093"
+        mmsproxy="smart.nate.com"
+        server="*"
+    />
+</apns>

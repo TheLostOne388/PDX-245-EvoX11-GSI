@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="640"
+        mnc="04"
+        carrier="Vodacom Internet"
+        apn="internet"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="640"
+        mnc="04"
+        carrier="Vodacom MMS"
+        apn="MMS"
+        mmsc="http://10.154.0.12/mms/"
+        mmsport="9401"
+        mmsproxy="10.154.0.8"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="640"
+        mnc="04"
+        carrier="Vodacom WAP"
+        apn="wap"
+        port="9401"
+        proxy="10.154.0.8"
+        type="default,supl"
+    />
+    <apn
+        mcc="640"
+        mnc="05"
+        carrier="Airtel Tanzania"
+        apn="internet"
+        type="default,supl"
+    />
+</apns>

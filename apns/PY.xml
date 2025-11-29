@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="744"
+        mnc="01"
+        carrier="Vox INTERNET"
+        apn="vox.internet"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="744"
+        mnc="01"
+        carrier="Vox MMS"
+        apn="vox.mms"
+        mmsc="http://mms.vox.com.py/mmsc"
+        password="vox"
+        port="8080"
+        proxy="172.24.97.29"
+        type="mms"
+        user="vox"
+    />
+    <apn
+        mcc="744"
+        mnc="02"
+        carrier="Claro PY"
+        apn="igprs.claro.com.py"
+        authtype="1"
+        password="ctigprs999"
+        type="default,supl"
+        user="ctigprs"
+    />
+    <apn
+        mcc="744"
+        mnc="02"
+        carrier="MMS GPRS PY"
+        apn="mms.ctimovil.com.py"
+        authtype="1"
+        mmsc="http://mms.ctimovil.com.py"
+        mmsport="8080"
+        mmsproxy="170.51.255.240"
+        password="ctimms999"
+        type="mms"
+        user="ctimms"
+    />
+    <apn
+        mcc="744"
+        mnc="04"
+        carrier="INTERNET TIGO PY"
+        apn="internet.tigo.py"
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="744"
+        mnc="04"
+        carrier="MMS TIGO PY"
+        apn="mms.tigo.py"
+        mmsc="http://mms"
+        mmsport="8888"
+        mmsproxy="10.16.17.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="744"
+        mnc="05"
+        carrier="Personal Datos Py"
+        apn="internet"
+        authtype="1"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="744"
+        mnc="05"
+        carrier="Personal MMS Py"
+        apn="mms"
+        authtype="1"
+        mmsc="http://mms"
+        mmsport="8080"
+        mmsproxy="172.16.192.7"
+        password=""
+        type="mms"
+        user=""
+    />
+</apns>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="627"
+        mnc="01"
+        carrier="Orange GQ"
+        apn="orangenet"
+        password="net"
+        type="default,supl"
+        user="net"
+    />
+    <apn
+        mcc="627"
+        mnc="01"
+        carrier="Orange GQ MMS"
+        apn="orangemms"
+        mmsc="http://192.168.17.34/servlets/mms"
+        mmsport="8080"
+        mmsproxy="192.168.17.2"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+</apns>

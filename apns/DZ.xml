@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="603"
+        mnc="01"
+        carrier="Mobilis"
+        apn="internet"
+        password="internet"
+        type="default,supl"
+        user="internet"
+    />
+    <apn
+        mcc="603"
+        mnc="01"
+        carrier="Mobilis MMS"
+        apn="mms"
+        mmsc="http://172.025.049.009/servlets/mms"
+        mmsport="8080"
+        mmsproxy="172.25.49.2"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="603"
+        mnc="02"
+        carrier="Djezzy"
+        apn="djezzy.internet"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="603"
+        mnc="02"
+        carrier="Djezzy MMS"
+        apn="djezzy.mms"
+        mmsc="http://172.024.97.152:10021/mmsc"
+        mmsport="8799"
+        mmsproxy="172.024.97.158"
+        type="mms"
+    />
+    <apn
+        mcc="603"
+        mnc="03"
+        carrier="Nedjma"
+        apn="internet"
+        password="nedjma"
+        type="default,supl"
+        user="nedjma"
+    />
+    <apn
+        mcc="603"
+        mnc="03"
+        carrier="Nedjma MMS"
+        apn="nedjmaMMS"
+        mmsc="http://10.10.111.1"
+        mmsport="9201"
+        mmsproxy="192.168.52.3"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+</apns>

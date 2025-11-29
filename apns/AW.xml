@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="363"
+        mnc="01"
+        carrier="Setar"
+        apn="wap.setar.aw"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="363"
+        mnc="01"
+        carrier="Setar MMS"
+        apn="mms.setar.aw"
+        mmsc="http://mms.setar.aw"
+        mmsport="8081"
+        mmsproxy="209.88.130.210"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="363"
+        mnc="02"
+        carrier="Digicel MMS"
+        apn="wap"
+        mmsc="http://mms.digicelgroup.com"
+        mmsport="8080"
+        mmsproxy="172.16.7.12"
+        password="wap03aruba"
+        port=""
+        proxy=""
+        type="mms"
+        user="waparuba"
+    />
+    <apn
+        mcc="363"
+        mnc="02"
+        carrier="Digicel Web"
+        apn="web"
+        password=""
+        type="default,supl"
+        user=""
+    />
+</apns>

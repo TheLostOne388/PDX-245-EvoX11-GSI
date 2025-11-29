@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="655"
+        mnc="01"
+        carrier="LTE.Vodacom"
+        apn="lte.vodacom.za"
+        type="default,supl"
+    />
+    <apn
+        mcc="655"
+        mnc="01"
+        carrier="Vlive!"
+        apn="internet"
+        authtype="3"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="196.6.128.12"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="655"
+        mnc="01"
+        carrier="Vlive!MMS"
+        apn="mms.vodacom.net"
+        authtype="3"
+        mmsc="http://mmsc.vodacom4me.co.za"
+        mmsport="8080"
+        mmsproxy="196.6.128.13"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="655"
+        mnc="01"
+        carrier="Vodacom ZA"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="655"
+        mnc="01"
+        carrier="Vodacom ZA MMS"
+        apn="mms.vodacom.net"
+        mmsc="http://mmsc.vodacom4me.co.za/"
+        mmsport="8080"
+        mmsproxy="196.6.128.13"
+        type="mms"
+    />
+    <apn
+        mcc="655"
+        mnc="02"
+        carrier="TelkomSA internet"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="655"
+        mnc="02"
+        carrier="TelkomSA mms"
+        apn="mms"
+        mmsc="http://mms.8ta.com:38090/was"
+        mmsport="8080"
+        mmsproxy="41.151.254.162"
+        type="mms"
+    />
+    <apn
+        mcc="655"
+        mnc="07"
+        carrier="CELL C INTERNET"
+        apn="internet"
+        mmsc="http://mms.cmobile.co.za"
+        mmsport="8080"
+        mmsproxy="196.31.116.250"
+        port="8080"
+        proxy=""
+        type="*"
+    />
+    <apn
+        mcc="655"
+        mnc="07"
+        carrier="Cell C MMS"
+        apn="mms"
+        mmsc="http://mms.cmobile.co.za"
+        mmsport="8080"
+        mmsproxy="196.031.116.250"
+        type="mms"
+    />
+    <apn
+        mcc="655"
+        mnc="07"
+        carrier="Virgin Mobile SA Internet"
+        apn="vdata"
+        type="default,supl"
+    />
+    <apn
+        mcc="655"
+        mnc="07"
+        carrier="Virgin Mobile SA Internet"
+        apn="vmms"
+        mmsc="http://mms.virginmobile.co.za"
+        mmsport="8080"
+        mmsproxy="196.31.116.242"
+        type="mms"
+    />
+    <apn
+        mcc="655"
+        mnc="10"
+        carrier="MTN"
+        apn="myMTN"
+        mmsc=""
+        password="mtnwap"
+        port="8080"
+        proxy="196.11.240.251"
+        type="default,supl"
+        user="mtnwap"
+    />
+    <apn
+        mcc="655"
+        mnc="10"
+        carrier="MTN MMS"
+        apn="myMTN"
+        mmsc=""
+        mmsport="8080"
+        mmsproxy="196.11.240.241"
+        password="mtnmms"
+        port=""
+        proxy=""
+        type="mms"
+        user="mtnmms"
+    />
+    <apn
+        mcc="655"
+        mnc="10"
+        carrier="MTN SA Web"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="655"
+        mnc="10"
+        carrier="MTN ZA"
+        apn="myMTN"
+        password="mtn"
+        server="*"
+        type="default,supl"
+        user="mtn"
+    />
+    <apn
+        mcc="655"
+        mnc="10"
+        carrier="MTN-WAP"
+        apn="myMTN"
+        authtype="1"
+        mmsc=""
+        password="mtnwap"
+        port="9201"
+        proxy="196.11.240.251"
+        type="default,supl"
+        user="mtnwap"
+    />
+</apns>

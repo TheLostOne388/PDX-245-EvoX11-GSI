@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="420"
+        mnc="01"
+        carrier="AL JA WAL"
+        apn="jawalnet.com.sa"
+        type="default,supl"
+    />
+    <apn
+        mcc="420"
+        mnc="01"
+        carrier="AL JA WAL MMS"
+        apn="mms.net.sa"
+        mmsc="http://mms.net.sa:8002"
+        mmsport="9201"
+        mmsproxy="10.1.1.1"
+        type="mms"
+    />
+    <apn
+        mcc="420"
+        mnc="03"
+        carrier="Mobily"
+        apn="web1"
+        type="default,supl"
+    />
+    <apn
+        mcc="420"
+        mnc="03"
+        carrier="Mobily MMS"
+        apn="mms1"
+        mmsc="http://10.3.3.133:9090/was"
+        mmsport="9201"
+        mmsproxy="10.3.2.133"
+        type="mms"
+    />
+    <apn
+        mcc="420"
+        mnc="04"
+        carrier="ZAIN-MMS"
+        apn="zain"
+        mmsc="http:// 10.122.200.12:8002"
+        mmsport="8080"
+        mmsproxy="10.122.200.10"
+        type="mms"
+    />
+    <apn
+        mcc="420"
+        mnc="04"
+        carrier="ZAIN-WAP"
+        apn="zain"
+        port="8080"
+        proxy="10.122.200.10"
+        type="default,supl"
+    />
+    <apn
+        mcc="420"
+        mnc="04"
+        carrier="ZAIN-WEB"
+        apn="zain"
+        type="default,supl"
+    />
+    <apn
+        mcc="420"
+        mnc="04"
+        carrier="Zain SA"
+        apn="zain"
+        mmsc="http://10.122.200.12:8002"
+        mmsport="8080"
+        mmsproxy="10.122.200.10"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="420"
+        mnc="20"
+        carrier="Softbank(internet)"
+        apn="andglobal.softbank.ne.jp"
+        mmsc="http://mms/"
+        mmsport="8080"
+        mmsproxy="andmms.softbank.ne.jp"
+        password="pumbbghkpgyysxa"
+        port=""
+        proxy=""
+        type="default,mms"
+        user="andg001softbank"
+    />
+</apns>

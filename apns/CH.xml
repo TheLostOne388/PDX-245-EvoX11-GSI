@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="228"
+        mnc="01"
+        carrier="Swisscom"
+        apn="gprs.swisscom.ch"
+        authtype="3"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="228"
+        mnc="01"
+        carrier="Swisscom-MMS"
+        apn="event.swisscom.ch"
+        authtype="3"
+        mmsc="http://mms.natel.ch:8079"
+        mmsport="8080"
+        mmsproxy="192.168.210.2"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="228"
+        mnc="02"
+        carrier="Sunrise Internet"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="228"
+        mnc="02"
+        carrier="Sunrise MMS"
+        apn="mms.sunrise.ch"
+        mmsc="http://mmsc.sunrise.ch"
+        mmsport="8080"
+        mmsproxy="212.35.34.75"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="228"
+        mnc="03"
+        carrier="Salt Internet"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="228"
+        mnc="03"
+        carrier="Salt MMS"
+        apn="mms"
+        mmsc="http://192.168.151.3:8002"
+        mmsport="8080"
+        mmsproxy="192.168.151.2"
+        type="mms"
+    />
+    <apn
+        mcc="228"
+        mnc="03"
+        carrier="Salt Prepay"
+        apn="click"
+        type="default,supl"
+    />
+    <apn
+        mcc="228"
+        mnc="54"
+        carrier="Lycamobile CH"
+        apn="data.lycamobile.ch"
+        password="plus"
+        type="default,supl"
+        user="lmch"
+    />
+</apns>

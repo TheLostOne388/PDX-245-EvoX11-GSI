@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="344"
+        mnc="03"
+        carrier="Imobile"
+        apn="net.apuapcs.ag"
+        mmsc=""
+        password=""
+        port="9090"
+        proxy="208.83.80.131"
+        server="http://208.083.080.131:40007"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="344"
+        mnc="03"
+        carrier="Imobile"
+        apn="ppnet.apuapcs.ag"
+        mmsc=""
+        password=""
+        port="9090"
+        proxy="208.83.80.131"
+        server="http://208.083.080.131:40007"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="344"
+        mnc="920"
+        carrier="LIME"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="344"
+        mnc="920"
+        carrier="LIME Postpaid Internet"
+        apn="internet"
+        mmsc=""
+        password=""
+        port="8799"
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="344"
+        mnc="920"
+        carrier="LIME Postpaid MMS"
+        apn="multimedia"
+        mmsc="http://mmsc"
+        password=""
+        port="8799"
+        proxy="10.20.5.34"
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="344"
+        mnc="920"
+        carrier="LIME Prepaid Internet"
+        apn="ppinternet"
+        mmsc=""
+        password=""
+        port="8799"
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="344"
+        mnc="920"
+        carrier="LIME Prepaid MMS"
+        apn="ppmms"
+        mmsc="http://mmsc"
+        password=""
+        port="8799"
+        proxy="10.20.5.34"
+        type="mms"
+        user=""
+    />
+</apns>

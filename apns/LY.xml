@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="606"
+        mnc="00"
+        carrier="Libyana"
+        apn="wap"
+        port="8000"
+        proxy="192.168.8.148"
+        type="default,supl"
+    />
+    <apn
+        mcc="606"
+        mnc="00"
+        carrier="Libyana MMS"
+        apn="mms"
+        mmsc="http://62.240.62.180:80"
+        mmsport="8000"
+        mmsproxy="192.168.8.148"
+        type="mms"
+    />
+    <apn
+        mcc="606"
+        mnc="01"
+        carrier="Al-Madar"
+        apn="almadar.net"
+        type="default,supl"
+    />
+    <apn
+        mcc="606"
+        mnc="01"
+        carrier="Al-Madar MMS"
+        apn="almadar.mms"
+        mmsc="http://almadar.mms/servlets/mms"
+        mmsport="8080"
+        mmsproxy="41.208.82.50"
+        type="mms"
+    />
+</apns>

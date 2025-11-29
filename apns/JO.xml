@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="416"
+        mnc="01"
+        carrier="Zain JO Internet"
+        apn="zain"
+        password="zain"
+        type="default,supl"
+        user="zain"
+    />
+    <apn
+        mcc="416"
+        mnc="01"
+        carrier="Zain JO MMS"
+        apn="mms"
+        mmsc="http://mms.jo.zain.com"
+        mmsport="80"
+        mmsproxy="192.168.55.10"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="416"
+        mnc="01"
+        carrier="Zain JO Postpaid"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="416"
+        mnc="01"
+        carrier="Zain JO Prepaid"
+        apn="internetpre"
+        password="zain"
+        type="default,supl"
+        user="zain"
+    />
+    <apn
+        mcc="416"
+        mnc="01"
+        carrier="Zain JO WAP"
+        apn="zain"
+        password="zain"
+        port="80"
+        proxy="192.168.55.10"
+        type="default,supl"
+        user="zain"
+    />
+    <apn
+        mcc="416"
+        mnc="03"
+        carrier="Umniah"
+        apn="net"
+        type="default,supl"
+    />
+    <apn
+        mcc="416"
+        mnc="03"
+        carrier="Umniah MMS"
+        apn="mms"
+        mmsc="http://mms.umniah.com/"
+        mmsport="9201"
+        mmsproxy="10.1.1.10"
+        type="mms"
+    />
+    <apn
+        mcc="416"
+        mnc="77"
+        carrier="Orange Internet"
+        apn="net.orange.jo"
+        password="net"
+        type="default,supl"
+        user="net"
+    />
+    <apn
+        mcc="416"
+        mnc="77"
+        carrier="Orange JO MMS"
+        apn="mms.orangemobile.jo"
+        mmsc="http://172.16.1.96/servlets/mms"
+        mmsport="8080"
+        mmsproxy="172.16.1.2"
+        password="mmc"
+        port=""
+        proxy=""
+        type="mms"
+        user="mmc"
+    />
+    <apn
+        mcc="416"
+        mnc="77"
+        carrier="Orange MMS"
+        apn="mms.orange.jo"
+        authtype="3"
+        mmsc="http://172.16.1.96/servlets/mms"
+        mmsport="8080"
+        mmsproxy="172.16.1.2"
+        password="mmc"
+        type="mms"
+        user="mmc"
+    />
+    <apn
+        mcc="416"
+        mnc="77"
+        carrier="Orange WAP"
+        apn="Wap.orange.jo"
+        authtype="3"
+        password="wap"
+        port="8080"
+        proxy="172.16.1.2"
+        type="default,supl"
+        user="wap"
+    />
+</apns>

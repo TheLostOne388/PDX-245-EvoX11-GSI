@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="708"
+        mnc="02"
+        carrier="INTERNET TIGO HN"
+        apn="internet.tigo.hn"
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="708"
+        mnc="02"
+        carrier="MMS TIGO HN"
+        apn="mms.tigo.hn"
+        mmsc="http://mms"
+        mmsport="8888"
+        mmsproxy="10.16.17.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="708"
+        mnc="020"
+        carrier="INTERNET TIGO HN"
+        apn="internet.tigo.hn"
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="708"
+        mnc="020"
+        carrier="MMS TIGO HN"
+        apn="mms.tigo.hn"
+        mmsc="http://mms"
+        mmsport="8888"
+        mmsproxy="10.16.17.12"
+        password=""
+        type="mms"
+        user=""
+    />
+</apns>

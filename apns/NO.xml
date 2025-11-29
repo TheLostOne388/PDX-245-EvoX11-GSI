@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="242"
+        mnc="01"
+        carrier="Mobitalk"
+        apn="telenor"
+        mmsc="http://mmsc/"
+        mmsport="8080"
+        mmsproxy="10.10.10.11"
+        password="dj"
+        port="8080"
+        proxy="10.10.10.10"
+        type="default,supl,mms"
+        user="dj"
+    />
+    <apn
+        mcc="242"
+        mnc="01"
+        carrier="Phonero Internet"
+        apn="internet.phonero.no"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="242"
+        mnc="01"
+        carrier="Phonero MMS"
+        apn="mms.phonero.no"
+        mmsc="http://mmsc"
+        mmsport="8080"
+        mmsproxy="10.10.10.11"
+        password="1111"
+        port=""
+        proxy=""
+        type="mms"
+        user="phonero"
+    />
+    <apn
+        mcc="242"
+        mnc="01"
+        carrier="Telenor"
+        apn="telenor.smart"
+        mmsc="http://mmsc/"
+        mmsport="8080"
+        mmsproxy="mms-proxy.telenor.no"
+        protocol="IPV4V6"
+        roaming_protocol="IP"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="242"
+        mnc="02"
+        carrier="NetCom"
+        apn="netcom"
+        mmsc="http://mm/"
+        mmsport="8080"
+        mmsproxy="212.169.66.4"
+        port="8080"
+        proxy="10.254.254.10"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="242"
+        mnc="04"
+        carrier="Tele2 Internet"
+        apn="internet.tele2.no"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="242"
+        mnc="04"
+        carrier="Tele2 MMS"
+        apn="internet.tele2.no"
+        mmsc="http://mmsc.tele2.no"
+        mmsport="8080"
+        mmsproxy="193.12.40.14"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="242"
+        mnc="05"
+        carrier="NwN Internet"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="242"
+        mnc="05"
+        carrier="NwN MMS"
+        apn="mms"
+        mmsc="http://mms.nwn.no"
+        mmsport="80"
+        mmsproxy="188.149.250.10"
+        type="mms"
+    />
+    <apn
+        mcc="242"
+        mnc="08"
+        carrier="TDC Internet"
+        apn="internet"
+        authtype="3"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="242"
+        mnc="08"
+        carrier="TDC MMS"
+        apn="mms"
+        authtype="3"
+        mmsc="http://mmsc.tdc.dk:8002"
+        mmsport="8080"
+        mmsproxy="inetproxy.tdc.dk"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+</apns>

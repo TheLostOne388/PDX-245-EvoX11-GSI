@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="400"
+        mnc="01"
+        carrier="Azercell"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="400"
+        mnc="01"
+        carrier="Azercell MMS"
+        apn="mms"
+        mmsc="http://mms.azercell.com/cMMSC/post"
+        mmsport="8080"
+        mmsproxy="10.0.154.101"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="400"
+        mnc="02"
+        carrier="Bakcell"
+        apn="mms"
+        mmsc="http://mms.bakcell.com/mms/wapenc"
+        mmsport="8080"
+        mmsproxy="213.172.91.46"
+        password=""
+        port=""
+        proxy=""
+        type="default,supl,mms"
+        user=""
+    />
+    <apn
+        mcc="400"
+        mnc="04"
+        carrier="Nar"
+        apn="nar"
+        mmsc="http://mmsc"
+        mmsport="8080"
+        mmsproxy="10.20.0.40"
+        password="nar"
+        port=""
+        proxy=""
+        type="default,supl,mms"
+        user="nar"
+    />
+</apns>

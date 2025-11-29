@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="455"
+        mnc="00"
+        carrier="SmarTone"
+        apn="smartweb"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="455"
+        mnc="00"
+        carrier="SmarTone MMS"
+        apn="smartgprs"
+        mmsc="http://mms.smartone.com.mo/dmog/mo"
+        mmsport="9201"
+        mmsproxy="10.9.9.29"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="455"
+        mnc="00"
+        carrier="SmarTone Macau"
+        apn="smartgprs"
+        mmsc="http://mms.smartone.com.mo/dmog/mo"
+        mmsport="8080"
+        mmsproxy="10.9.9.29"
+        password=""
+        port="8080"
+        proxy="10.9.9.29"
+        type="default,supl,mms"
+        user=""
+    />
+    <apn
+        mcc="455"
+        mnc="01"
+        carrier="CTM (Prepaid)"
+        apn="ctmprepaid"
+        authtype="0"
+        mmsc="http://mms.wap.ctm.net:8002"
+        mmsport="8080"
+        mmsproxy="192.168.99.3"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl,mms"
+    />
+    <apn
+        mcc="455"
+        mnc="01"
+        carrier="CTM Data"
+        apn="ctm-mobile"
+        authtype="0"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl"
+    />
+    <apn
+        mcc="455"
+        mnc="01"
+        carrier="CTM IMS"
+        apn="ims"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+    />
+    <apn
+        mcc="455"
+        mnc="01"
+        carrier="CTM MMS"
+        apn="ctmmms"
+        authtype="0"
+        mmsc="http://mms.wap.ctm.net:8002"
+        mmsport="8080"
+        mmsproxy="192.168.99.3"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="mms"
+    />
+    <apn
+        mcc="455"
+        mnc="01"
+        carrier="CTM XCAP"
+        apn="XCAP"
+        type="xcap"
+        user_visible="false"
+    />
+    <apn
+        mcc="455"
+        mnc="02"
+        carrier="中國電信(China Telecom) IMS"
+        apn="ims"
+        authtype="0"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+    />
+    <apn
+        mcc="455"
+        mnc="02"
+        carrier="中國電信(China Telecom) MMS"
+        apn="ctwap"
+        authtype="3"
+        mmsc="http://mmsc.vnet.mobi"
+        mmsport="80"
+        mmsproxy="10.0.0.200"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="mms"
+    />
+    <apn
+        mcc="455"
+        mnc="02"
+        carrier="中國電信(China Telecom) NET"
+        apn="ctnet"
+        authtype="3"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl,xcap"
+    />
+    <apn
+        mcc="455"
+        mnc="03"
+        carrier="3MACAU"
+        apn="mobile.three.com.mo"
+        authtype="3"
+        mmsc="http://mms.three.com.mo:10021/mmsc"
+        mmsport="8080"
+        mmsproxy="172.20.80.80"
+        password=""
+        port=""
+        proxy=""
+        type="default,mms"
+        user=""
+    />
+    <apn
+        mcc="455"
+        mnc="03"
+        carrier="Hutchison Macau"
+        apn="web-g.three.com.hk"
+        password="1234"
+        type="default,supl"
+        user="hutchison"
+    />
+    <apn
+        mcc="455"
+        mnc="03"
+        carrier="Hutchison Macau MMS"
+        apn="mms.hutchisonmacau.com"
+        mmsc="http://10.30.15.51:10021/mmsc"
+        mmsport="8080"
+        mmsproxy="10.30.15.53"
+        type="mms"
+    />
+    <apn
+        mcc="455"
+        mnc="04"
+        carrier="CTM (Prepaid)"
+        apn="ctmprepaid"
+        mmsc="http://mms.wap.ctm.net:8002"
+        mmsport="8080"
+        mmsproxy="192.168.99.3"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl,mms"
+    />
+    <apn
+        mcc="455"
+        mnc="04"
+        carrier="CTM Data"
+        apn="ctm-mobile"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl"
+    />
+    <apn
+        mcc="455"
+        mnc="04"
+        carrier="CTM IMS"
+        apn="ims"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+    />
+    <apn
+        mcc="455"
+        mnc="04"
+        carrier="CTM MMS"
+        apn="ctmmms"
+        mmsc="http://mms.wap.ctm.net:8002"
+        mmsport="8080"
+        mmsproxy="192.168.99.3"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="mms"
+    />
+    <apn
+        mcc="455"
+        mnc="04"
+        carrier="CTM XCAP"
+        apn="XCAP"
+        type="xcap"
+        user_visible="false"
+    />
+    <apn
+        mcc="455"
+        mnc="07"
+        carrier="中國電信(China Telecom) IMS"
+        apn="ims"
+        authtype="0"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+    />
+    <apn
+        mcc="455"
+        mnc="07"
+        carrier="中國電信(China Telecom) MMS"
+        apn="ctwap"
+        authtype="3"
+        mmsc="http://mmsc.vnet.mobi"
+        mmsport="80"
+        mmsproxy="10.0.0.200"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="mms"
+    />
+    <apn
+        mcc="455"
+        mnc="07"
+        carrier="中國電信(China Telecom) NET"
+        apn="ctnet"
+        authtype="3"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,ia,supl,xcap"
+    />
+</apns>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="257"
+        mnc="01"
+        carrier="Velcom BY // Web 25"
+        apn="web2.velcom.by"
+        mmsc=""
+        password="web2"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="web2"
+    />
+    <apn
+        mcc="257"
+        mnc="01"
+        carrier="Velcom BY // Web 250"
+        apn="web3.velcom.by"
+        mmsc=""
+        password="web3"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="web3"
+    />
+    <apn
+        mcc="257"
+        mnc="01"
+        carrier="Velcom BY // Web 500"
+        apn="vmi.velcom.by"
+        mmsc=""
+        password="vmi"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="vmi"
+    />
+    <apn
+        mcc="257"
+        mnc="01"
+        carrier="Velcom BY // Web Basic"
+        apn="web1.velcom.by"
+        mmsc=""
+        password="web1"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="web1"
+    />
+    <apn
+        mcc="257"
+        mnc="01"
+        carrier="Velcom BY // Web Plus"
+        apn="plus.velcom.by"
+        mmsc=""
+        password="plus"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="plus"
+    />
+    <apn
+        mcc="257"
+        mnc="01"
+        carrier="Velcom MMS"
+        apn="mms.velcom.by"
+        mmsc="http://mms.velcom.by/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.200.15.15"
+        password="mms"
+        port=""
+        proxy=""
+        server="mms.velcom.by"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="257"
+        mnc="01"
+        carrier="Velcom Web"
+        apn="web.velcom.by"
+        mmsc=""
+        password="web"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="web"
+    />
+    <apn
+        mcc="257"
+        mnc="02"
+        carrier="MTS BY"
+        apn="mts"
+        mmsc=""
+        password="mts"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="mts"
+    />
+    <apn
+        mcc="257"
+        mnc="02"
+        carrier="MTS BY MMS"
+        apn="mts"
+        mmsc="http://mmsc"
+        mmsport="8080"
+        mmsproxy="192.168.192.168"
+        password="mts"
+        port=""
+        proxy=""
+        type="mms"
+        user="mts"
+    />
+    <apn
+        mcc="257"
+        mnc="04"
+        carrier="Life:) // Internet"
+        apn="mms.life.com.by"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="257"
+        mnc="04"
+        carrier="Life:) // MMS"
+        apn="mms.life.com.by"
+        mmsc="http://mms.life.com.by/mmsc/"
+        mmsport="8080"
+        mmsproxy="10.10.10.20"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="257"
+        mnc="04"
+        carrier="life Internet"
+        apn="internet.life.com.by"
+        type="default,supl"
+    />
+    <apn
+        mcc="257"
+        mnc="04"
+        carrier="life MMS"
+        apn="mms.life.com.by"
+        mmsc="http://mms.life.com.by/mmsc"
+        mmsport="8080"
+        mmsproxy="10.10.10.20"
+        port=""
+        proxy=""
+        type="mms"
+    />
+</apns>

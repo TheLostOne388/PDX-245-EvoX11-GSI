@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="639"
+        mnc="02"
+        carrier="Safaricom"
+        apn="wap.safaricom.com"
+        mmsc="http://mms.gprs.safaricom.com"
+        password="data"
+        type="default,supl,mms"
+        user="saf"
+    />
+    <apn
+        mcc="639"
+        mnc="02"
+        carrier="Safaricom Live"
+        apn="safaricom"
+        authtype="1"
+        port="8080"
+        proxy="172.22.2.38"
+        type="default,supl"
+    />
+    <apn
+        mcc="639"
+        mnc="02"
+        carrier="Safaricom MMS"
+        apn="safaricom"
+        authtype="1"
+        mmsc="http://mms.gprs.safaricom.com"
+        mmsport="8080"
+        mmsproxy="172.22.2.38"
+        port=""
+        proxy=""
+        type="mms"
+    />
+    <apn
+        mcc="639"
+        mnc="03"
+        carrier="Airtel internet"
+        apn="ke.celtel.com"
+        authtype="1"
+        mmsc=""
+        password="wap"
+        port="8080"
+        proxy="172.30.8.50"
+        type="default,supl"
+        user="wap"
+    />
+    <apn
+        mcc="639"
+        mnc="05"
+        carrier="yu"
+        apn="internet"
+        port="8080"
+        proxy="10.4.16.6"
+        type="default,supl"
+    />
+    <apn
+        mcc="639"
+        mnc="05"
+        carrier="yu MMS"
+        apn="iternet"
+        mmsc="http://10.4.16.22/servlets/mms"
+        mmsproxy="10.4.16.6"
+        type="mms"
+    />
+    <apn
+        mcc="639"
+        mnc="07"
+        carrier="Orange KE"
+        apn="bew.orange.co.ke"
+        password="orange"
+        type="default,supl"
+        user="orange"
+    />
+    <apn
+        mcc="639"
+        mnc="07"
+        carrier="Orange Ke"
+        apn="bew.orange.co.ke"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="639"
+        mnc="07"
+        carrier="Orange MMS"
+        apn="mms.orange.co.ke"
+        mmsc="http://10.36.16.5/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.36.17.130"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="639"
+        mnc="07"
+        carrier="Orange MMS"
+        apn="mms.orange.co.ke"
+        mmsc="http://10.36.16.5/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.36.16.5"
+        type="mms"
+    />
+    <apn
+        mcc="639"
+        mnc="07"
+        carrier="Orange net KE"
+        apn="wap.orange.co.ke"
+        type="default,supl"
+    />
+    <apn
+        mcc="639"
+        mnc="07"
+        carrier="Orange wap"
+        apn="wap.orange.co.ke"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="10.36.17.130"
+        type="default,supl"
+        user=""
+    />
+</apns>

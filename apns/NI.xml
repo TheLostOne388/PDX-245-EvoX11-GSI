@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="710"
+        mnc="21"
+        carrier="Enitel"
+        apn="internet.ideasalo.ni"
+        authtype="1"
+        password="internet"
+        type="default,supl,dun"
+        user="internet"
+    />
+    <apn
+        mcc="710"
+        mnc="21"
+        carrier="Enitel MMS"
+        apn="mms.ideasalo.ni"
+        authtype="1"
+        mmsc="http://10.6.32.27/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.6.32.2"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="710"
+        mnc="30"
+        carrier="Movistar INTERNET"
+        apn="internet.movistar.ni"
+        authtype="1"
+        password="movistarni"
+        type="default,supl"
+        user="movistarni"
+    />
+    <apn
+        mcc="710"
+        mnc="30"
+        carrier="Movistar MMS"
+        apn="mms.movistar.ni"
+        authtype="1"
+        mmsc="http://mms.movistar.ni"
+        mmsport="80"
+        mmsproxy="10.12.23.1"
+        password="movistarni"
+        port=""
+        proxy=""
+        type="mms"
+        user="movistarni"
+    />
+    <apn
+        mcc="710"
+        mnc="300"
+        carrier="Movistar INTERNET"
+        apn="internet.movistar.ni"
+        authtype="1"
+        password="movistarni"
+        type="default,supl"
+        user="movistarni"
+    />
+    <apn
+        mcc="710"
+        mnc="300"
+        carrier="Movistar MMS"
+        apn="mms.movistar.ni"
+        authtype="1"
+        mmsc="http://mms.movistar.ni"
+        mmsport="80"
+        mmsproxy="10.12.23.1"
+        password="movistarni"
+        port=""
+        proxy=""
+        type="mms"
+        user="movistarni"
+    />
+    <apn
+        mcc="710"
+        mnc="73"
+        carrier="Enitel"
+        apn="internet.ideasalo.ni"
+        authtype="1"
+        password="internet"
+        type="default,supl,dun"
+        user="internet"
+    />
+    <apn
+        mcc="710"
+        mnc="73"
+        carrier="Enitel MMS"
+        apn="mms.ideasalo.ni"
+        authtype="1"
+        mmsc="http://10.6.32.27/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.6.32.2"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="710"
+        mnc="730"
+        carrier="Enitel"
+        apn="internet.ideasalo.ni"
+        authtype="1"
+        password="internet"
+        type="default,supl,dun"
+        user="internet"
+    />
+    <apn
+        mcc="710"
+        mnc="730"
+        carrier="Enitel MMS"
+        apn="mms.ideasalo.ni"
+        authtype="1"
+        mmsc="http://10.6.32.27/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.6.32.2"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+</apns>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="732"
+        mnc="101"
+        carrier="MMS COMCEL 3GSM"
+        apn="mms.comcel.com.co "
+        authtype="1"
+        mmsc="http://mms.movistar.com.co"
+        mmsport="8799"
+        mmsproxy="198.228.90.228"
+        password="COMCELMMS"
+        port=""
+        proxy=""
+        type="mms"
+        user="COMCELMMS"
+    />
+    <apn
+        mcc="732"
+        mnc="101"
+        carrier="Web Comcel 3GSM"
+        apn="internet.comcel.com.co"
+        authtype="1"
+        password="COMCELWEB"
+        type="default,supl"
+        user="COMCELWEB"
+    />
+    <apn
+        mcc="732"
+        mnc="102"
+        carrier="Movistar CO"
+        apn="internet.movistar.com.co"
+        password="movistar"
+        type="default,supl"
+        user="movistar"
+    />
+    <apn
+        mcc="732"
+        mnc="102"
+        carrier="Movistar CO"
+        apn="internet.movistar.com.co"
+        mmsc=""
+        password="movistar"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="movistar"
+    />
+    <apn
+        mcc="732"
+        mnc="103"
+        carrier="TIGO Multimedia"
+        apn="mms.colombiamovil.com.co"
+        authtype="1"
+        mmsc="http://mms.ola.com.co"
+        mmsport="8080"
+        mmsproxy="190.102.206.48"
+        password="mms-cm1900"
+        type="mms"
+        user="mms-cm1900"
+    />
+    <apn
+        mcc="732"
+        mnc="103"
+        carrier="TIGO WEB"
+        apn="web.colombiamovil.com.co"
+        password=""
+        type="default,supl,dun"
+        user=""
+    />
+    <apn
+        mcc="732"
+        mnc="111"
+        carrier="OLA"
+        apn="internet"
+        password="internet"
+        type="default,supl"
+        user="internet"
+    />
+    <apn
+        mcc="732"
+        mnc="111"
+        carrier="OLA MMS"
+        apn="mms.comcel.com.co"
+        mmsc="http://mms.ola.com.co"
+        mmsport="9201"
+        mmsproxy="200.058.228.081"
+        type="mms"
+    />
+    <apn
+        mcc="732"
+        mnc="111"
+        carrier="TIGO Multimedia"
+        apn="mms.colombiamovil.com.co"
+        authtype="1"
+        mmsc="http://mms.ola.com.co"
+        mmsport="8080"
+        mmsproxy="190.102.206.48"
+        password="mms-cm1900"
+        type="mms"
+        user="mms-cm1900"
+    />
+    <apn
+        mcc="732"
+        mnc="111"
+        carrier="TIGO WEB"
+        apn="web.colombiamovil.com.co"
+        password=""
+        type="default,supl,dun"
+        user=""
+    />
+    <apn
+        mcc="732"
+        mnc="123"
+        carrier="Movistar INTERNET"
+        apn="internet.movistar.com.co"
+        authtype="1"
+        password="movistar"
+        type="default,supl"
+        user="movistar"
+    />
+    <apn
+        mcc="732"
+        mnc="123"
+        carrier="Movistar MMS"
+        apn="mms.movistar.com.co"
+        authtype="1"
+        mmsc="http://mms.movistar.com.co"
+        mmsport="9001"
+        mmsproxy="192.168.222.7"
+        password="movistar"
+        port=""
+        proxy=""
+        type="mms"
+        user="movistar"
+    />
+    <apn
+        mcc="732"
+        mnc="187"
+        carrier="ETB 4G"
+        apn="internetmovil.etb.net.co"
+        authtype="0"
+        type="default,supl"
+    />
+</apns>

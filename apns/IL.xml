@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="425"
+        mnc="01"
+        carrier="3G Portal"
+        apn="uwap.orange.co.il"
+        mmsc="http://192.168.220.15/servlets/mms"
+        mmsport="8080"
+        mmsproxy="192.118.11.55"
+        type="default,mms"
+    />
+    <apn
+        mcc="425"
+        mnc="01"
+        carrier="3G Portal"
+        apn="uwap.orange.co.il"
+        port="8080"
+        type="default,supl"
+    />
+    <apn
+        mcc="425"
+        mnc="01"
+        carrier="Internet 3G"
+        apn="modem.orange.net.il"
+        type="default,supl"
+    />
+    <apn
+        mcc="425"
+        mnc="01"
+        carrier="MMS 3G"
+        apn="uwap.orange.co.il"
+        mmsc="http://192.168.220.15/servlets/mms"
+        mmsport="8080"
+        type="mms"
+    />
+    <apn
+        mcc="425"
+        mnc="01"
+        carrier="Orange IL"
+        apn="internet"
+        mmsc=""
+        password="orange"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="orange"
+    />
+    <apn
+        mcc="425"
+        mnc="01"
+        carrier="Orange IL MMS"
+        apn="wap.orange.co.il"
+        mmsc="http://192.168.220.15/servlets/mms"
+        mmsport="8080"
+        mmsproxy=""
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="425"
+        mnc="01"
+        carrier="Vodafone MT"
+        apn="Internet"
+        mmsc=""
+        password="Internet"
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="425"
+        mnc="02"
+        carrier="CellCOM"
+        apn="sphone"
+        type="default,supl"
+    />
+    <apn
+        mcc="425"
+        mnc="02"
+        carrier="CellCOM MMS"
+        apn="mms"
+        mmsc="http://mms.cellcom.co.il"
+        mmsport="8080"
+        mmsproxy="172.31.29.38"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="425"
+        mnc="02"
+        carrier="Cellcom 3G"
+        apn="internetg"
+        type="default,supl"
+    />
+    <apn
+        mcc="425"
+        mnc="02"
+        carrier="Cellcom MMS"
+        apn="MMS"
+        mmsc="http://mms.cellcom.co.il"
+        mmsport="8080"
+        mmsproxy="172.31.29.38"
+        type="mms"
+    />
+    <apn
+        mcc="425"
+        mnc="03"
+        carrier="Multimedia Pelephone"
+        apn="mms.pelephone.net.il"
+        mmsc="http://mmsu.pelephone.net.il/"
+        mmsport="9093"
+        mmsproxy="10.170.252.104"
+        password="pcl"
+        type="mms"
+        user="pcl@3g"
+    />
+    <apn
+        mcc="425"
+        mnc="03"
+        carrier="Pelephone"
+        apn="internet.pelephone.net.il"
+        password="pcl"
+        type="default,supl"
+        user="pcl@3g"
+    />
+    <apn
+        mcc="425"
+        mnc="03"
+        carrier="Pelephone"
+        apn="internet.pelephone.net.il"
+        mmsc=""
+        password="pcl"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="pcl@3g"
+    />
+    <apn
+        mcc="425"
+        mnc="03"
+        carrier="Pelephone Internet Static"
+        apn="org.pelephone.net.il"
+        password="pcl"
+        type="default,supl"
+        user="pcl@rsingle"
+    />
+    <apn
+        mcc="425"
+        mnc="03"
+        carrier="Pelephone MMS"
+        apn="mms.pelephone.net.il"
+        mmsc="http://mmsu.pelephone.net.il"
+        mmsport="9093"
+        mmsproxy="10.170.9.54"
+        password="pcl"
+        server="pelephone"
+        type="mms"
+        user="pcl@3g"
+    />
+    <apn
+        mcc="425"
+        mnc="03"
+        carrier="Pelephone MMS"
+        apn="mms.pelephone.net.il"
+        mmsc="http://mmsu.pelephone.net.il"
+        mmsport="9093"
+        mmsproxy="10.170.9.54"
+        password="pcl"
+        port=""
+        proxy=""
+        server="pelephone"
+        type="mms"
+        user="pcl@3g"
+    />
+    <apn
+        mcc="425"
+        mnc="03"
+        carrier="Rami Levey MMS"
+        apn="internet.rl"
+        mmsc="http://mmsu.pelephone.net.il"
+        mmsport="9093"
+        mmsproxy="10.170.9.54"
+        password="rl"
+        server="pelephone"
+        type="mms"
+        user="rl@3g"
+    />
+    <apn
+        mcc="425"
+        mnc="03"
+        carrier="Rami Levy"
+        apn="internet.rl"
+        password="rl"
+        type="default,supl"
+        user="rl@3g"
+    />
+    <apn
+        mcc="425"
+        mnc="03"
+        carrier="Sphone Pelephone"
+        apn="sphone.pelephone.net.il"
+        password="pcl"
+        type="default,supl"
+        user="pcl@3g"
+    />
+    <apn
+        mcc="425"
+        mnc="05"
+        carrier="Jawwal Internet"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="425"
+        mnc="05"
+        carrier="Jawwal MMS"
+        apn="mms"
+        mmsc="http://mms.jawwal.ps/servlets/mms"
+        mmsport="8080"
+        mmsproxy="213.244.118.129"
+        type="mms"
+    />
+    <apn
+        mcc="425"
+        mnc="05"
+        carrier="Jawwal WAP"
+        apn="wap"
+        port="8080"
+        proxy="213.244.118.129"
+        type="default,supl"
+    />
+    <apn
+        mcc="425"
+        mnc="07"
+        carrier="Hot Mobile"
+        apn="net.hotm"
+        type="default,supl"
+    />
+    <apn
+        mcc="425"
+        mnc="07"
+        carrier="Hot Mobile MMS"
+        apn="mms.hotm"
+        mmsc="http://mms.hotmobile.co.il"
+        mmsport="80"
+        type="mms"
+    />
+    <apn
+        mcc="425"
+        mnc="08"
+        carrier="Golan Telecom"
+        apn="internet.golantelecom.net.il"
+        authtype="0"
+        type="default,supl"
+    />
+    <apn
+        mcc="425"
+        mnc="08"
+        carrier="Golan Telecom MMS"
+        apn="mms.golantelecom.net.il"
+        authtype="0"
+        mmsc="http://mmsc.golantelecom.co.il"
+        mmsport="80"
+        mmsproxy="10.224.228.81"
+        type="mms"
+    />
+    <apn
+        mcc="425"
+        mnc="14"
+        carrier="YouPhone 3G"
+        apn="data.youphone.co.il"
+        mmsc="http://192.168.220.15/servlets/mms"
+        mmsport="80"
+        type="default,supl,mms"
+    />
+</apns>

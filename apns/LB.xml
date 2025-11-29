@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="415"
+        mnc="01"
+        carrier="ALFA_INTERNET"
+        apn="internet.mic1.com.lb"
+        type="default,supl"
+    />
+    <apn
+        mcc="415"
+        mnc="01"
+        carrier="ALFA_WAP"
+        apn="wap.mic1.com.lb"
+        password="mic1"
+        port="80"
+        proxy="192.168.23.50"
+        type="default,supl"
+        user="mic1"
+    />
+    <apn
+        mcc="415"
+        mnc="01"
+        carrier="Alfa"
+        apn="internet.mic1.com.lb"
+        password="mic1"
+        type="default,supl"
+        user="mic1"
+    />
+    <apn
+        mcc="415"
+        mnc="01"
+        carrier="Alfa MMS"
+        apn="mms.mic1.com.lb"
+        mmsc="http://mms.mic1.com.lb"
+        mmsport="9201"
+        mmsproxy="192.168.23.51"
+        password="mic1"
+        type="mms"
+        user="mic1"
+    />
+    <apn
+        mcc="415"
+        mnc="01"
+        carrier="Alfa WAP"
+        apn="wap.mic1.com.lb"
+        password="mic1"
+        port="80"
+        proxy="192.168.23.50"
+        type="default,supl"
+        user="mic1"
+    />
+    <apn
+        mcc="415"
+        mnc="03"
+        carrier="Alfa MMS"
+        apn="mms.mic1.com.lb"
+        mmsc="http://mms.mic1.com.lb"
+        mmsport="9201"
+        mmsproxy="192.168.23.51"
+        password="mic1"
+        type="mms"
+        user="mic1"
+    />
+    <apn
+        mcc="415"
+        mnc="03"
+        carrier="Alfa WAP"
+        apn="wap.mic1.com.lb"
+        password="mic1"
+        port="80"
+        proxy="192.168.023.050"
+        type="default,supl"
+        user="mic1"
+    />
+    <apn
+        mcc="415"
+        mnc="03"
+        carrier="mtc touch"
+        apn="gprs.mtctouch.com.lb"
+        type="default,supl"
+    />
+    <apn
+        mcc="415"
+        mnc="03"
+        carrier="mtc touch MMS"
+        apn="mms.mtctouch.com.lb"
+        mmsc="http://mms:8080/mms/"
+        mmsport="9201"
+        mmsproxy="192.168.4.103"
+        type="mms"
+        user="mtctouch"
+    />
+    <apn
+        mcc="415"
+        mnc="03"
+        carrier="mtcgprs"
+        apn="gprs.mtctouch.com.lb"
+        type="default,supl"
+    />
+</apns>

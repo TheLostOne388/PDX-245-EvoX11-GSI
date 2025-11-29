@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="219"
+        mnc="01"
+        carrier="T-Mobile HR"
+        apn="internet.ht.hr"
+        type="default,supl"
+    />
+    <apn
+        mcc="219"
+        mnc="01"
+        carrier="T-Mobile HR"
+        apn="web.htgprs"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="219"
+        mnc="01"
+        carrier="T-Mobile HR MMS"
+        apn="mms.htgprs"
+        mmsc="http://mms.t-mobile.hr/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.12.0.4"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="219"
+        mnc="01"
+        carrier="TM HR WAP"
+        apn="www.htgprs.hr"
+        authtype="1"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="10.12.0.3"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="219"
+        mnc="02"
+        carrier="Tele2 HR"
+        apn="wap.tele2.hr"
+        mmsc="http://mmsc.tele2.hr"
+        mmsport="8080"
+        mmsproxy="193.12.40.66"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="219"
+        mnc="02"
+        carrier="Tele2 HR"
+        apn="wap.tele2.hr"
+        mmsc="http://mmsc.tele2.hr"
+        mmsport="8080"
+        mmsproxy="193.12.40.66"
+        password=""
+        port=""
+        proxy=""
+        type="default,supl,mms"
+        user=""
+    />
+    <apn
+        mcc="219"
+        mnc="10"
+        carrier="VIPnet"
+        apn="data.vip.hr"
+        password="38591"
+        server="219.91.99.91"
+        type="default,supl"
+        user="38591"
+    />
+    <apn
+        mcc="219"
+        mnc="10"
+        carrier="VIPnet"
+        apn="gprs0.vipnet.hr"
+        type="default,supl"
+    />
+    <apn
+        mcc="219"
+        mnc="10"
+        carrier="VIPnet MMS"
+        apn="mms.vipnet.hr"
+        mmsc="http://mms.vipnet.hr/servlets/mms"
+        mmsport="8080"
+        mmsproxy="212.91.99.91"
+        type="mms"
+    />
+</apns>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="734"
+        mnc="01"
+        carrier="Digitel 412"
+        apn="internet.digitel.ve"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="734"
+        mnc="01"
+        carrier="MMS412"
+        apn="expresate.digitel.ve"
+        mmsc="http://mms.412.com.ve/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.99.0.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="734"
+        mnc="02"
+        carrier="Digitel"
+        apn="gprsweb.digitel.ve"
+        type="default,supl"
+    />
+    <apn
+        mcc="734"
+        mnc="02"
+        carrier="Digitel 412"
+        apn="internet.digitel.ve"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="734"
+        mnc="02"
+        carrier="Digitel MMS"
+        apn="expresate.digitel.ve"
+        mmsc="http://expresate.digitel.ve"
+        mmsport="8080"
+        mmsproxy="213.026.205.001"
+        type="mms"
+    />
+    <apn
+        mcc="734"
+        mnc="02"
+        carrier="MMS412"
+        apn="expresate.digitel.ve"
+        mmsc="http://mms.412.com.ve/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.99.0.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="734"
+        mnc="03"
+        carrier="Digitel 412"
+        apn="internet.digitel.ve"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="734"
+        mnc="03"
+        carrier="MMS412"
+        apn="expresate.digitel.ve"
+        mmsc="http://mms.412.com.ve/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.99.0.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="734"
+        mnc="04"
+        carrier="Movistar INTERNET"
+        apn="internet.movistar.ve"
+        password=""
+        type="default,supl"
+        user="http://www.movistar.com.ve/"
+    />
+    <apn
+        mcc="734"
+        mnc="04"
+        carrier="Movistar MMS"
+        apn="mms.movistar.ve"
+        mmsc="http://mms.movistar.com.ve:8088/mms"
+        mmsport="9001"
+        mmsproxy="200.35.64.73"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="734"
+        mnc="04"
+        carrier="Movistar VE"
+        apn="internet.movistar.ve"
+        mmsc="http://mms.movistar.ve"
+        mmsport="9001"
+        mmsproxy="200.35.64.73"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="734"
+        mnc="04"
+        carrier="Movistar WAP"
+        apn="wap.movistar.ve"
+        mmsc=""
+        password=""
+        port="9001"
+        proxy="200.35.64.73"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="734"
+        mnc="06"
+        carrier="Movilnet"
+        apn="int.movilnet.com.ve"
+        type="default,supl"
+    />
+    <apn
+        mcc="734"
+        mnc="06"
+        carrier="Movilnet MMS"
+        apn="mm.movilnet.com.ve"
+        mmsc="http://mms2.movilnet.com.ve/servlets/mms"
+        mmsport="8080"
+        mmsproxy="192.168.16.12"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="734"
+        mnc="06"
+        carrier="Movilnet WAP"
+        apn="app.movilnet.com.ve"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="192.168.201.170"
+        type="default,supl"
+        user=""
+    />
+</apns>

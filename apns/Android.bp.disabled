@@ -1,0 +1,34 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+genrule {
+    name: "pdx245-apns-conf",
+    out: ["apns-conf.xml"],
+    srcs: ["*.xml"],
+    tools: ["pdx245-make-apns", "xmllint"],
+    cmd: "XMLLINT=$(location xmllint) $(location pdx245-make-apns) $(in) > $(out)",
+}
+
+prebuilt_etc_xml {
+    name: "pdx245-apns-conf.xml",
+    product_specific: true,
+    src: ":pdx245-apns-conf",
+    filename: "apns-conf.xml",
+    schema: ":pdx245-apns-conf-schema",
+    // CRITICAL: This tells the build system that this module replaces the standard 'apns-conf' module.
+    // This prevents collision errors even if vendor/apn is present in the source tree.
+    overrides: ["apns-conf", "apns-full-conf", "apns-full-conf.xml"],
+}
+
+filegroup {
+    name: "pdx245-apns-conf-schema",
+    srcs: ["apns-conf.xsd"],
+}
+
+sh_binary_host {
+    name: "pdx245-make-apns",
+    src: "make-apns.sh",
+    required: ["xmllint"],
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="247"
+        mnc="01"
+        carrier="LMT"
+        apn="internet.lmt.lv"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="247"
+        mnc="01"
+        carrier="LMT MMS"
+        apn="internet.lmt.lv"
+        mmsc="http://mmsc.lmt.lv/mmsc"
+        mmsport="8080"
+        mmsproxy="212.93.97.201"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="247"
+        mnc="02"
+        carrier="Tele2 Internet LV"
+        apn="internet.tele2.lv"
+        password="wap"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="wap"
+    />
+    <apn
+        mcc="247"
+        mnc="02"
+        carrier="Tele2 MMS LV"
+        apn="mms.tele2.lv"
+        mmsc="http://mmsc.tele2.lv/"
+        mmsport="8080"
+        mmsproxy="193.12.40.38"
+        password="wap"
+        port=""
+        proxy=""
+        type="mms"
+        user="wap"
+    />
+    <apn
+        mcc="247"
+        mnc="05"
+        carrier="Bite LV Internet"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="247"
+        mnc="05"
+        carrier="Bite MMS"
+        apn="mms"
+        mmsc="http://mmsc/servlets/mms"
+        mmsport="8080"
+        mmsproxy="192.168.150.2"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user="mms@mms"
+    />
+</apns>

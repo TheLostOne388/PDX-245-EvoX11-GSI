@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="740"
+        mnc="00"
+        carrier="Movistar INTERNET"
+        apn="internet.movistar.com.ec"
+        password="movistar"
+        type="default,supl"
+        user="movistar"
+    />
+    <apn
+        mcc="740"
+        mnc="00"
+        carrier="Movistar MMS"
+        apn="mms.movistar.com.ec"
+        mmsc="http://mms.movistar.com.ec:8088/mms/"
+        mmsport="9001"
+        mmsproxy="10.3.5.50"
+        password="movistar"
+        port=""
+        proxy=""
+        type="mms"
+        user="movistar"
+    />
+    <apn
+        mcc="740"
+        mnc="01"
+        carrier="Banda Acha M??vil"
+        apn="ba.amx"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="740"
+        mnc="01"
+        carrier="MMS Claro"
+        apn="mms.claro.com.ec"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="740"
+        mnc="010"
+        carrier="Porta EC"
+        apn="internet.porta.com.ec"
+        type="default,supl"
+    />
+    <apn
+        mcc="740"
+        mnc="02"
+        carrier="Movistar INTERNET"
+        apn="internet.movistar.com.ec"
+        authtype="3"
+        password="movistar"
+        type="default,supl"
+        user="movistar"
+    />
+    <apn
+        mcc="740"
+        mnc="02"
+        carrier="Movistar MMS"
+        apn="mms.movistar.com.ec"
+        authtype="3"
+        mmsc="http://mms.movistar.com.ec:8088/mms/"
+        mmsport="9001"
+        mmsproxy="10.3.5.50"
+        password="movistar"
+        port=""
+        proxy=""
+        type="mms"
+        user="movistar"
+    />
+</apns>

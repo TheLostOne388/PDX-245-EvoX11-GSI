@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="232"
+        mnc="01"
+        carrier="A1 Internet"
+        apn="a1.net"
+        authtype="1"
+        password="ppp"
+        protocol="IPV4V6"
+        type="default,supl"
+        user="ppp@a1plus.at"
+    />
+    <apn
+        mcc="232"
+        mnc="01"
+        carrier="A1 MMS"
+        apn="free.A1.net"
+        authtype="1"
+        mmsc="http://mmsc.A1.net"
+        mmsport="8001"
+        mmsproxy="194.48.124.71"
+        password="ppp"
+        type="mms"
+        user="ppp@a1plus.at"
+    />
+    <apn
+        mcc="232"
+        mnc="03"
+        carrier="T-Mobile A Internet"
+        apn="internet.t-mobile.at"
+        authtype="1"
+        password="tm"
+        type="default,supl"
+        user="t-mobile"
+    />
+    <apn
+        mcc="232"
+        mnc="03"
+        carrier="T-Mobile A MMS"
+        apn="gprsmms"
+        authtype="1"
+        mmsc="http://mmsc.t-mobile.at/servlets/mms"
+        mmsport="80"
+        mmsproxy="10.12.0.20"
+        password="tm"
+        type="mms"
+        user="t-mobile"
+    />
+    <apn
+        mcc="232"
+        mnc="05"
+        carrier="3 AT"
+        apn="drei.at"
+        mmsc="http://mmsc"
+        mmsport="8799"
+        mmsproxy="213.94.78.133"
+        server="http://mobile.drei.at"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="232"
+        mnc="07"
+        carrier="HoT Internet"
+        apn="webaut"
+        type="default,supl"
+    />
+    <apn
+        mcc="232"
+        mnc="07"
+        carrier="HoT MMS"
+        apn="mmsaut"
+        mmsc="http://mmsaut.at/send"
+        mmsport="80"
+        mmsproxy="212.95.31.50"
+        type="mms"
+    />
+    <apn
+        mcc="232"
+        mnc="10"
+        carrier="3 AT"
+        apn="drei.at"
+        mmsc="http://mmsc"
+        mmsport="8799"
+        mmsproxy="213.94.78.133"
+        server="http://mobile.drei.at"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="232"
+        mnc="11"
+        carrier="Bob"
+        apn="bob.at"
+        password="ppp"
+        protocol="IPV4V6"
+        type="default,supl"
+        user="data@bob.at"
+    />
+    <apn
+        mcc="232"
+        mnc="11"
+        carrier="Bob MMS"
+        apn="mms.bob.at"
+        mmsc="http://mmsc.bob.at"
+        mmsport="8001"
+        mmsproxy="194.48.124.7"
+        password="ppp"
+        type="mms"
+        user="data@bob.at"
+    />
+    <apn
+        mcc="232"
+        mnc="12"
+        carrier="Yesss"
+        apn="webapn.at"
+        protocol="IPV4V6"
+        type="default,supl"
+    />
+    <apn
+        mcc="232"
+        mnc="13"
+        carrier="T-Mobile A Internet"
+        apn="internet.t-mobile.at"
+        authtype="1"
+        password="tm"
+        type="default,supl"
+        user="t-mobile"
+    />
+    <apn
+        mcc="232"
+        mnc="13"
+        carrier="T-Mobile A MMS"
+        apn="gprsmms"
+        authtype="1"
+        mmsc="http://mmsc.t-mobile.at/servlets/mms"
+        mmsport="80"
+        mmsproxy="10.12.0.20"
+        password="tm"
+        type="mms"
+        user="t-mobile"
+    />
+    <apn
+        mcc="232"
+        mnc="17"
+        carrier="spusu"
+        apn="mass.at"
+        type="default,supl"
+    />
+</apns>

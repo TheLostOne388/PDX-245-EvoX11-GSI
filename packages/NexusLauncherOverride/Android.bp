@@ -1,0 +1,19 @@
+// PDX245: Stub package to override NexusLauncherRelease
+// This prevents Pixel Launcher from being included in the build
+// while allowing Launcher3QuickStep (Trebuchet) to be the default
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+android_app {
+    name: "NexusLauncherOverride",
+    manifest: "AndroidManifest.xml",
+    system_ext_specific: true,
+    overrides: ["NexusLauncherRelease"],
+    platform_apis: true,
+    certificate: "platform",
+    // Minimal stub - no actual code needed
+    enforce_uses_libs: false,
+}
+

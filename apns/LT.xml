@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="246"
+        mnc="01"
+        carrier="Omnitel"
+        apn="gprs.startas.lt"
+        mmsc=""
+        password="omni"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="omni"
+    />
+    <apn
+        mcc="246"
+        mnc="01"
+        carrier="Omnitel Internet"
+        apn="omnitel"
+        mmsc=""
+        password="omni"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="omni"
+    />
+    <apn
+        mcc="246"
+        mnc="01"
+        carrier="Omnitel MMS"
+        apn="gprs.mms.lt"
+        mmsc="http://mms.omnitel.net:8002/"
+        mmsport="8080"
+        mmsproxy="194.176.32.149"
+        password="mms"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="246"
+        mnc="02"
+        carrier="Bite"
+        apn="wap"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        server="213.226.131.133"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="246"
+        mnc="02"
+        carrier="Bite LT Internet"
+        apn="banga"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="246"
+        mnc="02"
+        carrier="Bite MMS"
+        apn="mms"
+        mmsc="http://mmsc"
+        mmsport="8080"
+        mmsproxy="192.168.150.2"
+        password="mms"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms@mms"
+    />
+    <apn
+        mcc="246"
+        mnc="03"
+        carrier="Tele2 Internet LT"
+        apn="internet.tele2.lt"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="246"
+        mnc="03"
+        carrier="Tele2 LT"
+        apn="internet.vodafone.net"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="246"
+        mnc="03"
+        carrier="Tele2 LT MMS"
+        apn="wap.tele2.lt"
+        mmsc="http://mmsc.tele2.lt"
+        mmsport="8080"
+        mmsproxy="193.12.40.29"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="246"
+        mnc="03"
+        carrier="Tele2 MMS LT"
+        apn="mms.tele2.lt"
+        mmsc="http://mmsc.tele2.lt/"
+        mmsport="8080"
+        mmsproxy="193.12.40.29"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="246"
+        mnc="081"
+        carrier="VZW Test CBS"
+        apn="VZWAPP"
+        mmsc="http://mms.vtext.com/servlets/mms"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="cbs,mms"
+    />
+    <apn
+        mcc="246"
+        mnc="081"
+        carrier="VZW Test FOTA"
+        apn="VZWADMIN"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="fota"
+    />
+    <apn
+        mcc="246"
+        mnc="081"
+        carrier="VZW Test IMS"
+        apn="VZWIMS"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+    />
+    <apn
+        mcc="246"
+        mnc="081"
+        carrier="VZW Test Internet"
+        apn="VZWINTERNET"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,dun,supl"
+    />
+    <apn
+        mcc="246"
+        mnc="81"
+        carrier="VZW Test CBS"
+        apn="VZWAPP"
+        mmsc="http://mms.vtext.com/servlets/mms"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="cbs,mms"
+    />
+    <apn
+        mcc="246"
+        mnc="81"
+        carrier="VZW Test FOTA"
+        apn="VZWADMIN"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="fota"
+    />
+    <apn
+        mcc="246"
+        mnc="81"
+        carrier="VZW Test IMS"
+        apn="VZWIMS"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="ims"
+    />
+    <apn
+        mcc="246"
+        mnc="81"
+        carrier="VZW Test Internet"
+        apn="VZWINTERNET"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,dun,supl"
+    />
+</apns>

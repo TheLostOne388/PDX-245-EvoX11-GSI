@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="716"
+        mnc="06"
+        carrier="Movistar INTERNET"
+        apn="movistar.pe"
+        authtype="1"
+        password="movistar"
+        type="default,supl"
+        user="movistar@datos"
+    />
+    <apn
+        mcc="716"
+        mnc="06"
+        carrier="Movistar MMS"
+        apn="mms.movistar.pe"
+        authtype="1"
+        mmsc="http://mmsc.telefonicamovistar.com.pe:8088/mms/"
+        mmsport="8080"
+        mmsproxy="200.4.196.118"
+        password="movistar"
+        port=""
+        proxy=""
+        type="mms"
+        user="movistar@mms"
+    />
+    <apn
+        mcc="716"
+        mnc="10"
+        carrier="CLARO DATOS"
+        apn="claro.pe"
+        authtype="1"
+        password="claro"
+        type="default,supl"
+        user="claro"
+    />
+    <apn
+        mcc="716"
+        mnc="10"
+        carrier="Claro MMS"
+        apn="mms.claro.pe"
+        authtype="1"
+        mmsc="http://claro/servlets/mms"
+        mmsport="80"
+        mmsproxy="192.168.231.30"
+        password="claro"
+        port=""
+        proxy=""
+        type="mms"
+        user="claro"
+    />
+    <apn
+        mcc="716"
+        mnc="17"
+        carrier="Entel Internet"
+        apn="entel.pe"
+        authtype="0"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="716"
+        mnc="17"
+        carrier="Entel MMS"
+        apn="mms.entel.pe"
+        authtype="0"
+        mmsc="http://mms.nextel.pe"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+</apns>

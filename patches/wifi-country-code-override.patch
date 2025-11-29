@@ -1,0 +1,27 @@
+diff --git a/service/java/com/android/server/wifi/WifiCountryCode.java b/service/java/com/android/server/wifi/WifiCountryCode.java
+index 3b041cd..404cad4 100644
+--- a/service/java/com/android/server/wifi/WifiCountryCode.java
++++ b/service/java/com/android/server/wifi/WifiCountryCode.java
+@@ -58,6 +58,8 @@ import java.util.Set;
+ public class WifiCountryCode {
+     private static final String TAG = "WifiCountryCode";
+     private static final String BOOT_DEFAULT_WIFI_COUNTRY_CODE = "ro.boot.wificountrycode";
++    // PDX245: Persistent country code override - takes priority over telephony
++    private static final String PERSIST_WIFI_COUNTRY_CODE_OVERRIDE = "persist.sys.wifi.country_code_override";
+     private static final int PKT_COUNT_HIGH_PKT_PER_SEC = 16;
+     private static final int DISCONNECT_WIFI_COUNT_MAX = 1;
+     /* TODO: replace with PackageManager.FEATURE_TELEPHONY_CALLING once
+@@ -650,6 +652,13 @@ public class WifiCountryCode {
+      * @return country code base on the use case and current country code we have.
+      */
+     private String pickCountryCode(boolean useDriverCountryCodeIfAvailable) {
++        // PDX245: Check for persistent system property override first
++        // This takes priority over EVERYTHING including telephony
++        String persistOverride = SystemProperties.get(PERSIST_WIFI_COUNTRY_CODE_OVERRIDE);
++        if (isValid(persistOverride)) {
++            Log.d(TAG, "Using persistent country code override: " + persistOverride);
++            return persistOverride.toUpperCase(Locale.US);
++        }
+         if (mOverrideCountryCode != null) {
+             return mOverrideCountryCode;
+         }

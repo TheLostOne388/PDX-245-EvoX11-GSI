@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="520"
+        mnc="00"
+        carrier="TrueMove-H"
+        apn="internet"
+        password="true"
+        type="default,supl"
+        user="true"
+    />
+    <apn
+        mcc="520"
+        mnc="00"
+        carrier="TrueMove-H MMS"
+        apn="hmms"
+        mmsc="http://mms.trueh.com:8002"
+        mmsport="8080"
+        mmsproxy="10.4.7.39"
+        password="true"
+        type="mms"
+        user="true"
+    />
+    <apn
+        mcc="520"
+        mnc="01"
+        carrier="AIS GPRS Internet"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="520"
+        mnc="01"
+        carrier="AIS MMS"
+        apn="multimedia"
+        mmsc="http://mms.mobilelife.co.th"
+        mmsport="8080"
+        mmsproxy="203.170.229.34"
+        type="mms"
+    />
+    <apn
+        mcc="520"
+        mnc="03"
+        carrier="AIS Internet"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="520"
+        mnc="03"
+        carrier="AIS MMS"
+        apn="mms"
+        mmsc="http://mms.ais.co.th"
+        mmsport="8080"
+        mmsproxy="203.170.229.34"
+        type="mms"
+    />
+    <apn
+        mcc="520"
+        mnc="05"
+        carrier="DTAC GPRS WEB"
+        apn="www.dtac.co.th"
+        type="default,supl"
+    />
+    <apn
+        mcc="520"
+        mnc="05"
+        carrier="DTAC MMS"
+        apn="mms"
+        mmsc="http://mms2.dtac.co.th:8002"
+        mmsport="8080"
+        mmsproxy="10.10.10.10"
+        type="mms"
+    />
+    <apn
+        mcc="520"
+        mnc="15"
+        carrier="TOT 3G"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="520"
+        mnc="15"
+        carrier="TOT 3G MMS"
+        apn="mms"
+        mmsc="http://mms.tot3g.net:8002"
+        mmsport="8080"
+        mmsproxy="10.218.24.83"
+        type="mms"
+    />
+    <apn
+        mcc="520"
+        mnc="18"
+        carrier="DTAC GPRS WEB"
+        apn="www.dtac.co.th"
+        type="default,supl"
+    />
+    <apn
+        mcc="520"
+        mnc="18"
+        carrier="DTAC MMS"
+        apn="mms"
+        mmsc="http://mms.dtac.co.th:8002"
+        mmsport="8080"
+        mmsproxy="203.155.200.133"
+        type="mms"
+    />
+    <apn
+        mcc="520"
+        mnc="99"
+        carrier="True"
+        apn="internet"
+        password="true"
+        type="default,supl"
+        user="true"
+    />
+    <apn
+        mcc="520"
+        mnc="99"
+        carrier="True MMS"
+        apn="mms"
+        mmsc="http://mms.trueworld.net:8002"
+        mmsport="8080"
+        mmsproxy="10.4.7.39"
+        password="true"
+        type="mms"
+        user="true"
+    />
+</apns>

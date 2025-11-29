@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="470"
+        mnc="01"
+        carrier="GP-INTERNET"
+        apn="gpinternet"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="470"
+        mnc="01"
+        carrier="GP-MMS"
+        apn="gpmms"
+        mmsc="http://mms.gpsurf.net/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.128.1.2"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="470"
+        mnc="01"
+        carrier="GP-WAP"
+        apn="gpwap"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="10.128.1.2"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="470"
+        mnc="01"
+        carrier="Grameenphone"
+        apn="gpinternet"
+        type="default,supl"
+    />
+    <apn
+        mcc="470"
+        mnc="01"
+        carrier="Grameenphone"
+        apn="gpinternet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="470"
+        mnc="01"
+        carrier="Grameenphone MMS"
+        apn="gpmms"
+        mmsc="http://mms.gpsurf.net/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.128.1.2"
+        type="mms"
+    />
+    <apn
+        mcc="470"
+        mnc="01"
+        carrier="Grameenphone WAP"
+        apn="gpinternet"
+        port="8080"
+        proxy="10.128.1.2"
+        type="default,supl"
+    />
+    <apn
+        mcc="470"
+        mnc="02"
+        carrier="Robi"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="470"
+        mnc="02"
+        carrier="Robi MMS"
+        apn="wap"
+        mmsc="http://192.168.23.4/was"
+        mmsport="9028"
+        mmsproxy="192.168.023.007"
+        type="mms"
+    />
+    <apn
+        mcc="470"
+        mnc="02"
+        carrier="Robi WAP"
+        apn="wap"
+        port="9208"
+        proxy="10.128.1.2"
+        type="default,supl"
+    />
+    <apn
+        mcc="470"
+        mnc="03"
+        carrier="Banglalink"
+        apn="blweb"
+        type="default,supl"
+    />
+    <apn
+        mcc="470"
+        mnc="03"
+        carrier="Banglalink MMS"
+        apn="blmms"
+        mmsc="http://"
+        mmsport="8799"
+        mmsproxy="10.10.55.34"
+        type="mms"
+    />
+    <apn
+        mcc="470"
+        mnc="03"
+        carrier="Banglalink WAP"
+        apn="blwap"
+        port="8799"
+        proxy="10.10.55.34"
+        type="default,supl"
+    />
+    <apn
+        mcc="470"
+        mnc="04"
+        carrier="Tele Talk"
+        apn="wap"
+        type="default,supl"
+    />
+    <apn
+        mcc="470"
+        mnc="04"
+        carrier="Tele Talk WAP"
+        apn="wap"
+        port="9201"
+        proxy="192.168.145.101"
+        type="default,supl"
+    />
+    <apn
+        mcc="470"
+        mnc="07"
+        carrier="Airtel BD"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="470"
+        mnc="07"
+        carrier="Airtel BD MMS"
+        apn="mms"
+        mmsc="http://10.6.0.21/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.6.0.2"
+        type="mms"
+    />
+    <apn
+        mcc="470"
+        mnc="07"
+        carrier="Airtel BD WAP"
+        apn="wap"
+        port="8080"
+        proxy="10.6.0.2"
+        type="default,supl"
+    />
+    <apn
+        mcc="470"
+        mnc="07"
+        carrier="Warid BD"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="470"
+        mnc="07"
+        carrier="Warid BD MMS"
+        apn="mms"
+        mmsc="http://mms.waridtel.com.bd/index.jsp"
+        mmsport="8080"
+        mmsproxy="10.128.5.6"
+        type="mms"
+    />
+</apns>

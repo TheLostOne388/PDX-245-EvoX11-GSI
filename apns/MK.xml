@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="294"
+        mnc="01"
+        carrier="T-Mobile MK"
+        apn="internet"
+        authtype="3"
+        mmsc=""
+        password="t-mobile"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="internet"
+    />
+    <apn
+        mcc="294"
+        mnc="01"
+        carrier="T-Mobile MK MMS"
+        apn="mms"
+        authtype="3"
+        mmsc="http://mms.t-mobile.com.mk"
+        mmsport="8080"
+        mmsproxy="62.162.155.227"
+        password="mms"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="294"
+        mnc="03"
+        carrier="Vip internet"
+        apn="vipoperator"
+        mmsc=""
+        password="vipoperator"
+        port="8080"
+        proxy="78.40.0.1"
+        type="default,supl"
+        user="vipoperator"
+    />
+    <apn
+        mcc="294"
+        mnc="03"
+        carrier="Vip mms"
+        apn="vipoperator.mms"
+        mmsc="http://mmsc.vipoperator.com.mk"
+        mmsport="8080"
+        mmsproxy="78.40.0.1"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+</apns>

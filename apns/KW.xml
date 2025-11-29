@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="419"
+        mnc="02"
+        carrier="MI"
+        apn="pps"
+        password="pps"
+        type="default,supl"
+        user="pps"
+    />
+    <apn
+        mcc="419"
+        mnc="02"
+        carrier="MTC Vodafone KW"
+        apn="apn01"
+        type="default,supl"
+    />
+    <apn
+        mcc="419"
+        mnc="02"
+        carrier="MTC Vodafone KW MMS"
+        apn="mms"
+        mmsc="http://176.000.000.021"
+        mmsport="8080"
+        mmsproxy="176.0.0.65"
+        password="online"
+        type="mms"
+        user="annyway"
+    />
+    <apn
+        mcc="419"
+        mnc="02"
+        carrier="Zain KW"
+        apn="pps"
+        password="pps"
+        type="default,supl"
+        user="pps"
+    />
+    <apn
+        mcc="419"
+        mnc="02"
+        carrier="Zain KW MMS"
+        apn="pps"
+        mmsc="http://mms.zain"
+        mmsport="8080"
+        mmsproxy="176.0.0.65"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="419"
+        mnc="03"
+        carrier="Wataniya Internet"
+        apn="action.wataniya.com"
+        type="*"
+    />
+    <apn
+        mcc="419"
+        mnc="03"
+        carrier="wataniya"
+        apn="action.wataniya.com"
+        type="default,supl"
+    />
+    <apn
+        mcc="419"
+        mnc="03"
+        carrier="wataniya MMS"
+        apn="mms.wataniya.com"
+        mmsc="http://action.wataniya.com"
+        mmsport="8080"
+        mmsproxy="194.126.053.064"
+        type="mms"
+    />
+    <apn
+        mcc="419"
+        mnc="04"
+        carrier="Viva KW"
+        apn="viva"
+        type="default,supl"
+    />
+    <apn
+        mcc="419"
+        mnc="04"
+        carrier="Viva KW MMS"
+        apn="viva"
+        mmsc="http://172.16.128.80:38090/was"
+        mmsport="8080"
+        mmsproxy="172.16.128.228"
+        type="mms"
+    />
+</apns>

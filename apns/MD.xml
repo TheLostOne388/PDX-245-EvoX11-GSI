@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="259"
+        mnc="01"
+        carrier="Orange IMO"
+        apn="wap.orange.md"
+        mmsc="http://wap.orange.md/"
+        mmsport="8799"
+        mmsproxy="9201"
+        password=""
+        port=""
+        proxy=""
+        type="*"
+        user=""
+    />
+    <apn
+        mcc="259"
+        mnc="01"
+        carrier="Orange IMO"
+        apn="wap.orange.md"
+        mmsport="3128"
+        proxy="192.168.127.124"
+        type="default,supl"
+    />
+    <apn
+        mcc="259"
+        mnc="01"
+        carrier="Orange MMS"
+        apn="mms.orange.md"
+        mmsc="http://mms/mms"
+        mmsport="3128"
+        mmsproxy="192.168.127.125"
+        type="mms"
+    />
+    <apn
+        mcc="259"
+        mnc="02"
+        carrier="MD MOLDCELL"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="259"
+        mnc="02"
+        carrier="MD MOLDCELL"
+        apn="mms"
+        mmsc="http://mms.moldcell.md/cmmsc/post"
+        mmsport="9401"
+        mmsproxy="10.0.10.10"
+        type="mms"
+    />
+    <apn
+        mcc="259"
+        mnc="05"
+        carrier="Unite Internet PostPay"
+        apn="internet.unite.md"
+        type="default,supl"
+    />
+    <apn
+        mcc="259"
+        mnc="05"
+        carrier="Unite Internet PrePay"
+        apn="internet3g.unite.md"
+        type="default,supl"
+    />
+    <apn
+        mcc="259"
+        mnc="05"
+        carrier="Unite MMS"
+        apn="mms.unite.md"
+        mmsc="http://10.32.15.68:38090/was"
+        mmsport="8080"
+        mmsproxy="10.32.15.164"
+        type="mms"
+    />
+</apns>

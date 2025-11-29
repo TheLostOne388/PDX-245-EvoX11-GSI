@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="604"
+        mnc="00"
+        carrier="Imédia"
+        apn="wap.meditel.ma"
+        authtype="1"
+        password="MEDIWAP"
+        port="8080"
+        proxy="10.8.8.8"
+        type="default,supl"
+        user="MEDIWAP"
+    />
+    <apn
+        mcc="604"
+        mnc="00"
+        carrier="Meditel Internet"
+        apn="internet1.meditel.ma"
+        authtype="1"
+        password="MEDINET"
+        type="default,supl"
+        user="MEDINET"
+    />
+    <apn
+        mcc="604"
+        mnc="00"
+        carrier="Meditel MMS"
+        apn="mms.meditel.ma"
+        authtype="1"
+        mmsc="http://mms.meditel.ma:8088/mms"
+        mmsport="8080"
+        mmsproxy="10.8.8.9"
+        password="MEDIMMS"
+        type="mms"
+        user="MEDIMMS"
+    />
+    <apn
+        mcc="604"
+        mnc="01"
+        carrier="IAM"
+        apn="www.iamgprs1.ma"
+        type="default,supl"
+    />
+    <apn
+        mcc="604"
+        mnc="01"
+        carrier="IAM MMS"
+        apn="mmsiam"
+        mmsc="http://mms:8002"
+        mmsport="8080"
+        mmsproxy="10.16.35.50"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="604"
+        mnc="01"
+        carrier="MMS IAM"
+        apn="Mmsiam"
+        mmsc="http://mms:8002/"
+        mmsport="8080"
+        mmsproxy="10.16.35.50"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="604"
+        mnc="01"
+        carrier="Mobile Internet"
+        apn="www.iamgprs1.ma"
+        authtype="1"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="604"
+        mnc="01"
+        carrier="Mobile TV"
+        apn="wap.iamgprs.ma"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="604"
+        mnc="01"
+        carrier="Mobile Zone"
+        apn="wap.iamgprs.ma"
+        authtype="1"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="212.217.54.133"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="604"
+        mnc="02"
+        carrier="Inwi"
+        apn="www.inwi.ma"
+        type="default,supl,hipri,dun,fota,cbs"
+    />
+    <apn
+        mcc="604"
+        mnc="02"
+        carrier="Inwi MMS"
+        apn="mms.wana.ma"
+        authtype="0"
+        mmsc="http://mms.wana.ma:38090"
+        mmsport="8080"
+        mmsproxy="10.86.0.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+</apns>

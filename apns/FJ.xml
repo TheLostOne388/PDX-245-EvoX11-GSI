@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="542"
+        mnc="01"
+        carrier="Vodafone FJ"
+        apn="vfinternet.fj"
+        type="default,supl"
+    />
+    <apn
+        mcc="542"
+        mnc="01"
+        carrier="Vodafone FJ MMS"
+        apn="live.vodafone.com.fj"
+        mmsc="http://pxt.vodafone.net.fj/pxtsend"
+        mmsport="9201"
+        mmsproxy="010.202.002.040"
+        type="mms"
+    />
+    <apn
+        mcc="542"
+        mnc="01"
+        carrier="vodafone fj"
+        apn="live.vodafone.com.fj"
+        authtype="3"
+        mmsc="http://pxt.vodafone.net.fj/pxtsend"
+        mmsport="8080"
+        mmsproxy="10.202.2.40"
+        password=""
+        port="8080"
+        proxy="10.202.2.40"
+        type="*"
+        user=""
+    />
+    <apn
+        mcc="542"
+        mnc="02"
+        carrier="Digicel FJ"
+        apn="web.digicelpacific.com"
+        type="default,supl"
+    />
+    <apn
+        mcc="542"
+        mnc="02"
+        carrier="Digicel FJ MMS"
+        apn="wap.digicelpacific.com"
+        mmsc="http://mms.digicelpacific.com:8990"
+        mmsport="8080"
+        mmsproxy="10.150.122.12"
+        type="mms"
+    />
+    <apn
+        mcc="542"
+        mnc="02"
+        carrier="Digicel MMS"
+        apn="wap.digicelpacific.com"
+        mmsc="http://mms.digicelpacific.com:8990"
+        mmsport="8080"
+        mmsproxy="10.150.122.12"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="542"
+        mnc="02"
+        carrier="Digicel Web"
+        apn="web.digicelpacific.com"
+        password=""
+        type="default,supl"
+        user=""
+    />
+</apns>

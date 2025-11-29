@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="230"
+        mnc="01"
+        carrier="T-Mobile CZ"
+        apn="internet.t-mobile.cz"
+        mmsc="http://mms"
+        mmsport="80"
+        mmsproxy="010.000.000.010"
+        password="wap"
+        server="*"
+        type="default,supl"
+        user="wap"
+    />
+    <apn
+        mcc="230"
+        mnc="01"
+        carrier="T-Mobile CZ IMS"
+        apn="IMS"
+        protocol="IPV4V6"
+        type="ims"
+    />
+    <apn
+        mcc="230"
+        mnc="01"
+        carrier="T-Mobile MMS"
+        apn="mms.t-mobile.cz"
+        authtype="1"
+        mmsc="http://mms"
+        mmsport="80"
+        mmsproxy="010.000.000.010"
+        password="mms"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="230"
+        mnc="02"
+        carrier="O2 CZ"
+        apn="internet"
+        authtype="3"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="230"
+        mnc="02"
+        carrier="O2 CZ"
+        apn="wap"
+        mmsc=""
+        password="wap"
+        port="9201"
+        proxy="160.218.160.218"
+        type="default,supl"
+        user="O2"
+    />
+    <apn
+        mcc="230"
+        mnc="02"
+        carrier="O2 CZ MMS"
+        apn="mms"
+        authtype="3"
+        mmsc="http://mms.o2active.cz:8002"
+        mmsport="8080"
+        mmsproxy="160.218.160.218"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="230"
+        mnc="03"
+        carrier="Vodafone CZ"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="230"
+        mnc="03"
+        carrier="Vodafone CZ MMS"
+        apn="mms"
+        mmsc="http://mms"
+        mmsport="80"
+        mmsproxy="10.11.10.111"
+        password="mms"
+        port=""
+        proxy=""
+        server="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="230"
+        mnc="99"
+        carrier="GPRS Web"
+        apn="Internet"
+        authtype="3"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="230"
+        mnc="99"
+        carrier="MMS"
+        apn="MMS"
+        authtype="1"
+        mmsc="http://mms"
+        mmsport="80"
+        mmsproxy="10.011.010.111"
+        password="mms"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+</apns>

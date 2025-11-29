@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="502"
+        mnc="12"
+        carrier="Maxis 2G Internet"
+        apn="net"
+        password="wap"
+        type="default,supl"
+        user="maxis"
+    />
+    <apn
+        mcc="502"
+        mnc="12"
+        carrier="Maxis 2G MMS"
+        apn="net"
+        mmsc="http://172.16.74.100:10021/mmsc"
+        mmsport="80"
+        mmsproxy="202.75.133.49"
+        password="wap"
+        server="202.75.133.49"
+        type="mms"
+        user="maxis"
+    />
+    <apn
+        mcc="502"
+        mnc="12"
+        carrier="Maxis 3G Internet"
+        apn="unet"
+        password="wap"
+        type="default,supl"
+        user="maxis"
+    />
+    <apn
+        mcc="502"
+        mnc="12"
+        carrier="Maxis 3G MMS"
+        apn="unet"
+        mmsc="http://172.16.74.100:10021/mmsc"
+        mmsport="80"
+        mmsproxy="202.75.133.49"
+        password="wap"
+        server="202.75.133.49"
+        type="mms"
+        user="maxis"
+    />
+    <apn
+        mcc="502"
+        mnc="12"
+        carrier="Maxis 3G WAP GPRS"
+        apn="unet"
+        password=""
+        port="80"
+        proxy="202.75.133.49"
+        type="default,supl"
+        user="maxis"
+    />
+    <apn
+        mcc="502"
+        mnc="12"
+        carrier="Maxis 3g Internet"
+        apn="unet"
+        password=""
+        type="default,supl"
+        user="maxis"
+    />
+    <apn
+        mcc="502"
+        mnc="12"
+        carrier="Maxis 3g MMS"
+        apn="unet"
+        mmsc="http://172.16.74.100:10021/mmsc"
+        mmsport="80"
+        mmsproxy="202.75.133.49"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user="maxis"
+    />
+    <apn
+        mcc="502"
+        mnc="12"
+        carrier="Maxis Internet"
+        apn="unet"
+        authtype="1"
+        mmsc="http://172.16.74.100:10021/mmsc"
+        mmsport="80"
+        mmsproxy="202.75.133.49"
+        password="wap"
+        type="default,supl,mms"
+        user="maxis"
+    />
+    <apn
+        mcc="502"
+        mnc="13"
+        carrier="Xpax"
+        apn="celcom"
+        type="default,supl"
+    />
+    <apn
+        mcc="502"
+        mnc="13"
+        carrier="Xpax MMS"
+        apn="celcom3g"
+        mmsc="http://mms.celcom.net.my"
+        mmsport="8080"
+        mmsproxy="10.128.1.242"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="502"
+        mnc="153"
+        carrier="Unifi"
+        apn="unifi"
+        type="default,supl"
+    />
+    <apn
+        mcc="502"
+        mnc="16"
+        carrier="DiGi GPRS"
+        apn="digiwap"
+        password=""
+        port="80"
+        proxy="203.92.128.188"
+        type="default,supl"
+        user="digi"
+    />
+    <apn
+        mcc="502"
+        mnc="16"
+        carrier="DiGi Internet"
+        apn="3gdgnet"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="502"
+        mnc="16"
+        carrier="DiGi MMS"
+        apn="digimms"
+        mmsc="http://mms.digi.com.my/servlets/mms"
+        mmsport="80"
+        mmsproxy="203.92.128.160"
+        password="mms"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="502"
+        mnc="16"
+        carrier="Digi"
+        apn="diginet"
+        password="digi"
+        type="default,supl"
+        user="digi"
+    />
+    <apn
+        mcc="502"
+        mnc="16"
+        carrier="Digi MMS"
+        apn="digimms"
+        mmsc="http://mms.digi.com.my/servlets/mms"
+        mmsport="80"
+        mmsproxy="203.92.128.160"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="502"
+        mnc="18"
+        carrier="U Mobile Internet"
+        apn="my3g"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="502"
+        mnc="18"
+        carrier="U Mobile Internet"
+        apn="my3g"
+        type="default,supl"
+    />
+    <apn
+        mcc="502"
+        mnc="18"
+        carrier="U Mobile MMS"
+        apn="my3g"
+        mmsc="http://10.30.3.11/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.30.5.11"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="502"
+        mnc="18"
+        carrier="U Mobile MMS"
+        apn="my3g"
+        mmsc="http://10.30.3.11/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.30.5.11"
+        type="mms"
+    />
+    <apn
+        mcc="502"
+        mnc="19"
+        carrier="Celcom 2G Internet"
+        apn="celcom.net.my"
+        type="default,supl"
+    />
+    <apn
+        mcc="502"
+        mnc="19"
+        carrier="Celcom 2G MMS"
+        apn="mms.celcom.net.my"
+        mmsc="http://mms.celcom.net.my"
+        mmsport="8080"
+        mmsproxy="10.128.1.242"
+        type="mms"
+    />
+    <apn
+        mcc="502"
+        mnc="19"
+        carrier="Celcom 3G Internet"
+        apn="celcom3g"
+        type="default,supl"
+    />
+    <apn
+        mcc="502"
+        mnc="19"
+        carrier="Celcom 3G MMS"
+        apn="celcom3g"
+        mmsc="http://mms.celcom.net.my"
+        mmsport="8080"
+        mmsproxy="10.128.1.242"
+        type="mms"
+    />
+    <apn
+        mcc="502"
+        mnc="19"
+        carrier="celcom"
+        apn="celcom3g"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="502"
+        mnc="19"
+        carrier="celcom MMS"
+        apn="celcom3G"
+        mmsc="http://mms.celcom.net.my"
+        mmsport="8080"
+        mmsproxy="10.128.1.242"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+</apns>

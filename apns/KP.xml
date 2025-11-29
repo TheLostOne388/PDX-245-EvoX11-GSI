@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="467"
+        mnc="05"
+        carrier="MMS"
+        apn="KL．M"
+        mmsc="http://10.250.155.30:38090"
+        mmsport="8080"
+        mmsproxy="10.250.155.42"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="467"
+        mnc="06"
+        carrier="KL．M"
+        apn="KL．M"
+        mmsc="http://10.250.155.30:38090"
+        mmsport="8080"
+        mmsproxy="10.250.155.42"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="467"
+        mnc="07"
+        carrier="KL．M"
+        apn="KL．M"
+        mmsc="http://10.250.155.30:38090"
+        mmsport="8080"
+        mmsproxy="10.250.155.42"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+</apns>

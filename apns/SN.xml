@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="608"
+        mnc="01"
+        carrier="Orange GPRS"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="608"
+        mnc="01"
+        carrier="Orange MMS"
+        apn="mms"
+        mmsc="http://mmsalize/servlets/mms"
+        mmsport="8080"
+        mmsproxy="172.16.30.9"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="608"
+        mnc="01"
+        carrier="Orange MMS SN"
+        apn="mms"
+        mmsc="http://mmsalize/servlets/mms"
+        mmsport="8080"
+        mmsproxy="172.16.30.9"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="608"
+        mnc="01"
+        carrier="Orange WAP"
+        apn="wap"
+        password="wap"
+        port="8080"
+        proxy="172.16.30.9"
+        type="default,supl"
+        user="wap"
+    />
+    <apn
+        mcc="608"
+        mnc="01"
+        carrier="Orange Wap SN"
+        apn="wap"
+        password="wap"
+        port="8080"
+        proxy="172.16.30.9"
+        type="default,supl"
+        user="wap"
+    />
+    <apn
+        mcc="608"
+        mnc="01"
+        carrier="Orange Web SN"
+        apn="internet"
+        password="internet"
+        type="default,supl"
+        user="internet"
+    />
+</apns>

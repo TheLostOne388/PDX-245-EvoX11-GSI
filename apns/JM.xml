@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="338"
+        mnc="05"
+        carrier="Digicel Antigua MMS"
+        apn="wap"
+        mmsc="http://mms.digicelgroup.com"
+        mmsport="8080"
+        mmsproxy="172.16.7.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="05"
+        carrier="Digicel BVI MMS"
+        apn="wap"
+        mmsc="http://mmc.digiceljamaica.com/servlets/mms"
+        mmsport="8080"
+        mmsproxy="172.16.7.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="05"
+        carrier="Digicel BVI Web"
+        apn="web"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="05"
+        carrier="Digicel Cayman MMS"
+        apn="wap"
+        mmsc="http://mms.digicelgroup.com"
+        mmsport="8080"
+        mmsproxy="172.16.7.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="05"
+        carrier="Digicel Cayman Web"
+        apn="internet"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="05"
+        carrier="Digicel Haiti MMS"
+        apn="wap"
+        mmsc="http://mmc.digicelhaiti.com/servlets/mms"
+        mmsport="8080"
+        mmsproxy="172.20.134.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="05"
+        carrier="Digicel Haiti Web"
+        apn="web"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="05"
+        carrier="Digicel LTE ANTIGUA"
+        apn="internet"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="05"
+        carrier="Digicel MMS"
+        apn="wap"
+        mmsc="http://mms.digicelgroup.com"
+        mmsport="8080"
+        mmsproxy="172.16.7.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="05"
+        carrier="Digicel Web"
+        apn="web"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="050"
+        carrier="Digicel ANTIGUA MMS"
+        apn="wap"
+        mmsc="http://mms.digicelgroup.com"
+        mmsport="8080"
+        mmsproxy="172.16.7.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="050"
+        carrier="Digicel BVI MMS"
+        apn="wap"
+        mmsc="http://mmc.digiceljamaica.com/servlets/mms"
+        mmsport="8080"
+        mmsproxy="172.16.7.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="050"
+        carrier="Digicel BVI Web"
+        apn="web"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="050"
+        carrier="Digicel Cayman MMS"
+        apn="wap"
+        mmsc="http://mms.digicelgroup.com"
+        mmsport="8080"
+        mmsproxy="172.16.7.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="050"
+        carrier="Digicel Cayman Web"
+        apn="internet"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="050"
+        carrier="Digicel Haiti MMS"
+        apn="wap"
+        mmsc="http://mmc.digicelhaiti.com/servlets/mms"
+        mmsport="8080"
+        mmsproxy="172.20.134.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="050"
+        carrier="Digicel Haiti Web"
+        apn="web"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="050"
+        carrier="Digicel LTE ANTIGUA"
+        apn="internet"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="050"
+        carrier="Digicel MMS"
+        apn="wap"
+        mmsc="http://mms.digicelgroup.com"
+        mmsport="8080"
+        mmsproxy="172.16.7.12"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="050"
+        carrier="Digicel Web"
+        apn="web"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="180"
+        carrier="LIME Postpaid Internet"
+        apn="internet"
+        mmsc=""
+        password=""
+        port="8799"
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="180"
+        carrier="LIME Postpaid MMS"
+        apn="multimedia"
+        mmsc="http://mmsc"
+        password=""
+        port="8799"
+        proxy="10.20.5.34"
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="180"
+        carrier="LIME Prepaid Internet"
+        apn="ppinternet"
+        mmsc=""
+        password=""
+        port="8799"
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="180"
+        carrier="LIME Prepaid MMS"
+        apn="ppmms"
+        mmsc="http://mmsc"
+        password=""
+        port="8799"
+        proxy="10.20.5.34"
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="50"
+        carrier="Digicel BM"
+        apn="web.digicelbermuda.com"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="50"
+        carrier="Digicel JM"
+        apn="wap.digiceljamaica.com"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="338"
+        mnc="50"
+        carrier="Digicel JM MMS"
+        apn="wap.digiceljamaica.com"
+        mmsc="http://mms.digicelgroup.com"
+        mmsport="8080"
+        mmsproxy="172.16.7.12"
+        password="wap03jam"
+        port=""
+        proxy=""
+        type="mms"
+        user="wapuser"
+    />
+    <apn
+        mcc="338"
+        mnc="70"
+        carrier="Claro JM"
+        apn="internet.ideasclaro.com.jm"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+</apns>

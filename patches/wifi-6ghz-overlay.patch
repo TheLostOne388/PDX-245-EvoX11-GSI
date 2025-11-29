@@ -1,0 +1,28 @@
+diff --git a/WifiOverlay/res/values/config.xml b/WifiOverlay/res/values/config.xml
+index a9f6555..f4cce1a 100644
+--- a/WifiOverlay/res/values/config.xml
++++ b/WifiOverlay/res/values/config.xml
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <!-- Copyright (C) 2019 The Android Open Source Project
++     Modified for PDX245: Added WiFi 6GHz/7 support
+ 
+      Licensed under the Apache License, Version 2.0 (the "License");
+      you may not use this file except in compliance with the License.
+@@ -21,4 +22,16 @@
+ 
+     <!-- Always assume 5GHz support -->
+     <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
++
++    <!-- PDX245: Enable 6GHz (WiFi 6E/7) support globally -->
++    <bool translatable="false" name="config_wifi6ghzSupport">true</bool>
++
++    <!-- PDX245: Enable 6GHz SoftAP (hotspot) support -->
++    <bool translatable="false" name="config_wifiSoftap6ghzSupported">true</bool>
++
++    <!-- PDX245: Disable AFC requirement - allows 6GHz without AFC server validation -->
++    <bool translatable="false" name="config_wifiAfcSupported">false</bool>
++
++    <!-- PDX245: Enable 6GHz PSC (Preferred Scanning Channels) scanning -->
++    <bool translatable="false" name="config_wifiEnable6ghzPscScanning">true</bool>
+ </resources>

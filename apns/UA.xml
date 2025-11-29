@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="255"
+        mnc="01"
+        carrier="Vodafone UA"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="255"
+        mnc="01"
+        carrier="Vodafone UA MMS"
+        apn="mms"
+        mmsc="http://mms"
+        mmsport="8080"
+        mmsproxy="192.168.10.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="255"
+        mnc="02"
+        carrier="Beeline UA"
+        apn="www.ab.kyivstar.net"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="255"
+        mnc="02"
+        carrier="Beeline UA MMS"
+        apn="mms.kyivstar.net"
+        mmsc="http://mms.kyivstar.net/"
+        mmsport="8080"
+        mmsproxy="10.10.10.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="255"
+        mnc="03"
+        carrier="Kyivstar"
+        apn="www.kyivstar.net"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="255"
+        mnc="03"
+        carrier="Kyivstar MMS"
+        apn="mms.kyivstar.net"
+        mmsc="http://mms.kyivstar.net"
+        mmsport="8080"
+        mmsproxy="10.10.10.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="255"
+        mnc="03"
+        carrier="Kyivstar Prepaid"
+        apn="www.ab.kyivstar.net"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="255"
+        mnc="06"
+        carrier="lifecell"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="255"
+        mnc="06"
+        carrier="lifecell MMS"
+        apn="mms"
+        mmsc="http://mms.life"
+        mmsport="8080"
+        mmsproxy="10.10.10.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="255"
+        mnc="07"
+        carrier="TriMob"
+        apn="3g.utel.ua"
+        mmsc="http://10.212.1.4/mms/wapenc"
+        mmsport="8080"
+        mmsproxy="10.212.3.148"
+        password=""
+        port=""
+        proxy=""
+        type="default,supl,mms"
+        user=""
+    />
+</apns>

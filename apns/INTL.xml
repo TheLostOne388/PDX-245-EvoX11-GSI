@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="901"
+        mnc="58"
+        carrier="BICS Internet"
+        apn="bicsapn"
+        carrier_id="2132"
+        type="default,ia,supl"
+    />
+</apns>

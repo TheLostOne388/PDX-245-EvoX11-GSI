@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="434"
+        mnc="04"
+        carrier="Beeline UZ"
+        apn="internet.beeline.uz"
+        password="beeline"
+        type="default,supl"
+        user="beeline"
+    />
+    <apn
+        mcc="434"
+        mnc="04"
+        carrier="Beeline UZ MMS"
+        apn="mms.beeline.uz"
+        mmsc="http://mms"
+        mmsport="8080"
+        mmsproxy="172.30.30.166"
+        password="beeline"
+        type="mms"
+        user="beeline"
+    />
+    <apn
+        mcc="434"
+        mnc="05"
+        carrier="Ucell Internet"
+        apn="internet"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="10.64.164.10"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="434"
+        mnc="05"
+        carrier="Ucell MMS"
+        apn="mms"
+        mmsc="http://mmsc:8002/"
+        mmsport="8080"
+        mmsproxy="10.64.164.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="434"
+        mnc="06"
+        carrier="Perfectum"
+        apn="default"
+        password="a"
+        type="default,supl"
+        user="perfectum@perfectum.com"
+    />
+    <apn
+        mcc="434"
+        mnc="07"
+        carrier="MTS Internet"
+        apn="net.mts.uz"
+        authtype="1"
+        password="mts"
+        type="default,supl"
+        user="mts"
+    />
+    <apn
+        mcc="434"
+        mnc="07"
+        carrier="MTS MMS"
+        apn="mms.mts.uz"
+        authtype="1"
+        mmsc="http://mmsc/was"
+        mmsport="8080"
+        mmsproxy="10.10.0.10"
+        password="mts"
+        port=""
+        proxy=""
+        type="mms"
+        user="mts"
+    />
+</apns>

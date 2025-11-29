@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="631"
+        mnc="02"
+        carrier="Unitel Internet"
+        apn="internet.unitel.co.ao"
+        type="default,supl"
+    />
+    <apn
+        mcc="631"
+        mnc="02"
+        carrier="Unitel MMS"
+        apn="mms.unitel.co.ao"
+        mmsc="http://10.128.4.10/wapenc"
+        mmsport="8080"
+        mmsproxy="10.128.2.70"
+        port=""
+        proxy=""
+        type="mms"
+    />
+    <apn
+        mcc="631"
+        mnc="04"
+        carrier="Movicel Angola"
+        apn="internet.movicel.co.ao"
+        type="default,supl"
+    />
+    <apn
+        mcc="631"
+        mnc="04"
+        carrier="Movicel Angola MMS"
+        apn="mms.movicel.co.ao"
+        mmsc="http://10.33.14.180:8080"
+        mmsport="8080"
+        mmsproxy="10.33.15.133"
+        type="mms"
+    />
+</apns>

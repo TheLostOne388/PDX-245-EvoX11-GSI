@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="284"
+        mnc="01"
+        carrier="M-Tel Internet"
+        apn="inet-gprs.mtel.bg"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="284"
+        mnc="01"
+        carrier="M-Tel MMS"
+        apn="mms-gprs.mtel.bg"
+        mmsc="http://mmsc/"
+        mmsport="8080"
+        mmsproxy="10.150.0.33"
+        password="mtel"
+        port=""
+        proxy=""
+        type="mms"
+        user="mtel"
+    />
+    <apn
+        mcc="284"
+        mnc="03"
+        carrier="VIVACOM Internet"
+        apn="internet.vivacom.bg"
+        authtype="0"
+        mmsc=""
+        password="VIVACOM"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="VIVACOM"
+    />
+    <apn
+        mcc="284"
+        mnc="03"
+        carrier="VIVACOM MMS"
+        apn="mms.vivacom.bg"
+        authtype="0"
+        mmsc="http://mmsc.vivacom.bg"
+        mmsport="8080"
+        mmsproxy="192.168.123.123"
+        password="mms"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="284"
+        mnc="05"
+        carrier="GLOBUL Internet"
+        apn="globul"
+        mmsc=""
+        password=""
+        port="8004"
+        proxy="192.168.88.11"
+        type="default,supl"
+        user="globul"
+    />
+    <apn
+        mcc="284"
+        mnc="05"
+        carrier="GLOBUL MMS"
+        apn="mms.globul.bg"
+        mmsc="http://mmsc1.mms.globul.bg:8002"
+        mmsport="8004"
+        mmsproxy="192.168.87.11"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="284"
+        mnc="05"
+        carrier="Telenor Internet"
+        apn="telenor"
+        type="default,supl"
+        user="telenor"
+    />
+    <apn
+        mcc="284"
+        mnc="05"
+        carrier="Telenor MMS"
+        apn="mms.telenor.bg"
+        mmsc="http://mmsc1.mms.telenor.bg:8002"
+        mmsport="8004"
+        mmsproxy="192.168.87.11"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="284"
+        mnc="11"
+        carrier="Bulsatcom"
+        apn="bulsat.com"
+        type="default,supl"
+    />
+</apns>

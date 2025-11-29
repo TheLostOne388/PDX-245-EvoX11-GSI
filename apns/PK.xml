@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="410"
+        mnc="01"
+        carrier="Mobilink"
+        apn="connect.mobilinkworld.com"
+        type="default,supl"
+    />
+    <apn
+        mcc="410"
+        mnc="01"
+        carrier="Mobilink MMS"
+        apn="mms.mobilinkworld.com"
+        mmsc="http://mms"
+        mmsport="8080"
+        mmsproxy="172.25.20.12"
+        password="mobilink"
+        type="mms"
+        user="mobilink"
+    />
+    <apn
+        mcc="410"
+        mnc="03"
+        carrier="Ufone"
+        apn="ufone.pinternet"
+        type="default,supl"
+    />
+    <apn
+        mcc="410"
+        mnc="03"
+        carrier="Ufone MMS"
+        apn="ufone.mms"
+        mmsc="http://www.ufone.com"
+        mmsport="8080"
+        mmsproxy="172.16.13.27"
+        type="mms"
+    />
+    <apn
+        mcc="410"
+        mnc="04"
+        carrier="Zong"
+        apn="zonginternet"
+        type="default,supl"
+    />
+    <apn
+        mcc="410"
+        mnc="04"
+        carrier="Zong MMS"
+        apn="zongmms"
+        mmsc="10.81.6.11"
+        mmsport="8080"
+        mmsproxy="10.81.6.11"
+        type="mms"
+    />
+    <apn
+        mcc="410"
+        mnc="06"
+        carrier="Telenor PK"
+        apn="internet"
+        password="Telenor"
+        type="default,supl"
+        user="Telenor"
+    />
+    <apn
+        mcc="410"
+        mnc="06"
+        carrier="Telenor PK MMS"
+        apn="mms"
+        mmsc="http://mmstelenor"
+        mmsport="8080"
+        mmsproxy="172.18.19.11"
+        password="Telenor"
+        type="mms"
+        user="Telenor"
+    />
+    <apn
+        mcc="410"
+        mnc="07"
+        carrier="Warid PK"
+        apn="warid"
+        type="default,supl"
+    />
+    <apn
+        mcc="410"
+        mnc="07"
+        carrier="Warid PK MMS"
+        apn="mms.warid"
+        mmsc="http://10.4.0.132/servlets/MMS"
+        mmsport="8080"
+        mmsproxy="10.4.2.1"
+        type="mms"
+    />
+    <apn
+        mcc="410"
+        mnc="08"
+        carrier="Axis"
+        apn="axis"
+        password="123456"
+        type="default,supl"
+        user="axis"
+    />
+</apns>

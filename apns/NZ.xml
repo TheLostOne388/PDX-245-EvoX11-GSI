@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="530"
+        mnc="01"
+        carrier="Vodafone NZ"
+        apn="www.vodafone.net.nz"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="530"
+        mnc="01"
+        carrier="Vodafone NZ"
+        apn="www.vodafone.net.nz"
+        type="default,supl"
+    />
+    <apn
+        mcc="530"
+        mnc="01"
+        carrier="Vodafone NZ MMS"
+        apn="live.vodafone.com"
+        mmsc="http://pxt.vodafone.net.nz/pxtsend"
+        mmsport="8080"
+        mmsproxy="172.030.038.003"
+        type="mms"
+    />
+    <apn
+        mcc="530"
+        mnc="01"
+        carrier="Vodafone NZ-MMS"
+        apn="live.vodafone.com"
+        mmsc="http://pxt.vodafone.net.nz/pxtsend"
+        mmsport="8080"
+        mmsproxy="172.30.38.3"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="530"
+        mnc="02"
+        carrier="Telecom NZ"
+        apn="internet.telecom.co.nz"
+        type="default,supl"
+    />
+    <apn
+        mcc="530"
+        mnc="02"
+        carrier="Telecom NZ MMS"
+        apn="wap.telecom.co.nz"
+        mmsc="http://lsmmsc.xtra.co.nz"
+        mmsport="80"
+        mmsproxy="210.55.11.73"
+        type="mms"
+    />
+    <apn
+        mcc="530"
+        mnc="02"
+        carrier="VFNZ Internet"
+        apn="www.vodafone.net.nz"
+        type="default,supl"
+    />
+    <apn
+        mcc="530"
+        mnc="02"
+        carrier="VFNZ PXT"
+        apn="live.vodafone.com"
+        mmsc="http://pxt.vodafone.net.nz/pxtsend"
+        mmsport="8080"
+        mmsproxy="172.30.38.3"
+        type="mms"
+    />
+    <apn
+        mcc="530"
+        mnc="03"
+        carrier="Telecom NZ"
+        apn="internet.telecom.co.nz"
+        type="default,supl"
+    />
+    <apn
+        mcc="530"
+        mnc="03"
+        carrier="Telecom NZ MMS"
+        apn="wap.telecom.co.nz"
+        mmsc="http://lsmmsc.xtra.co.nz"
+        mmsport="80"
+        mmsproxy="210.55.11.73"
+        type="mms"
+    />
+    <apn
+        mcc="530"
+        mnc="05"
+        carrier="TelecomDefault"
+        apn="wap.telecom.co.nz"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="530"
+        mnc="05"
+        carrier="TelecomMMS"
+        apn="wap.telecom.co.nz"
+        mmsc="http://lsmmsc.xtra.co.nz"
+        mmsport="8080"
+        mmsproxy="210.55.11.73"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="530"
+        mnc="05"
+        carrier="XT Mobile"
+        apn="internet.telecom.co.nz"
+        type="default,supl"
+    />
+    <apn
+        mcc="530"
+        mnc="05"
+        carrier="XT Mobile MMS"
+        apn="wap.telecom.co.nz"
+        mmsc="http://lsmmsc.xtra.co.nz"
+        mmsport="8080"
+        mmsproxy="210.55.11.73"
+        type="mms"
+    />
+    <apn
+        mcc="530"
+        mnc="24"
+        carrier="2 degrees mobile"
+        apn="2degrees"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="118.148.1.118"
+        type="default,supl,mms"
+        user=""
+    />
+    <apn
+        mcc="530"
+        mnc="24"
+        carrier="2degrees Internet"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="530"
+        mnc="24"
+        carrier="2degrees MMS"
+        apn="mms"
+        mmsc="http://mms.2degreesmobile.net.nz:48090"
+        mmsport="8080"
+        mmsproxy="118.148.1.118"
+        type="mms"
+    />
+</apns>

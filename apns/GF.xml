@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="340"
+        mnc="01"
+        carrier="Orange MMS Caraïbe"
+        apn="orangewap"
+        mmsc="http://193.251.160.246/servlets/mms"
+        mmsport="8082"
+        mmsproxy="10.0.0.10"
+        password="orange"
+        type="mms"
+        user="orange"
+    />
+    <apn
+        mcc="340"
+        mnc="01"
+        carrier="Orange World"
+        apn="Orange MMS"
+        mmsc="http://193.251.160.246/servlets/mms"
+        mmsport="8082"
+        mmsproxy="10.0.0.10"
+        password="orange"
+        port=""
+        proxy=""
+        type="mms"
+        user="orange"
+    />
+    <apn
+        mcc="340"
+        mnc="01"
+        carrier="Orange World"
+        apn="orangeweb"
+        password="orange"
+        type="default,supl"
+        user="orange"
+    />
+    <apn
+        mcc="340"
+        mnc="01"
+        carrier="Orange World Caraïbe"
+        apn="orangewap"
+        password="wap"
+        port="8082"
+        proxy="10.0.0.10"
+        type="default,supl"
+        user="orange"
+    />
+    <apn
+        mcc="340"
+        mnc="01"
+        carrier="Orange web"
+        apn="orangeweb"
+        password="orange"
+        type="default,supl"
+        user="orange"
+    />
+    <apn
+        mcc="340"
+        mnc="01"
+        carrier="Orangeweb"
+        apn="orangeweb"
+        password="orange"
+        type="default,supl"
+        user="orange"
+    />
+    <apn
+        mcc="340"
+        mnc="02"
+        carrier="Onlyplanet"
+        apn="onlywap"
+        password="only"
+        port="8080"
+        proxy="10.4.85.50"
+        type="default,supl"
+        user="only"
+    />
+    <apn
+        mcc="340"
+        mnc="02"
+        carrier="onlymms"
+        apn="onlymms"
+        mmsc="http://10.4.85.50:8514"
+        mmsport="8080"
+        mmsproxy="10.4.85.50"
+        password="only"
+        port=""
+        proxy=""
+        type="mms"
+        user="only"
+    />
+    <apn
+        mcc="340"
+        mnc="20"
+        carrier="Digicel FR MMS"
+        apn="wap"
+        mmsc="http://mmc.digicelfr.com/servlets/mms"
+        mmsport="8080"
+        mmsproxy="172.24.2.101"
+        password="wap"
+        port=""
+        proxy=""
+        type="mms"
+        user="wap"
+    />
+    <apn
+        mcc="340"
+        mnc="20"
+        carrier="Digicel FR Web"
+        apn="web.digicelfr.com"
+        password=""
+        type="default,supl"
+        user=""
+    />
+</apns>

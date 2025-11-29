@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="736"
+        mnc="01"
+        carrier="Viva Edge"
+        apn="edge.viva.net.do"
+        mmsc="http://wap.viva.net.do/WapDeck/"
+        password="viva"
+        port="9401"
+        proxy="192.168.016.010"
+        type="default,supl"
+        user="viva"
+    />
+    <apn
+        mcc="736"
+        mnc="01"
+        carrier="Viva GPRS"
+        apn="internet.nuevatel.com"
+        port="3128"
+        proxy="192.168.101.4"
+        type="default,supl"
+    />
+    <apn
+        mcc="736"
+        mnc="01"
+        carrier="Viva MMS"
+        apn="mms.nuevatel.com"
+        mmsc="http://mmsgw.nuevatel.com:1981"
+        mmsport="3128"
+        mmsproxy="192.168.101.4"
+        server="mmsgw.nuevatel.com:1981"
+        type="mms"
+    />
+    <apn
+        mcc="736"
+        mnc="01"
+        carrier="Viva MMS"
+        apn="mms.viva.net.do"
+        mmsc="http://10.200.16.4/mms/wapenc"
+        mmsport="9401"
+        mmsproxy="192.168.016.010"
+        password="viva"
+        type="mms"
+        user="viva"
+    />
+    <apn
+        mcc="736"
+        mnc="02"
+        carrier="ENTEL 4G"
+        apn="4g.entel"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="736"
+        mnc="02"
+        carrier="ENTEL MMS"
+        apn="mms.movil.com.bo"
+        mmsc="http://mms.movil.com.bo/servlets/mms"
+        mmsport="8080"
+        mmsproxy="127.27.7.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="736"
+        mnc="03"
+        carrier="INTERNET TIGO BO"
+        apn="internet.tigo.bo"
+        password=""
+        port=""
+        proxy=""
+        type="default,supl,dun"
+        user=""
+    />
+    <apn
+        mcc="736"
+        mnc="03"
+        carrier="MMS TIGO BO"
+        apn="mms.tigo.bo"
+        mmsc="http://mms"
+        mmsport="8888"
+        mmsproxy="172.25.100.8"
+        password=""
+        type="mms"
+        user=""
+    />
+</apns>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="602"
+        mnc="01"
+        carrier="Mobinil"
+        apn="mobinilweb"
+        authtype="2"
+        type="default,supl"
+    />
+    <apn
+        mcc="602"
+        mnc="01"
+        carrier="mobinilmms"
+        apn="mobinilmms"
+        authtype="2"
+        mmsc="http://10.7.13.24:8002/"
+        mmsport="8080"
+        mmsproxy="62.241.155.45"
+        type="mms"
+    />
+    <apn
+        mcc="602"
+        mnc="02"
+        carrier="Vodafone EG"
+        apn="internet.vodafone.net"
+        password="internet"
+        type="default,supl"
+        user="internet"
+    />
+    <apn
+        mcc="602"
+        mnc="02"
+        carrier="Vodafone EG MMS"
+        apn="mms.vodafone.com.eg"
+        mmsc="http://mms.vodafone.com.eg/servlets/mms"
+        mmsport="8080"
+        mmsproxy="163.121.178.002"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="602"
+        mnc="02"
+        carrier="Vodafone GPRS Internet"
+        apn="internet.vodafone.net"
+        authtype="3"
+        password="internet"
+        type="default,supl"
+        user="internet"
+    />
+    <apn
+        mcc="602"
+        mnc="02"
+        carrier="Vodafone MMS"
+        apn="mms.vodafone.com.eg"
+        authtype="1"
+        mmsc="http://mms.vodafone.com.eg/servlets/mms"
+        mmsport="8080"
+        mmsproxy="163.121.178.2"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="602"
+        mnc="02"
+        carrier="Vodafone live!"
+        apn="wap.Vodafone.com.eg"
+        authtype="1"
+        password="wap"
+        port="8080"
+        proxy="163.121.178.2"
+        type="default,supl"
+        user="wap"
+    />
+    <apn
+        mcc="602"
+        mnc="03"
+        carrier="Etisalat MMS"
+        apn="etisalat"
+        mmsc="http://10.71.131.7:38090"
+        mmsport="8080"
+        mmsproxy="10.71.130.29"
+        type="mms"
+    />
+    <apn
+        mcc="602"
+        mnc="03"
+        carrier="Etisalat WAP"
+        apn="etisalat"
+        authtype="1"
+        mmsc="http://10.71.131.7:38090"
+        mmsport="8080"
+        mmsproxy="10.71.130.29"
+        type="*"
+    />
+    <apn
+        mcc="602"
+        mnc="03"
+        carrier="Etisalat internet"
+        apn="Etisalat"
+        mmsc="http://10.71.131.7:38090"
+        mmsport="8080"
+        mmsproxy="10.71.130.29"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="602"
+        mnc="04"
+        carrier="WE ims"
+        apn="ims"
+        type="ims"
+    />
+    <apn
+        mcc="602"
+        mnc="04"
+        carrier="WE internet"
+        apn="internet.te.eg"
+        type="default"
+    />
+    <apn
+        mcc="602"
+        mnc="04"
+        carrier="WE mms"
+        apn="mms.te.eg"
+        mmsc="http://wemmsc.te.eg:8080"
+        mmsport="8080"
+        mmsproxy="wemmsc.te.eg"
+        type="mms"
+    />
+    <apn
+        mcc="602"
+        mnc="12"
+        carrier="Vodafone GPRS Internet"
+        apn="internet.vodafone.net"
+        authtype="2"
+        password="internet"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="internet"
+    />
+</apns>

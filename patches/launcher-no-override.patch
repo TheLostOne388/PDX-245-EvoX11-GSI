@@ -1,0 +1,14 @@
+diff --git a/system_ext/packages/privileged_apps/NexusLauncherRelease/Android.mk b/system_ext/packages/privileged_apps/NexusLauncherRelease/Android.mk
+index 6279b11..8fc836f 100644
+--- a/system_ext/packages/privileged_apps/NexusLauncherRelease/Android.mk
++++ b/system_ext/packages/privileged_apps/NexusLauncherRelease/Android.mk
+@@ -25,7 +25,8 @@ LOCAL_SRC_FILES := NexusLauncherRelease.apk
+ LOCAL_CERTIFICATE := PRESIGNED
+ LOCAL_MODULE_CLASS := APPS
+ LOCAL_SYSTEM_EXT_MODULE := true
+-LOCAL_OVERRIDES_PACKAGES := Launcher3 Launcher3QuickStep Trebuchet QuickSearchBox
++# PDX245: Removed LOCAL_OVERRIDES_PACKAGES to allow Launcher3QuickStep as fallback
++# LOCAL_OVERRIDES_PACKAGES := Launcher3 Launcher3QuickStep Trebuchet QuickSearchBox
+ LOCAL_PRIVILEGED_MODULE := true
+ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+ LOCAL_REQUIRED_MODULES := privapp_whitelist_com.android.launcher3

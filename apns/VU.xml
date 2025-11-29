@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="541"
+        mnc="05"
+        carrier="Digicel MMS"
+        apn="wap.digicelpacific.com"
+        mmsc="http://mms.digicelpacific.com:8990"
+        mmsport="8080"
+        mmsproxy="10.150.122.12"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="541"
+        mnc="05"
+        carrier="Digicel Web"
+        apn="web.digicelpacific.com"
+        password=""
+        type="default,supl"
+        user=""
+    />
+</apns>

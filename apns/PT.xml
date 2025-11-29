@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="268"
+        mnc="01"
+        carrier="Vodafone Net2"
+        apn="net2.vodafone.pt"
+        authtype="3"
+        mmsc="http://mms.vodafone.pt/servlets/mms"
+        mmsport="80"
+        mmsproxy="iproxy.vodafone.pt"
+        password="vodafone"
+        port="80"
+        proxy="iproxy.vodafone.pt"
+        type="default,mms"
+        user="vodafone"
+    />
+    <apn
+        mcc="268"
+        mnc="01"
+        carrier="Vodafone PT Internet"
+        apn="net2.vodafone.pt"
+        mmsc="http://mms.vodafone.pt/servlets/mms"
+        mmsport="80"
+        mmsproxy="iproxy.vodafone.pt"
+        port="80"
+        proxy="iproxy.vodafone.pt"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="268"
+        mnc="01"
+        carrier="Vodafone PT WAP"
+        apn="wap.vodafone.pt"
+        password="wap"
+        port="8799"
+        proxy="172.16.19.50"
+        type="default,supl"
+        user="wap"
+    />
+    <apn
+        mcc="268"
+        mnc="01"
+        carrier="Vodafone PT WAP MMS"
+        apn="vas.vodafone.pt"
+        mmsc="http://mms/servlets/mms"
+        mmsport="8799"
+        mmsproxy="213.30.27.63"
+        password="vas"
+        type="mms"
+        user="vas"
+    />
+    <apn
+        mcc="268"
+        mnc="02"
+        carrier="DIGI PT"
+        apn="internet"
+        authtype="1"
+        type="default,supl"
+    />
+    <apn
+        mcc="268"
+        mnc="03"
+        carrier="NOS MMS"
+        apn="mms"
+        authtype="1"
+        mmsc="http://mmsc:10021/mmsc"
+        mmsport="8799"
+        mmsproxy="62.169.66.5"
+        type="mms"
+    />
+    <apn
+        mcc="268"
+        mnc="03"
+        carrier="NOS/WTF Internet"
+        apn="umts"
+        type="default,supl,dun"
+    />
+    <apn
+        mcc="268"
+        mnc="03"
+        carrier="WTF MMS"
+        apn="umts"
+        authtype="1"
+        mmsc="http://mmsc:10021/mmsc"
+        mmsport="8799"
+        mmsproxy="62.169.66.5"
+        type="mms"
+    />
+    <apn
+        mcc="268"
+        mnc="04"
+        carrier="Lycamobile"
+        apn="data.lycamobile.pt"
+        mmsc=""
+        mvno_match_data="Lycamobile"
+        mvno_type="spn"
+        password="plus"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="lmpt"
+    />
+    <apn
+        mcc="268"
+        mnc="04"
+        carrier="Lycamobile PT"
+        apn="data.lycamobile.pt"
+        password="plus"
+        type="default,supl"
+        user="lmpt"
+    />
+    <apn
+        mcc="268"
+        mnc="06"
+        carrier="MEO Internet"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="268"
+        mnc="06"
+        carrier="MEO MMS"
+        apn="mmsc.tmn.pt"
+        mmsc="http://mmsc"
+        mmsport="8080"
+        mmsproxy="10.111.2.16"
+        password="tmnnet"
+        type="mms"
+        user="tmn"
+    />
+    <apn
+        mcc="268"
+        mnc="07"
+        carrier="Vectone Mobile"
+        apn="webpt.mundio.com"
+        mmsc=""
+        mvno_match_data="Vectone Mobile"
+        mvno_type="spn"
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+</apns>

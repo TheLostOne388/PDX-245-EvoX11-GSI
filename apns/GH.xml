@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="620"
+        mnc="01"
+        carrier="MTN INTERNET"
+        apn="WAP"
+        port="8080"
+        proxy="172.17.3.5"
+        type="default,supl"
+    />
+    <apn
+        mcc="620"
+        mnc="01"
+        carrier="MTN MMS"
+        apn="MMS"
+        mmsc="http://172.17.3.7"
+        mmsport="8080"
+        mmsproxy="172.17.3.5"
+        type="mms"
+    />
+    <apn
+        mcc="620"
+        mnc="02"
+        carrier="MMS"
+        apn="MMS"
+        mmsc="http://mms.onetouch.com.gh/mmsc"
+        mmsport="8080"
+        mmsproxy="172.24.97.1"
+        type="mms"
+    />
+    <apn
+        mcc="620"
+        mnc="02"
+        carrier="internet"
+        apn="browse"
+        type="default,supl"
+    />
+    <apn
+        mcc="620"
+        mnc="03"
+        carrier="Tigo MMS"
+        apn="wap.tigo.com.gh"
+        mmsc="http://mmsc.tigo.com.gh:19090"
+        mmsport="8080"
+        mmsproxy="10.4.1.7"
+        type="mms"
+    />
+    <apn
+        mcc="620"
+        mnc="03"
+        carrier="Tigo WAP"
+        apn="wap.tigo.com.gh"
+        type="default,supl"
+    />
+    <apn
+        mcc="620"
+        mnc="03"
+        carrier="Tigo WEB1"
+        apn="web.tigo.com.gh"
+        type="default,supl"
+    />
+    <apn
+        mcc="620"
+        mnc="03"
+        carrier="Tigo WEB2"
+        apn="tigo.3G"
+        type="default,supl"
+    />
+    <apn
+        mcc="620"
+        mnc="06"
+        carrier="Zain MMS"
+        apn="MMS"
+        mmsc="http://zainmms/servlets/mms"
+        mmsport="9401"
+        mmsproxy="10.93.85.88"
+        type="mms"
+    />
+    <apn
+        mcc="620"
+        mnc="06"
+        carrier="Zain WAP"
+        apn="wap"
+        port="9401"
+        proxy="10.93.85.88"
+        type="default,supl"
+    />
+</apns>

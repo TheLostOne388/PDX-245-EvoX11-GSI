@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="274"
+        mnc="01"
+        carrier="Siminn Internet"
+        apn="internet"
+        authtype="3"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="213.167.138.200"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="274"
+        mnc="01"
+        carrier="Siminn Internet"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="274"
+        mnc="01"
+        carrier="Siminn MMS"
+        apn="mms.simi.is"
+        authtype="3"
+        mmsc="http://mms.simi.is/servlets/mms"
+        mmsport="8080"
+        mmsproxy="213.167.138.200"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="274"
+        mnc="02"
+        carrier="Vodafone Internet"
+        apn="gprs.is"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="274"
+        mnc="02"
+        carrier="Vodafone MMS"
+        apn="mms.gprs.is"
+        mmsc="http://mmsc.vodafone.is"
+        mmsport="8080"
+        mmsproxy="10.22.0.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="274"
+        mnc="11"
+        carrier="MMS Nova"
+        apn="mms.nova.is"
+        mmsc="http://mmsc.nova.is"
+        mmsport="8080"
+        mmsproxy="10.10.2.60"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="274"
+        mnc="11"
+        carrier="Net Nova"
+        apn="net.nova.is"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="274"
+        mnc="12"
+        carrier="Tal"
+        apn="internet.tal.is"
+        mmsc="http://mms.tal.is/servlets/mms"
+        mmsport="8080"
+        mmsproxy="213.167.138.210"
+        type="default,supl,mms"
+    />
+</apns>

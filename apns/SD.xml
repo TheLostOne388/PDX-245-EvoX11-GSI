@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="634"
+        mnc="01"
+        carrier="Zain Internet"
+        apn="internet"
+        authtype="1"
+        type="default,supl"
+    />
+    <apn
+        mcc="634"
+        mnc="01"
+        carrier="Zain MMS"
+        apn="MMS"
+        authtype="1"
+        mmsc="http://mms.zain.sd"
+        mmsport="80"
+        mmsproxy="172.20.2.124"
+        type="mms"
+    />
+    <apn
+        mcc="634"
+        mnc="02"
+        carrier="MMS"
+        apn="mms"
+        mmsc="http://mms.mtn.sd/mmsc"
+        mmsport="8080"
+        mmsproxy="172.24.97.20"
+        type="mms"
+    />
+    <apn
+        mcc="634"
+        mnc="02"
+        carrier="MTN"
+        apn="internet"
+        authtype="1"
+        type="default,supl"
+    />
+    <apn
+        mcc="634"
+        mnc="07"
+        carrier="Sudani One MMS"
+        apn="sudanimms"
+        authtype="1"
+        mmsc="http://10.50.182.30:38090/was"
+        mmsport="8080"
+        mmsproxy="10.50.189.114"
+        password="sudani"
+        type="mms"
+        user="sudani"
+    />
+    <apn
+        mcc="634"
+        mnc="07"
+        carrier="Sudina ONE"
+        apn="sudaninet"
+        authtype="1"
+        password="sudani"
+        type="default,supl"
+        user="sudani"
+    />
+</apns>

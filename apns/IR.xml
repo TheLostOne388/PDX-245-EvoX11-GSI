@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="432"
+        mnc="11"
+        carrier="IR-MCI"
+        apn="mcinet"
+        type="default,supl"
+    />
+    <apn
+        mcc="432"
+        mnc="20"
+        carrier="IR-MCI MMS"
+        apn="mcinet"
+        mmsc="http://192.168.193.134:38090/was"
+        mmsport="8080"
+        mmsproxy="192.168.194.73"
+        type="mms"
+    />
+    <apn
+        mcc="432"
+        mnc="20"
+        carrier="Rightel"
+        apn="rightel"
+        type="default,supl"
+    />
+    <apn
+        mcc="432"
+        mnc="20"
+        carrier="Rightel MMS"
+        apn="RighTel-WAP"
+        mmsc="http://10.200.40.55:38090/was"
+        mmsport="8080"
+        mmsproxy="10.200.39.10"
+        type="mms"
+    />
+    <apn
+        mcc="432"
+        mnc="35"
+        carrier="Irancell"
+        apn="irancell"
+        type="default,supl"
+    />
+    <apn
+        mcc="432"
+        mnc="35"
+        carrier="Irancell MMS"
+        apn="irancell"
+        mmsc="http://mms:8002"
+        mmsport="8080"
+        mmsproxy="10.131.26.138"
+        type="mms"
+    />
+</apns>

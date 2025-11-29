@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="280"
+        mnc="01"
+        carrier="CYTA"
+        apn="cytamobile"
+        mmsc="http://mmsc.cyta.com.cy"
+        mmsport="8080"
+        mmsproxy="212.31.96.161"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="280"
+        mnc="10"
+        carrier="MTN Internet"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="280"
+        mnc="10"
+        carrier="MTN MMS"
+        apn="mms"
+        mmsc="http://mms.mtn.com.cy/mmsc"
+        mmsport="3130"
+        mmsproxy="172.24.97.1"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="280"
+        mnc="20"
+        carrier="PrimeTel"
+        apn="ip.primetel"
+        mmsc="http://mms.primetel"
+        type="default,supl,mms"
+    />
+</apns>

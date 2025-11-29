@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="712"
+        mnc="01"
+        carrier="Kolbi"
+        apn="kolbi3g"
+        type="default,supl"
+    />
+    <apn
+        mcc="712"
+        mnc="01"
+        carrier="Kolbi MMS"
+        apn="kolbimundo"
+        mmsc="http://mmsice"
+        mmsport="8080"
+        mmsproxy="10.184.202.24"
+        type="mms"
+    />
+    <apn
+        mcc="712"
+        mnc="01"
+        carrier="Mundo Kolbi"
+        apn="kolbi3g"
+        port="8080"
+        proxy="172.27.10.4"
+        type="default,supl"
+    />
+    <apn
+        mcc="712"
+        mnc="01"
+        carrier="Mundo Kolbi MMS"
+        apn="mmscelular"
+        mmsc="http://mmsice"
+        mmsport="8080"
+        mmsproxy="172.27.10.4"
+        type="mms"
+    />
+    <apn
+        mcc="712"
+        mnc="02"
+        carrier="Kolbi"
+        apn="kolbi3g"
+        type="default,supl"
+    />
+    <apn
+        mcc="712"
+        mnc="02"
+        carrier="Kolbi MMS"
+        apn="kolbimundo"
+        mmsc="http://mmsice"
+        mmsport="8080"
+        mmsproxy="10.184.202.24"
+        type="mms"
+    />
+    <apn
+        mcc="712"
+        mnc="03"
+        carrier="Claro"
+        apn="internet.ideasclaro"
+        type="default,supl"
+    />
+    <apn
+        mcc="712"
+        mnc="03"
+        carrier="Claro MMS"
+        apn="mms.ideasclaro"
+        mmsc="http://mms.ideasclaro.com:8002"
+        mmsport="8080"
+        mmsproxy="216.230.133.66"
+        type="mms"
+    />
+    <apn
+        mcc="712"
+        mnc="04"
+        carrier="Movistar INTERNET"
+        apn="internet.movistar.cr"
+        authtype="1"
+        password="movistarcr"
+        type="default,supl"
+        user="movistarcr"
+    />
+    <apn
+        mcc="712"
+        mnc="04"
+        carrier="Movistar MMS"
+        apn="mms.movistar.cr"
+        authtype="1"
+        mmsc="http://mms.movistar.cr"
+        mmsport="80"
+        mmsproxy="10.221.79.83"
+        password="movistarcr"
+        port=""
+        proxy=""
+        type="mms"
+        user="movistarcr"
+    />
+</apns>

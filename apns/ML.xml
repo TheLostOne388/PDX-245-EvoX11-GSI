@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="610"
+        mnc="02"
+        carrier="Orange ML"
+        apn="internet"
+        password="internet"
+        type="default,supl"
+        user="internet"
+    />
+    <apn
+        mcc="610"
+        mnc="02"
+        carrier="Orange ML MMS"
+        apn="mms"
+        mmsc="http://10.109.6.2/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.109.4.35"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="610"
+        mnc="02"
+        carrier="Orange MMS"
+        apn="mms"
+        mmsc="http://10.109.6.2/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.109.4.35"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="610"
+        mnc="02"
+        carrier="Orange Wap"
+        apn="wap"
+        password="wap"
+        port="8080"
+        proxy="10.109.4.35"
+        type="default,supl"
+        user="wap"
+    />
+    <apn
+        mcc="610"
+        mnc="02"
+        carrier="Orange Wap ML"
+        apn="wap"
+        password="wap"
+        port="8080"
+        proxy="10.109.4.35"
+        type="default,supl"
+        user="wap"
+    />
+</apns>

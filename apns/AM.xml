@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="283"
+        mnc="01"
+        carrier="BeeLine AM MMS"
+        apn="mms.beeline.am"
+        mmsc="http://mms/"
+        mmsport="8080"
+        mmsproxy="10.3.2.205"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="283"
+        mnc="01"
+        carrier="Beeline AM"
+        apn="internet.beeline.am"
+        mmsc=""
+        password="internet"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="internet"
+    />
+    <apn
+        mcc="283"
+        mnc="05"
+        carrier="VivaCell"
+        apn="connect.vivacell.am"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="283"
+        mnc="05"
+        carrier="VivaCell MMS"
+        apn="mms.vivacell.am"
+        mmsc="http://mms.vivacell.am/mmsc"
+        mmsport="8080"
+        mmsproxy="83.217.226.72"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="283"
+        mnc="05"
+        carrier="VivaCell-MTS Internet"
+        apn="inet.vivacell.am"
+        authtype="1"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="283"
+        mnc="05"
+        carrier="VivaCell-MTS MMS"
+        apn="mms.vivacell.am"
+        authtype="1"
+        mmsc="http://mms.vivacell.am/mmsc"
+        mmsport="8080"
+        mmsproxy="83.217.226.72"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="283"
+        mnc="10"
+        carrier="Orange AM"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="283"
+        mnc="10"
+        carrier="Orange AM MMS"
+        apn="mms"
+        mmsc="http://mms/"
+        mmsport="3128"
+        mmsproxy="192.168.220.251"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+</apns>

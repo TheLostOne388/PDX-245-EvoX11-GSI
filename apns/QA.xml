@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="427"
+        mnc="01"
+        carrier="Q-tel"
+        apn="web.qtel"
+        password="gprs"
+        type="default,supl"
+        user="gprs"
+    />
+    <apn
+        mcc="427"
+        mnc="01"
+        carrier="Q-tel MMS"
+        apn="mms.qtel"
+        mmsc="http://mmsr.qtelmma.qa"
+        mmsport="9201"
+        mmsproxy="10.23.8.3"
+        password="gprs"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="427"
+        mnc="01"
+        carrier="Qtel gprs"
+        apn="gprs.qtel"
+        port="8080"
+        proxy="10.23.8.3"
+        type="default,supl"
+    />
+    <apn
+        mcc="427"
+        mnc="01"
+        carrier="Qtel mms"
+        apn="mms.qtel"
+        mmsc="http://mmsr.qtelmms.qa"
+        mmsport="8080"
+        mmsproxy="10.23.8.3"
+        type="mms"
+    />
+    <apn
+        mcc="427"
+        mnc="02"
+        carrier="VFQ Internet"
+        apn="web.vodafone.com.qa"
+        authtype="1"
+        type="default,supl"
+    />
+    <apn
+        mcc="427"
+        mnc="02"
+        carrier="VFQ MMS"
+        apn="vodafone.com.qa"
+        authtype="1"
+        mmsc="http://mms.vodafone.com.qa/mmsc"
+        mmsport="80"
+        mmsproxy="10.101.97.102"
+        port="80"
+        proxy="10.101.97.102"
+        type="*"
+    />
+    <apn
+        mcc="427"
+        mnc="02"
+        carrier="Vodafone QA"
+        apn="web.vodafone.com.qa"
+        type="default,supl"
+    />
+    <apn
+        mcc="427"
+        mnc="02"
+        carrier="Vodafone QA MMS"
+        apn="vodafone.com.qa"
+        mmsc="http://mms.vodafone.com.qa/mmsc"
+        mmsport="80"
+        mmsproxy="10.101.97.102"
+        type="mms"
+    />
+    <apn
+        mcc="427"
+        mnc="02"
+        carrier="WAP"
+        apn="vodafone.com.qa"
+        port="80"
+        proxy="10.101.97.102"
+        type="default,supl"
+    />
+</apns>

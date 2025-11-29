@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="645"
+        mnc="01"
+        carrier="Zambia MMS"
+        apn="mms"
+        mmsc="http://10.150.0.130/servlets/mms"
+        mmsport="9201"
+        mmsproxy="10.150.0.140"
+        port=""
+        proxy=""
+        type="mms"
+    />
+    <apn
+        mcc="645"
+        mnc="01"
+        carrier="Zambia WAP"
+        apn="wap"
+        port="8080"
+        proxy="10.150.0.140"
+        type="default,supl"
+    />
+    <apn
+        mcc="645"
+        mnc="02"
+        carrier="MTN GPRS"
+        apn="Internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="645"
+        mnc="02"
+        carrier="MTN MMS"
+        apn="mms"
+        mmsc="http://010.110.022.12:38090"
+        mmsport="8080"
+        mmsproxy="10.110.22.20"
+        port=""
+        proxy=""
+        type="mms"
+    />
+    <apn
+        mcc="645"
+        mnc="02"
+        carrier="MTN WAP"
+        apn="wap"
+        port="8080"
+        proxy="10.110.22.20"
+        type="default,supl"
+    />
+</apns>

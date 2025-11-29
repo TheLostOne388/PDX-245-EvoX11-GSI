@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="429"
+        mnc="01"
+        carrier="GPRS APN"
+        apn="ntwap"
+        mmsc=""
+        password=""
+        port="8000"
+        proxy="192.80.7.133"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="429"
+        mnc="01"
+        carrier="MMS"
+        apn="ntmms"
+        mmsc="http://192.80.11.180"
+        mmsport="8000"
+        mmsproxy="192.80.7.133"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="429"
+        mnc="01"
+        carrier="Nepal Telecom Internet"
+        apn="ntnet"
+        type="default,supl"
+    />
+    <apn
+        mcc="429"
+        mnc="01"
+        carrier="Nepal Telecom MMS"
+        apn="ntmms"
+        mmsc="http://192.80.11.180"
+        mmsport="8000"
+        mmsproxy="192.80.7.133"
+        type="mms"
+    />
+    <apn
+        mcc="429"
+        mnc="01"
+        carrier="WEB"
+        apn="ntnet"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="429"
+        mnc="02"
+        carrier="MMS"
+        apn="mms"
+        mmsc="http://192.168.19.15"
+        mmsport="8080"
+        mmsproxy="192.168.19.15"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="429"
+        mnc="02"
+        carrier="Ncell Internet"
+        apn="web"
+        type="default,supl"
+    />
+    <apn
+        mcc="429"
+        mnc="02"
+        carrier="Ncell MMS"
+        apn="mms"
+        mmsc="http://192.168.19.15"
+        mmsport="8080"
+        mmsproxy="192.168.19.15"
+        type="mms"
+    />
+    <apn
+        mcc="429"
+        mnc="02"
+        carrier="Ncell WAP"
+        apn="web"
+        port="8080"
+        proxy="192.168.19.15"
+        type="default,supl"
+    />
+    <apn
+        mcc="429"
+        mnc="02"
+        carrier="Nepal Telecom WAP"
+        apn="ntwap"
+        port="8000"
+        proxy="192.80.7.133"
+        type="default,supl"
+    />
+    <apn
+        mcc="429"
+        mnc="02"
+        carrier="WEB"
+        apn="web"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="192.168.19.15"
+        type="default,supl"
+        user=""
+    />
+</apns>

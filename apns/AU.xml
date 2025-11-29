@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="505"
+        mnc="01"
+        carrier="Belong Internet/MMS"
+        apn="mdata.net.au"
+        mmsc="http://mmsc.mdata.net.au:8003"
+        mmsport="80"
+        mmsproxy="10.1.1.180"
+        protocol="IPV4V6"
+        roaming_protocol="IP"
+        type="default,dun,supl,mms"
+    />
+    <apn
+        mcc="505"
+        mnc="01"
+        carrier="Telstra 3G Pay by Time"
+        apn="telstra.pcpack"
+        password="telstra"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="505"
+        mnc="01"
+        carrier="Telstra Broadband"
+        apn="telstra.internet"
+        password=""
+        type="dun"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="01"
+        carrier="Telstra Internet"
+        apn="Telstra.wap"
+        type="default,supl"
+    />
+    <apn
+        mcc="505"
+        mnc="01"
+        carrier="Telstra Internet"
+        apn="telstra.wap"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="01"
+        carrier="Telstra MMS"
+        apn="Telstra.mms"
+        mmsc="http://mmsc.telstra.com:8002"
+        mmsport="80"
+        mmsproxy="10.1.1.180"
+        type="mms"
+    />
+    <apn
+        mcc="505"
+        mnc="01"
+        carrier="Telstra MMS"
+        apn="telstra.mms"
+        mmsc="http://mmsc.telstra.com:8002"
+        mmsport="80"
+        mmsproxy="10.1.1.180"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="01"
+        carrier="Telstra w/ Portal"
+        apn="telstra.internet"
+        mmsc="http://mmsc.telstra.com:8002"
+        mmsport="80"
+        mmsproxy="10.1.1.181"
+        port="80"
+        proxy="10.1.1.181"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Apex Telecom"
+        apn="splns357"
+        mmsc=""
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Boost MMS"
+        apn="mms"
+        authtype="3"
+        mmsc="http://mmsc.optus.com.au:8002/"
+        mmsport="8070"
+        mmsproxy="61.88.190.10"
+        password=""
+        port="8070"
+        proxy="61.88.190.10"
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Boost Mobile"
+        apn="yesinternet"
+        authtype="3"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Exetel"
+        apn="exetel1"
+        type="default,supl"
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Optus"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Optus Business Mobile Broadband"
+        apn="yesbusiness"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Optus Connect"
+        apn="connect"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Optus ConnectCap"
+        apn="connectcap"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Optus Internet"
+        apn="yesinternet"
+        password="*"
+        server="*"
+        type="default,supl"
+        user="*"
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Optus MMS"
+        apn="mms"
+        mmsc="http://mmsc.optus.com.au:8002/"
+        mmsport="8070"
+        mmsproxy="61.88.190.10"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Optus MMS"
+        apn="mms"
+        mmsc="http://mmsc.optus.com.au:8002/"
+        mmsport="8070"
+        mmsproxy="61.88.190.10"
+        password="*"
+        port="8070"
+        proxy="202.139.83.152"
+        server="*"
+        type="mms"
+        user="*"
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Optus Preconnect"
+        apn="preconnect"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Optus Streaming"
+        apn="yesinternet"
+        mmsc=""
+        password=""
+        port="554"
+        proxy="172.22.1.3"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Optus Yesinternet"
+        apn="yesinternet"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Truphone"
+        apn="truphone.com"
+        mvno_match_data="50502100"
+        mvno_type="imsi"
+        type="default,dun"
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Virgin AU"
+        apn="virgininternet"
+        password="*"
+        server="*"
+        type="default,supl"
+        user="*"
+    />
+    <apn
+        mcc="505"
+        mnc="02"
+        carrier="Virgin AU MMS"
+        apn="virginmms"
+        mmsc="http://mms.virginvibe.com.au:8002/"
+        mmsport="8070"
+        mmsproxy="202.139.083.152"
+        password="*"
+        port="8070"
+        proxy="202.139.083.152"
+        server="*"
+        type="mms"
+        user="*"
+    />
+    <apn
+        mcc="505"
+        mnc="03"
+        carrier="Vodafone AU"
+        apn="live.vodafone.com"
+        mmsc="http://pxt.vodafone.net.au/pxtsend"
+        mmsport="8080"
+        mmsproxy="10.202.2.60"
+        password="*"
+        server="*"
+        type="mms,default,supl"
+        user="*"
+    />
+    <apn
+        mcc="505"
+        mnc="03"
+        carrier="Vodafone Live!"
+        apn="live.vodafone.com"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="10.202.2.60"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="03"
+        carrier="Vodafone PXT"
+        apn="live.vodafone.com"
+        mmsc="http://pxt.vodafone.net.au/pxtsend"
+        mmsport="8080"
+        mmsproxy="10.202.2.60"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="06"
+        carrier="3 AU"
+        apn="3services"
+        mmsc="http://mmsc.three.net.au:10021/mmsc"
+        mmsport="8799"
+        mmsproxy="10.176.57.25"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="505"
+        mnc="07"
+        carrier="VF AU PXT"
+        apn="live.vodafone.com"
+        mmsc="http://pxt.vodafone.net.au/pxtsend"
+        mmsport="8080"
+        mmsproxy="10.202.2.60"
+        type="mms"
+    />
+    <apn
+        mcc="505"
+        mnc="07"
+        carrier="VF Internet"
+        apn="vfinternet.au"
+        type="default,supl"
+    />
+    <apn
+        mcc="505"
+        mnc="11"
+        carrier="Telstra Internet"
+        apn="Telstra.wap"
+        type="default,supl"
+    />
+    <apn
+        mcc="505"
+        mnc="11"
+        carrier="Telstra MMS"
+        apn="Telstra.mms"
+        mmsc="http://mmsc.telstra.com:8002"
+        mmsport="80"
+        mmsproxy="10.1.1.180"
+        type="mms"
+    />
+    <apn
+        mcc="505"
+        mnc="12"
+        carrier="3"
+        apn="3services"
+        mmsc="http://mmsc.three.net.au:10021/mmsc"
+        mmsport="8799"
+        mmsproxy="10.176.57.25"
+        type="default,supl,mms"
+    />
+    <apn
+        mcc="505"
+        mnc="12"
+        carrier="3Internet"
+        apn="3netaccess"
+        type="default,supl"
+    />
+    <apn
+        mcc="505"
+        mnc="19"
+        carrier="Lycamobile AU"
+        apn="data.lycamobile.com.au"
+        password="plus"
+        type="default,supl"
+        user="lmau"
+    />
+    <apn
+        mcc="505"
+        mnc="38"
+        carrier="Truphone"
+        apn="truphone.com"
+        type="default,supl"
+    />
+    <apn
+        mcc="505"
+        mnc="71"
+        carrier="Telstra Internet"
+        apn="Telstra.wap"
+        type="default,supl"
+    />
+    <apn
+        mcc="505"
+        mnc="71"
+        carrier="Telstra MMS"
+        apn="Telstra.mms"
+        mmsc="http://mmsc.telstra.com:8002"
+        mmsport="80"
+        mmsproxy="10.1.1.180"
+        type="mms"
+    />
+    <apn
+        mcc="505"
+        mnc="72"
+        carrier="Telstra Internet"
+        apn="Telstra.wap"
+        type="default,supl"
+    />
+    <apn
+        mcc="505"
+        mnc="72"
+        carrier="Telstra Internet"
+        apn="Telstra.wap"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="505"
+        mnc="72"
+        carrier="Telstra MMS"
+        apn="Telstra.mms"
+        mmsc="http://mmsc.telstra.com:8002"
+        mmsport="80"
+        mmsproxy="10.1.1.180"
+        type="mms"
+    />
+    <apn
+        mcc="505"
+        mnc="88"
+        carrier="VF AU PXT"
+        apn="live.vodafone.com"
+        mmsc="http://pxt.vodafone.net.au/pxtsend"
+        mmsport="8080"
+        mmsproxy="10.202.2.60"
+        type="mms"
+    />
+    <apn
+        mcc="505"
+        mnc="88"
+        carrier="VF Internet"
+        apn="vfinternet.au"
+        type="default,supl"
+    />
+    <apn
+        mcc="505"
+        mnc="90"
+        carrier="Optus Internet"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="505"
+        mnc="90"
+        carrier="Optus MMS"
+        apn="mms"
+        mmsc="http://mmsc.optus.com.au:8002/"
+        mmsport="8070"
+        mmsproxy="61.88.190.10"
+        type="mms"
+    />
+</apns>

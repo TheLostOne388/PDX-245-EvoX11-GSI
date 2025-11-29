@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="424"
+        mnc="02"
+        carrier="Etisalat MMS"
+        apn="etisalat"
+        authtype="1"
+        mmsc="http://mms/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.12.0.32"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="424"
+        mnc="02"
+        carrier="Etisalat UAE"
+        apn="etisalat.ae"
+        authtype="1"
+        type="default,supl"
+    />
+    <apn
+        mcc="424"
+        mnc="02"
+        carrier="Etisalat UAE MMS"
+        apn="mms"
+        authtype="1"
+        mmsc="http://mms/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.12.0.32"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="424"
+        mnc="02"
+        carrier="Etisalat WAP"
+        apn="etisalat"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="10.12.0.32"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="424"
+        mnc="02"
+        carrier="Etisalat internet"
+        apn="etisalat.ae"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="424"
+        mnc="03"
+        carrier="Du MMS"
+        apn="du"
+        authtype="1"
+        mmsc="http://mms.du.ae:8002"
+        mmsport="8080"
+        mmsproxy="10.19.18.4"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="424"
+        mnc="03"
+        carrier="Du WAP"
+        apn="du"
+        mmsc=""
+        password=""
+        port="8080"
+        proxy="10.19.18.4"
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="424"
+        mnc="03"
+        carrier="Du internet"
+        apn="du"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="424"
+        mnc="03"
+        carrier="du"
+        apn="du"
+        mmsc="http://mms.du.ae"
+        mmsport="9201"
+        mmsproxy="10.19.18.4"
+        type="default,supl,mms"
+    />
+</apns>

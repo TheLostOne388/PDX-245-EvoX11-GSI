@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="248"
+        mnc="01"
+        carrier="EMT"
+        apn="internet.emt.ee"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="248"
+        mnc="01"
+        carrier="EMT MMS"
+        apn="mms.emt.ee"
+        mmsc="http://mms.emt.ee/servlets/mms"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="248"
+        mnc="02"
+        carrier="Elisa EE"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="248"
+        mnc="02"
+        carrier="Elisa EE MMS"
+        apn="mms"
+        mmsc="http://194.204.2.10"
+        mmsport="8080"
+        mmsproxy="194.204.2.6"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="248"
+        mnc="03"
+        carrier="Tele2 EE"
+        apn="internet.tele2.ee"
+        mmsc=""
+        password="wap"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="wap"
+    />
+    <apn
+        mcc="248"
+        mnc="03"
+        carrier="Tele2 EE MMS"
+        apn="mms.emt.ee"
+        mmsc="http://mms.emt.ee/servlets/mms"
+        mmsport="8080"
+        mmsproxy="217.71.32.82"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="248"
+        mnc="03"
+        carrier="Tele2 MMS"
+        apn="mms.tele2.ee"
+        mmsc="http://mmsc.tele2.ee"
+        mmsport="8080"
+        mmsproxy="193.12.40.6"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+</apns>

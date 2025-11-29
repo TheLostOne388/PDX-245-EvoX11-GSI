@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="282"
+        mnc="01"
+        carrier="Geocell"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl,mms"
+        user=""
+    />
+    <apn
+        mcc="282"
+        mnc="01"
+        carrier="Geocell Mms"
+        apn="mms"
+        mmsc="http://mms.geocell.com.ge/cmmsc/post"
+        mmsport="8080"
+        mmsproxy="10.11.240.7"
+        password=""
+        port=""
+        proxy=""
+        type="default,supl,mms"
+        user=""
+    />
+</apns>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="366"
+        mnc="110"
+        carrier="LIME Postpaid Internet"
+        apn="internet"
+        mmsc=""
+        password=""
+        port="8799"
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="366"
+        mnc="110"
+        carrier="LIME Postpaid MMS"
+        apn="multimedia"
+        mmsc="http://mmsc"
+        password=""
+        port="8799"
+        proxy="10.20.5.34"
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="366"
+        mnc="110"
+        carrier="LIME Prepaid Internet"
+        apn="ppinternet"
+        mmsc=""
+        password=""
+        port="8799"
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="366"
+        mnc="110"
+        carrier="LIME Prepaid MMS"
+        apn="ppmms"
+        mmsc="http://mmsc"
+        password=""
+        port="8799"
+        proxy="10.20.5.34"
+        type="mms"
+        user=""
+    />
+</apns>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="334"
+        mnc="020"
+        carrier="Mensajes Multimedia"
+        apn="mms.itelcel.com"
+        authtype="1"
+        carrier_id="1913"
+        mmsc="http://mms.itelcel.com/servlets/mms"
+        mmsport="8080"
+        mmsproxy="148.233.151.240"
+        password="mmsgprs2003"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="mms"
+        user="mmsgprs"
+    />
+    <apn
+        mcc="334"
+        mnc="020"
+        carrier="Telcel EDGE"
+        apn="internet.itelcel.com"
+        mmsc=""
+        password="webgprs2002"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="webgprs"
+    />
+    <apn
+        mcc="334"
+        mnc="020"
+        carrier="Telcel Internet"
+        apn="internet.itelcel.com"
+        authtype="1"
+        carrier_id="1913"
+        password="webgprs2002"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,supl"
+        user="webgprs"
+    />
+    <apn
+        mcc="334"
+        mnc="020"
+        carrier="Telcel MMS"
+        apn="mms.itelcel.com"
+        mmsc="http://mms.itelcel.com/servlets/mms"
+        mmsport="8080"
+        mmsproxy="148.233.151.240"
+        password="mmsgprs2003"
+        port=""
+        proxy=""
+        type="mms"
+        user="mmsgprs"
+    />
+    <apn
+        mcc="334"
+        mnc="03"
+        carrier="Movistar MX"
+        apn="internet.movistar.mx"
+        mmsc=""
+        password="movistar"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="movistar"
+    />
+    <apn
+        mcc="334"
+        mnc="03"
+        carrier="Movistar MX MMS"
+        apn="mms.movistar.mx"
+        mmsc="http://mms.movistar.mx"
+        mmsport="9201"
+        mmsproxy="10.2.20.1"
+        password="movistar"
+        port=""
+        proxy=""
+        type="mms"
+        user="movistar"
+    />
+    <apn
+        mcc="334"
+        mnc="05"
+        carrier="Internet Modem"
+        apn="modem.iusacellgsm.mx"
+        password="iusacellgsm"
+        type="dun"
+        user="iusacellgsm"
+    />
+    <apn
+        mcc="334"
+        mnc="05"
+        carrier="Iusacell Internet"
+        apn="web.iusacellgsm.mx"
+        authtype="0"
+        password="iusacellgsm"
+        type="default,supl"
+        user="iusacellgsm"
+    />
+    <apn
+        mcc="334"
+        mnc="05"
+        carrier="Iusacell MMS"
+        apn="mms.iusacellgsm.mx"
+        mmsc="http://mms.iusacell3g.com/"
+        password="mmsiusacellgsm"
+        type="mms"
+        user="mmsiusacellgsm"
+    />
+    <apn
+        mcc="334"
+        mnc="050"
+        carrier="Iusacell Internet"
+        apn="web.iusacellgsm.mx"
+        authtype="0"
+        password="iusacellgsm"
+        type="default,supl"
+        user="iusacellgsm"
+    />
+    <apn
+        mcc="334"
+        mnc="050"
+        carrier="Iusacell MMS"
+        apn="mms.iusacellgsm.mx"
+        mmsc="http://mms.iusacell3g.com/"
+        password="mmsiusacellgsm"
+        type="mms"
+        user="mmsiusacellgsm"
+    />
+    <apn
+        mcc="334"
+        mnc="050"
+        carrier="Unefon Internet"
+        apn="web.iusacellgsm.mx"
+        authtype="0"
+        password="iusacellgsm"
+        type="default,supl"
+        user="iusacellgsm"
+    />
+    <apn
+        mcc="334"
+        mnc="050"
+        carrier="Unefon MMS"
+        apn="mms.iusacellgsm.mx"
+        mmsc="http://mms.iusacell3g.com/"
+        password="mmsiusacellgsm"
+        type="mms"
+        user="mmsiusacellgsm"
+    />
+    <apn
+        mcc="334"
+        mnc="090"
+        carrier="Nextel Internet"
+        apn="modem.nexteldata.com.mx"
+        password=""
+        type="dun"
+        user=""
+    />
+    <apn
+        mcc="334"
+        mnc="090"
+        carrier="Nextel Localización"
+        apn="location.nexteldata.com.mx"
+        port="7275"
+        server="supl.nexteldata.com.mx"
+        type="supl"
+    />
+    <apn
+        mcc="334"
+        mnc="090"
+        carrier="Nextel MMS"
+        apn="mms.nexteldata.com.mx"
+        mmsc="http://3gmms.nexteldata.com.mx"
+        mmsport="8080"
+        mmsproxy="129.192.129.104"
+        password=""
+        type="mms"
+        user=""
+    />
+    <apn
+        mcc="334"
+        mnc="090"
+        carrier="Nextel Navegación"
+        apn="wap.nexteldata.com.mx"
+        authtype="0"
+        password=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="334"
+        mnc="30"
+        carrier="Movistar INTERNET"
+        apn="internet.movistar.mx"
+        authtype="1"
+        password="movistar"
+        type="default,supl"
+        user="movistar"
+    />
+    <apn
+        mcc="334"
+        mnc="30"
+        carrier="Movistar MMS"
+        apn="mms.movistar.mx"
+        authtype="1"
+        mmsc="http://mms.movistar.mx"
+        mmsport="80"
+        mmsproxy="10.2.20.1"
+        password="movistar"
+        port=""
+        proxy=""
+        type="mms"
+        user="movistar"
+    />
+</apns>

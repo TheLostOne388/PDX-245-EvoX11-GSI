@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="290"
+        mnc="01"
+        carrier="Tele GPRS"
+        apn="internet"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="290"
+        mnc="01"
+        carrier="Tele MMS"
+        apn="internet"
+        mmsc="http://mms.tele.gl/mms/wapenc"
+        mmsport="8080"
+        mmsproxy="10.112.222.37"
+        password=""
+        port=""
+        proxy=""
+        type="mms"
+        user=""
+    />
+</apns>

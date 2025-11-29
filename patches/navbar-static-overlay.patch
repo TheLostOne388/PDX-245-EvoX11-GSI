@@ -1,0 +1,11 @@
+diff --git a/NavBar/AndroidManifest.xml b/NavBar/AndroidManifest.xml
+index 5b51912..46af8e1 100644
+--- a/NavBar/AndroidManifest.xml
++++ b/NavBar/AndroidManifest.xml
+@@ -3,5 +3,6 @@
+         android:versionCode="1"
+         android:versionName="1.0">
+         <overlay android:targetPackage="android"
++                android:isStatic="true"
+                 android:priority="3"/>
+ </manifest>

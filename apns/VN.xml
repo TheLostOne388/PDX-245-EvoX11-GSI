@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="452"
+        mnc="01"
+        carrier="Mobifone 3G"
+        apn="m-wap"
+        authtype="1"
+        password="mms"
+        type="default,supl"
+        user="mms"
+    />
+    <apn
+        mcc="452"
+        mnc="01"
+        carrier="Mobifone MMS"
+        apn="m-i090"
+        authtype="1"
+        mmsc="http://203.162.21.114/mmsc"
+        mmsport="8080"
+        mmsproxy="203.162.21.114"
+        password="mms"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="452"
+        mnc="02"
+        carrier="Vinaphone 3G"
+        apn="m3-world"
+        password="mms"
+        type="default,supl"
+        user="mms"
+    />
+    <apn
+        mcc="452"
+        mnc="02"
+        carrier="Vinaphone MMS"
+        apn="m3-mms"
+        mmsc="http://mms.vinaphone.vnn.vn:8002"
+        mmsport="9201"
+        mmsproxy="10.1.10.46"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="452"
+        mnc="04"
+        carrier="Viettel 3G"
+        apn="v-internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="452"
+        mnc="04"
+        carrier="Viettel MMS"
+        apn="v-mms"
+        mmsc="http://mms.viettelmobile.com.vn/mms"
+        mmsport="9201"
+        mmsproxy="192.168.233.10"
+        type="mms"
+    />
+    <apn
+        mcc="452"
+        mnc="05"
+        carrier="Vietnamobile 3G"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="452"
+        mnc="05"
+        carrier="Vietnamobile MMS"
+        apn="mms"
+        mmsc="http://10.10.128.58/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.10.128.44"
+        port=""
+        proxy=""
+        type="mms"
+    />
+    <apn
+        mcc="452"
+        mnc="07"
+        carrier="BeeLine VN 3G"
+        apn="internet"
+        type="default,supl"
+    />
+    <apn
+        mcc="452"
+        mnc="07"
+        carrier="Beeline VN MMS"
+        apn="MMS"
+        mmsc="http://mms"
+        mmsport="8080"
+        mmsproxy="10.16.70.199"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="452"
+        mnc="09"
+        carrier="Wintel Internet"
+        apn="m9-wintel"
+        type="default,supl"
+    />
+</apns>

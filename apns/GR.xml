@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="202"
+        mnc="01"
+        carrier="Cosmote IMS"
+        apn="ims"
+        authtype="1"
+        protocol="IPV4V6"
+        roaming_protocol="IP"
+        type="ims"
+    />
+    <apn
+        mcc="202"
+        mnc="01"
+        carrier="Cosmote Internet"
+        apn="internet"
+        protocol="IPV4V6"
+        roaming_protocol="IP"
+        type="default"
+    />
+    <apn
+        mcc="202"
+        mnc="01"
+        carrier="Cosmote MMS"
+        apn="mms"
+        mmsc="http://mmsc.cosmote.gr:8002"
+        mmsport="8080"
+        mmsproxy="10.10.10.20"
+        protocol="IPV4V6"
+        roaming_protocol="IP"
+        type="mms"
+    />
+    <apn
+        mcc="202"
+        mnc="05"
+        carrier="Vf IMS"
+        apn="ims"
+        protocol="IP"
+        roaming_protocol="IP"
+        type="ims"
+    />
+    <apn
+        mcc="202"
+        mnc="05"
+        carrier="Vf Internet"
+        apn="internet.vodafone.gr"
+        protocol="IP"
+        roaming_protocol="IP"
+        type="default,supl,dun"
+    />
+    <apn
+        mcc="202"
+        mnc="05"
+        carrier="Vf MMS"
+        apn="mms.vodafone.net"
+        mmsc="http://mms.vodafone.gr"
+        mmsport="5080"
+        mmsproxy="213.249.19.49"
+        password="pass"
+        protocol="IP"
+        roaming_protocol="IP"
+        type="mms"
+        user="user"
+    />
+    <apn
+        mcc="202"
+        mnc="09"
+        carrier="Q-Telecom Internet"
+        apn="myq"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,supl"
+    />
+    <apn
+        mcc="202"
+        mnc="09"
+        carrier="Q-Telecom MMS GPRS"
+        apn="q-mms.myq.gr"
+        mmsc="http://mms.myq.gr"
+        mmsport="8080"
+        mmsproxy="192.168.80.134"
+        type="mms"
+    />
+    <apn
+        mcc="202"
+        mnc="10"
+        carrier="Wind IMS"
+        apn="ims"
+        protocol="IPV6"
+        roaming_protocol="IP"
+        type="ims"
+    />
+    <apn
+        mcc="202"
+        mnc="10"
+        carrier="Wind Internet"
+        apn="gint.b-online.gr"
+        protocol="IP"
+        roaming_protocol="IP"
+        type="default"
+    />
+    <apn
+        mcc="202"
+        mnc="10"
+        carrier="Wind MMS"
+        apn="mnet.b-online.gr"
+        mmsc="http://192.168.200.95/servlets/mms"
+        mmsport="9401"
+        mmsproxy="192.168.200.11"
+        protocol="IP"
+        roaming_protocol="IP"
+        type="mms"
+    />
+    <apn
+        mcc="202"
+        mnc="17"
+        carrier="Nova Internet"
+        apn="internet.nova.gr"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default"
+    />
+    <apn
+        mcc="202"
+        mnc="17"
+        carrier="Nova MMS"
+        apn="mms.nova.gr"
+        mmsc="http://mms.nova.gr/mms/"
+        mmsport="8080"
+        mmsproxy="212.251.24.200"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="mms"
+    />
+</apns>

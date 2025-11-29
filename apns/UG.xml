@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="641"
+        mnc="01"
+        carrier="Airtel UG"
+        apn="web.ug.zain.com"
+        type="default,supl"
+    />
+    <apn
+        mcc="641"
+        mnc="10"
+        carrier="MTN"
+        apn="yellopix.men.co.ug"
+        mmsc="http://mtn.mmsc/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.120.0.138"
+        port="8080"
+        proxy="10.120.0.138"
+        type="*"
+    />
+    <apn
+        mcc="641"
+        mnc="10"
+        carrier="MTN UG"
+        apn="yellopix.mtn.co.ug"
+        type="default,supl"
+    />
+    <apn
+        mcc="641"
+        mnc="11"
+        carrier="Uganda Telecom"
+        apn="utweb"
+        type="default,supl"
+    />
+    <apn
+        mcc="641"
+        mnc="14"
+        carrier="ORANGE WAP"
+        apn="orange.ug"
+        port="9201"
+        proxy="10.201.20.4"
+        type="default,supl"
+    />
+    <apn
+        mcc="641"
+        mnc="14"
+        carrier="Orange Internet UG"
+        apn="orange.ug"
+        type="default,supl"
+    />
+    <apn
+        mcc="641"
+        mnc="14"
+        carrier="Orange MMS"
+        apn="orangemms"
+        mmsc="http://10.201.20.5"
+        mmsport="9201"
+        mmsproxy="10.201.20.4"
+        port=""
+        proxy=""
+        type="mms"
+    />
+    <apn
+        mcc="641"
+        mnc="14"
+        carrier="Orange MMS"
+        apn="orangemms"
+        mmsc="http://mms/"
+        type="mms"
+    />
+    <apn
+        mcc="641"
+        mnc="14"
+        carrier="Orange UG"
+        apn="orange.ug"
+        mmsc=""
+        password=""
+        port=""
+        proxy=""
+        type="default,supl"
+        user=""
+    />
+    <apn
+        mcc="641"
+        mnc="22"
+        carrier="Waridtel UG"
+        apn="web.waridtel.co.ug"
+        type="default,supl"
+    />
+</apns>

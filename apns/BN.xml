@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="528"
+        mnc="02"
+        carrier="B-Mobile"
+        apn="bmobilewap"
+        type="default,supl"
+    />
+    <apn
+        mcc="528"
+        mnc="02"
+        carrier="B-Mobile MMS"
+        apn="bmobilemms"
+        mmsc="http://mms.bmobile.com.bn/was"
+        mmsport="6500"
+        mmsproxy="129.9.10.20"
+        type="mms"
+    />
+    <apn
+        mcc="528"
+        mnc="11"
+        carrier="DSTCom"
+        apn="dst.internet"
+        password="internet"
+        type="default,supl"
+        user="internet"
+    />
+    <apn
+        mcc="528"
+        mnc="11"
+        carrier="DSTCom MMS"
+        apn="dst.mms"
+        mmsc="http://mms.dst.com.bn/mmsc"
+        mmsport="9201"
+        mmsproxy="10.100.6.101"
+        password="mms"
+        type="mms"
+        user="mms"
+    />
+</apns>

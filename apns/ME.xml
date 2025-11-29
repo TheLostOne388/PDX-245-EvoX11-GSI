@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: Google Inc
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<apns version="8">
+    <apn
+        mcc="297"
+        mnc="01"
+        carrier="ProMonte"
+        apn="gprs.promonte.com"
+        mmsc=""
+        password="gprs"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="gprs"
+    />
+    <apn
+        mcc="297"
+        mnc="01"
+        carrier="ProMonte MMS"
+        apn="mms.promonte.com"
+        mmsc="http://mm.vor.promonte.com"
+        mmsport="8080"
+        mmsproxy="192.168.246.5"
+        password="mms"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="297"
+        mnc="01"
+        carrier="Telenor MNE internet"
+        apn="internet"
+        mmsc=""
+        password="gprs"
+        port="8080"
+        proxy="192.168.246.005"
+        type="default,supl"
+        user="gprs"
+    />
+    <apn
+        mcc="297"
+        mnc="01"
+        carrier="Telenor MNE mms"
+        apn="mms"
+        mmsc="http://mm.vor.telenor.me"
+        mmsport="8080"
+        mmsproxy="192.168.246.005"
+        password="mms"
+        port=""
+        proxy=""
+        type="mms"
+        user="mms"
+    />
+    <apn
+        mcc="297"
+        mnc="02"
+        carrier="T-Mobile CG"
+        apn="tmcg-wnw"
+        mmsc=""
+        password="38267"
+        port=""
+        proxy=""
+        type="default,supl"
+        user="38267"
+    />
+    <apn
+        mcc="297"
+        mnc="02"
+        carrier="T-Mobile CG MMS"
+        apn="mms"
+        mmsc="http://192.168.180.100/servlets/mms"
+        mmsport="8080"
+        mmsproxy="10.0.5.19"
+        password="38267"
+        port=""
+        proxy=""
+        type="mms"
+        user="38267"
+    />
+</apns>
