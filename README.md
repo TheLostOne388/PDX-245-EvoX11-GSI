@@ -63,7 +63,10 @@ device/sony/pdx245/
 repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
 repo sync -c -j$(nproc --all)
 
-# 2. Apply patches (REQUIRED after every repo sync)
+# 2. Clone this device tree
+git clone https://github.com/TheLostOne388/PDX-245-EvoX11-GSI.git device/sony/pdx245
+
+# 3. Apply patches (REQUIRED after every repo sync)
 cd packages/modules/Wifi
 git apply ../../../device/sony/pdx245/patches/wifi-country-code-override.patch
 cd ../../..
@@ -72,7 +75,7 @@ cd vendor/hardware_overlay
 git apply ../../device/sony/pdx245/patches/wifi-6ghz-overlay.patch
 cd ../..
 
-# 3. Build
+# 4. Build
 source build/envsetup.sh
 lunch pdx245-user          # Use 'user' for Intune compliance (or 'userdebug' for development)
 make installclean
