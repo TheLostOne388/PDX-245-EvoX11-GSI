@@ -8,11 +8,13 @@ Device tree for building Evolution X Android 16 GSI for Sony Xperia 1 VI (PDX245
 |---------|--------|-------|
 | Telephony | ✅ Working | Dual SIM, VoLTE, 5G/4G/LTE, SMS/MMS, Calls |
 | WiFi 2.4/5GHz | ✅ Working | Full support |
-| WiFi 6GHz (WiFi 7) | 🔧 In Progress | Requires init script to set vendor property |
+| WiFi 6GHz (WiFi 7) | ✅ Working | 6GHz bands enabled via product properties |
 | Navigation Bar | ✅ Working | No patch needed with Trebuchet launcher |
 | Launcher | ✅ Working | Trebuchet (Pixel Launcher disabled via override) |
 | Audio | ✅ Working | Stereo speakers, Bluetooth audio |
 | Display | ✅ Working | Full resolution, HDR, 120Hz |
+| SELinux | ✅ Enforcing | Full security compliance |
+| Intune/Enterprise | ✅ Working | Passes Microsoft Intune compliance checks |
 
 ## Patches Required After Repo Sync
 
@@ -48,14 +50,20 @@ cd ../..
 ### 3. WiFi 6GHz / WiFi 7
 - **Problem:** Sony's WiFi driver requires `ro.vendor.sony.wlan.6e_cc_list` property to enable 6GHz bands. This property is set in stock firmware's product partition but is missing when using a GSI.
 - **Root Cause:** Without this property, the driver's `BandCapability=7` (2.4G+5G+6G) doesn't enable 6GHz scanning
-- **Solution:** Init script uses `resetprop_phh` to set this property at boot
-- **Location:** `init.pdx245.rc`, `init.pdx245.wifi6ghz.sh`
-- **Still requires 2 patches** for framework-level WiFi support
+- **Solution:** Properties set in `pdx245.mk` via `PRODUCT_PRODUCT_PROPERTIES`
+- **Status:** ✅ Fully working - 6GHz/WiFi 7 supported
+- **Requires 2 patches** for framework-level WiFi support (see above)
 
 ### 4. WiFi Country Code
 - **Problem:** Indonesia (ID) locks WiFi to limited channels
 - **Solution:** Framework patch adds `persist.sys.wifi.country_code_override` support
 - **Requires patch** to `packages/modules/Wifi`
+
+### 5. Intune / Enterprise Compliance
+- **Problem:** Microsoft Intune flagged device as "Rooted" due to userdebug build, permissive SELinux, and su binary
+- **Solution:** Build `user` variant with SELinux Enforcing, PHH secure mode, and fingerprint spoofing
+- **Status:** ✅ Fully working - passes Intune compliance checks
+- **Documentation:** See `documentation/INTUNE_TROUBLESHOOTING.md` for full details
 
 ## Troubleshooting
 
@@ -104,18 +112,21 @@ cd ../..
 ```
 device/sony/pdx245/
 ├── Android.bp                    # Soong build configuration
-├── AndroidProducts.mk            # Product list
+├── AndroidProducts.mk            # Product list (pdx245-user, pdx245-userdebug)
 ├── BoardConfig.mk                # Board configuration
 ├── pdx245.mk                     # Main device makefile
 ├── README.md                     # This file
-├── init.pdx245.rc                # Init script for WiFi 6GHz
-├── init.pdx245.wifi6ghz.sh       # WiFi 6GHz property setter
 ├── apns/                         # Custom APN configurations
+├── files/
+│   └── secure                    # PHH secure mode marker (Intune compliance)
 ├── patches/                      # Required patches
 │   ├── wifi-country-code-override.patch
 │   └── wifi-6ghz-overlay.patch
-└── packages/
-    └── NexusLauncherOverride/    # Stub to exclude Pixel Launcher
+├── packages/
+│   └── NexusLauncherOverride/    # Stub to exclude Pixel Launcher
+└── documentation/
+    ├── INTUNE_TROUBLESHOOTING.md # Enterprise compliance guide
+    └── wifi_nav_troubleshooting.md
 ```
 
 ## Build Instructions
@@ -136,12 +147,14 @@ cd ../..
 
 # 3. Build
 source build/envsetup.sh
-lunch pdx245-userdebug
+lunch pdx245-user          # Use 'user' for Intune compliance (or 'userdebug' for development)
 make installclean
 make -j$(nproc --all) systemimage
 ```
 
 **Output:** `out/target/product/pdx245/system.img`
+
+**Note:** Use `pdx245-user` for production/Intune compliance. Use `pdx245-userdebug` only for development/debugging.
 
 ## Credits
 - **phhusson** - Treble GSI framework, resetprop_phh
