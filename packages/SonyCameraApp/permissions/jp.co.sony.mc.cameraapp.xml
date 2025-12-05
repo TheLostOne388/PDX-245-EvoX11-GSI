@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* © 2025 Sony Corporation
+-->
+<permissions>
+  <privapp-permissions package="jp.co.sony.mc.cameraapp">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

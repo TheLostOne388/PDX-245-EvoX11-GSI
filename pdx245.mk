@@ -54,7 +54,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=Sony/XQ-EC72/XQ-EC72:14/67.1.A.2.76/067001A002007604104057462:user/release-keys \
     ro.system.build.fingerprint=Sony/XQ-EC72/XQ-EC72:14/67.1.A.2.76/067001A002007604104057462:user/release-keys \
     ro.build.description=XQ-EC72-user_14_67.1.A.2.76_067001A002007604104057462_release-keys \
-    ro.build.display.id=67.1.A.2.76
+        ro.build.display.id=67.1.A.2.76
 
 # ==============================================================================
 # PHH Secure Mode (Hides su binary and hardens props at runtime)
@@ -142,4 +142,32 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Re-enable QcRilAm for Qualcomm voice call audio routing
 PRODUCT_PACKAGES += QcRilAm
+
+# ==============================================================================
+# Sony Camera App (from XQ-EC72_Customized_SEA_69.2.A.2.30 firmware)
+# ==============================================================================
+# Main camera app and dependencies extracted from stock Sony firmware.
+# Requires com.sony.device framework JAR and various permission definitions.
+PRODUCT_PACKAGES += \
+    SomcCameraApp \
+    CameraCommon \
+    CameraPanorama \
+    CameraAddonPermission \
+    CameraCommonPermission \
+    SomcCameraCalibration \
+    com.sony.device.xml \
+    privapp_whitelist_jp.co.sony.mc.cameraapp
+
+# Sony framework JAR required by camera app (uses-library com.sony.device)
+PRODUCT_COPY_FILES += \
+    device/sony/pdx245/packages/SonyCameraApp/framework/com.sony.device.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.sony.device.jar
+
+# ==============================================================================
+# Sony Keylayout (Camera Button Support)
+# ==============================================================================
+# Maps physical camera button key codes:
+#   key 528 -> FOCUS (half-press)
+#   key 766 -> CAMERA (full-press to capture)
+PRODUCT_COPY_FILES += \
+    device/sony/pdx245/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
 

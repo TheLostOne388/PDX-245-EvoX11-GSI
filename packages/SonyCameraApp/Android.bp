@@ -1,0 +1,121 @@
+// Sony Camera App - Prebuilt modules for PDX245 (Xperia 1 VI)
+// Extracted from XQ-EC72_Customized_SEA_69.2.A.2.30 firmware
+
+// ==============================================================================
+// Framework JAR - Required by camera app (uses-library com.sony.device)
+// ==============================================================================
+// The JAR is installed via PRODUCT_COPY_FILES in pdx245.mk since java_import
+// only provides compile-time dependencies and prebuilt_etc doesn't support
+// the framework directory cleanly.
+
+// ==============================================================================
+// Privileged Apps (priv-app)
+// ==============================================================================
+
+// Main Sony Camera App
+android_app_import {
+    name: "SomcCameraApp",
+    apk: "priv-app/SomcCameraApp/SomcCameraApp.apk",
+    privileged: true,
+    product_specific: true,
+    presigned: true,
+    preprocessed: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    required: [
+        "CameraCommon",
+        "CameraAddonPermission",
+        "CameraCommonPermission",
+        "privapp_whitelist_jp.co.sony.mc.cameraapp",
+        "com.sony.device.xml",
+    ],
+}
+
+// Camera Common Services
+android_app_import {
+    name: "CameraCommon",
+    apk: "priv-app/CameraCommon/CameraCommon.apk",
+    privileged: true,
+    product_specific: true,
+    presigned: true,
+    preprocessed: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+// Camera Panorama Feature
+android_app_import {
+    name: "CameraPanorama",
+    apk: "priv-app/CameraPanorama/CameraPanorama.apk",
+    privileged: true,
+    product_specific: true,
+    presigned: true,
+    preprocessed: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+// ==============================================================================
+// Regular Apps (app)
+// ==============================================================================
+
+// Camera Addon Permission Definition
+android_app_import {
+    name: "CameraAddonPermission",
+    apk: "app/CameraAddonPermission/CameraAddonPermission.apk",
+    product_specific: true,
+    presigned: true,
+    preprocessed: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+// Camera Common Permission Definition
+android_app_import {
+    name: "CameraCommonPermission",
+    apk: "app/CameraCommonPermission/CameraCommonPermission.apk",
+    product_specific: true,
+    presigned: true,
+    preprocessed: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+// Camera Calibration Data (device-specific for PDX245)
+android_app_import {
+    name: "SomcCameraCalibration",
+    apk: "app/SomcCameraCalibration/SomcCameraCalibration.apk",
+    product_specific: true,
+    presigned: true,
+    preprocessed: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+// ==============================================================================
+// Permission XML Files
+// ==============================================================================
+
+// Framework library declaration for com.sony.device
+prebuilt_etc {
+    name: "com.sony.device.xml",
+    src: "permissions/com.sony.device.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}
+
+// Priv-app permission whitelist for camera app
+prebuilt_etc {
+    name: "privapp_whitelist_jp.co.sony.mc.cameraapp",
+    src: "permissions/jp.co.sony.mc.cameraapp.xml",
+    sub_dir: "permissions",
+    filename_from_src: true,
+    product_specific: true,
+}
+
