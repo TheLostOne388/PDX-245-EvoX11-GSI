@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2024 Sony Corporation
+-->
+<permissions>
+
+   <permission name="com.sonymobile.permission.SYSTEM_EXT_IDD" >
+        <group gid="system_ext_idd" />
+   </permission>
+
+</permissions>

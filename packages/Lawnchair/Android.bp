@@ -1,0 +1,21 @@
+// Lawnchair Launcher - Prebuilt APK
+// Download latest from: https://github.com/LawnchairLauncher/lawnchair/releases
+// Place the APK as Lawnchair.apk in this directory
+
+android_app_import {
+    name: "Lawnchair",
+    apk: "Lawnchair.apk",
+    presigned: true,
+    privileged: true,
+    
+    // Required for home screen launcher
+    overrides: [
+        "Launcher3",
+        "Launcher3QuickStep",
+        "Trebuchet",
+    ],
+    
+    dex_preopt: {
+        enabled: false,
+    },
+}

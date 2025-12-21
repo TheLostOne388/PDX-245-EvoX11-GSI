@@ -20,3 +20,7 @@ BOARD_EXT4_SHARE_DUP_BLOCKS := true
 
 # Allow missing dependencies
 ALLOW_MISSING_DEPENDENCIES := true
+
+# SELinux Policy Extensions
+# Custom policy to allow Bluetooth property access (for sysbta)
+BOARD_SEPOLICY_DIRS += device/sony/pdx245/sepolicy

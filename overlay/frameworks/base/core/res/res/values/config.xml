@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Sony Xperia 1 VI (PDX245) Display Configuration Overlay
+    
+    ONLY enables auto-brightness boolean - brightness curves come from
+    vendor displayconfig (/vendor/etc/displayconfig/display_id_131.xml)
+-->
+<resources>
+    <!-- Enable automatic/adaptive brightness -->
+    <bool name="config_automatic_brightness_available">true</bool>
+</resources>

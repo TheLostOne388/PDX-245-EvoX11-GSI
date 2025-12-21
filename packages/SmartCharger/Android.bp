@@ -1,0 +1,78 @@
+// Sony SmartCharger (Battery Care) - Prebuilt modules for PDX245 (Xperia 1 VI)
+// Extracted from XQ-EC72_Customized_SEA_69.2.A.2.41 firmware
+//
+// This provides the Battery Care feature which allows:
+// - Setting charge limit to 80% or 90%
+// - Adaptive charging based on usage patterns
+//
+// REQUIREMENTS:
+// - Sony vendor partition with aidlcharger HAL service running
+// - Kernel support for /sys/class/battchg_ext/smart_charging_status
+
+// ==============================================================================
+// Main App
+// ==============================================================================
+
+// SmartCharger (Battery Care) App
+// This integrates into Settings > Battery as "Battery Care"
+android_app_import {
+    name: "SmartCharger",
+    apk: "app/SmartCharger.apk",
+    product_specific: true,
+    presigned: true,
+    preprocessed: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    required: [
+        "com.sonyericsson.idd.xml",
+        "com.sonymobile.miscta.xml",
+        "jp.co.sony.mc.misctasdklibrary.xml",
+        "com.sonymobile.system_ext_idd.xml",
+        "com.sonymobile.vendor_idd.xml",
+    ],
+}
+
+// ==============================================================================
+// Permission XML Files
+// ==============================================================================
+
+// IDD library declaration - required for diagnostics/telemetry
+prebuilt_etc {
+    name: "com.sonyericsson.idd.xml",
+    src: "permissions/com.sonyericsson.idd.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}
+
+// MISCTA API permission - declares com.sonymobile.miscta.api library
+prebuilt_etc {
+    name: "com.sonymobile.miscta.xml",
+    src: "permissions/com.sonymobile.miscta.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}
+
+// MISCTA SDK library declaration
+prebuilt_etc {
+    name: "jp.co.sony.mc.misctasdklibrary.xml",
+    src: "permissions/jp.co.sony.mc.misctasdklibrary.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}
+
+// IDD permission (system_ext)
+prebuilt_etc {
+    name: "com.sonymobile.system_ext_idd.xml",
+    src: "permissions/com.sonymobile.system_ext_idd.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}
+
+// IDD permission (vendor)
+prebuilt_etc {
+    name: "com.sonymobile.vendor_idd.xml",
+    src: "permissions/com.sonymobile.vendor_idd.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}

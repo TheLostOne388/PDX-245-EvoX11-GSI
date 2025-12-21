@@ -1,0 +1,18 @@
+# Sony PDX245 Bluetooth Audio Properties SELinux Policy
+#
+# Allow bluetooth domain to read A2DP offload and sysbta properties
+# Required for PHH's sysbta (software Bluetooth audio) to work properly
+#
+# Without this policy:
+# - getprop returns empty for bluetooth properties
+# - Bluetooth audio routing fails
+# - AVC denials: "avc: denied { read } ... u:object_r:bluetooth_a2dp_offload_prop:s0"
+
+# Allow bluetooth to read its own properties
+get_prop(bluetooth, bluetooth_a2dp_offload_prop)
+
+# Allow system_app to read for settings apps
+get_prop(system_app, bluetooth_a2dp_offload_prop)
+
+# Allow shell to read for debugging (getprop)
+get_prop(shell, bluetooth_a2dp_offload_prop)
