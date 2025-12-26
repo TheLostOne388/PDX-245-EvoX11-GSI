@@ -1,0 +1,27 @@
+
+project frameworks/base/
+diff --git a/packages/SystemUI/src/com/android/systemui/doze/DozeScreenBrightness.java b/packages/SystemUI/src/com/android/systemui/doze/DozeScreenBrightness.java
+index 1234567..89abcdef 100644
+--- a/packages/SystemUI/src/com/android/systemui/doze/DozeScreenBrightness.java
++++ b/packages/SystemUI/src/com/android/systemui/doze/DozeScreenBrightness.java
+@@ -147,7 +147,19 @@ public class DozeScreenBrightness extends BroadcastReceiver implements DozeMachi
+         mDefaultDozeBrightness = alwaysOnDisplayPolicy.defaultDozeBrightness;
+-        mDefaultDozeBrightnessFloat = mDisplayManager.getDefaultDozeBrightness(
+-                mContext.getDisplayId());
++        // Use DisplayManager value if set, otherwise fall back to framework config
++        float displayManagerDoze = mDisplayManager.getDefaultDozeBrightness(mContext.getDisplayId());
++        if (displayManagerDoze > 0f) {
++            mDefaultDozeBrightnessFloat = displayManagerDoze;
++        } else {
++            // Fall back to framework config float value
++            float configFloat = mContext.getResources().getFloat(
++                    com.android.internal.R.dimen.config_screenBrightnessDozeFloat);
++            if (configFloat > 0f) {
++                mDefaultDozeBrightnessFloat = configFloat;
++            } else {
++                // Ultimate fallback: convert integer [0-255] to float [0-1]
++                mDefaultDozeBrightnessFloat = mDefaultDozeBrightness / 255f;
++            }
++        }
+         mScreenBrightnessDim = alwaysOnDisplayPolicy.dimBrightness;
+         mScreenBrightnessDimFloat = alwaysOnDisplayPolicy.dimBrightnessFloat;

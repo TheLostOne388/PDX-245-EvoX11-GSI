@@ -1,0 +1,35 @@
+
+project frameworks/base/
+diff --git a/packages/SystemUI/src/com/android/systemui/edgelight/EdgeLightViewController.kt b/packages/SystemUI/src/com/android/systemui/edgelight/EdgeLightViewController.kt
+index 1234567..89abcdef 100644
+--- a/packages/SystemUI/src/com/android/systemui/edgelight/EdgeLightViewController.kt
++++ b/packages/SystemUI/src/com/android/systemui/edgelight/EdgeLightViewController.kt
+@@ -22,6 +22,7 @@ import android.content.Context
+ import android.graphics.Color
++import android.service.dreams.IDreamManager
+ import android.service.notification.NotificationListenerService.RankingMap
+ import android.service.notification.StatusBarNotification
+ import android.widget.FrameLayout
+@@ -43,6 +44,7 @@ class EdgeLightViewController 
+ constructor(
+     private val context: Context,
+     private val listener: NotificationListener,
++    private val dreamManager: IDreamManager,
+ ) : NotificationListener.NotificationHandler,
+     ScrimUtils.ScrimEventListener {
+ 
+@@ -67,6 +69,9 @@ class EdgeLightViewController 
+     // Check if device is in a state where edge light should show
+     // (either AOD doze mode or screensaver dream mode)
+-    private fun shouldShowEdgeLight(): Boolean {
+-        return isDozing
++    // (either AOD doze mode or screensaver dream mode)
++    private fun shouldShowEdgeLight(): Boolean {
++        return isDozing || try { dreamManager.isDreaming } catch (e: Exception) { false }
+     }
+ 
+     init {
+         ScrimUtils.get().addListener(this)
++        listener.addNotificationHandler(this)  // Register for notifications immediately
+         updateView()
+     }

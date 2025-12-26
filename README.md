@@ -6,12 +6,12 @@ Device tree for building Evolution X Android 16 GSI for Sony Xperia 1 VI (PDX245
 
 | Feature | Status | Notes |
 |---------|--------|-------|
-| Telephony | ✅ Working | Dual SIM, VoLTE, 5G/4G/LTE, SMS/MMS, Calls |
+| Telephony | ✅ Working | Dual SIM, 5G/4G/LTE, Calls |
 | WiFi 2.4/5GHz | ✅ Working | Full support |
 | WiFi 6GHz (WiFi 7) | ✅ Working | 6GHz bands enabled via product properties |
 | Navigation Bar | ✅ Working | No patch needed with Trebuchet launcher |
-| Launcher | ✅ Working | Trebuchet (Pixel Launcher disabled via override) |
-| Audio | ✅ Working | Stereo speakers, Bluetooth audio |
+| Launcher | ✅ Working | (Pixel / Lawnchair Launcher) |
+| Audio | ✅ Working | Stereo speakers |
 | Display | ✅ Working | Full resolution, HDR, 120Hz |
 | SELinux | ✅ Enforcing | Full security compliance |
 | Intune/Enterprise | ✅ Working | Passes Microsoft Intune compliance checks |

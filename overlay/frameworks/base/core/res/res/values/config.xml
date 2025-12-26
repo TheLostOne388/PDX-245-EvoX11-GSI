@@ -8,4 +8,27 @@
 <resources>
     <!-- Enable automatic/adaptive brightness -->
     <bool name="config_automatic_brightness_available">true</bool>
+
+    <!-- AOD (Doze) Brightness Configuration -->
+    <!-- Screen brightness for AOD/doze mode
+         Sony display minimum: 0.0013 = 2.0 nits (from vendor displayconfig)
+         The hardware cannot go lower than 2 nits -->
+    <integer name="config_screenBrightnessDoze">1</integer>
+    <!-- Float version - Using Sony's minimum value 0.0013 = 2.0 nits -->
+    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.0013</item>
+    
+    <!-- AOD availability from Sony vendor overlay -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+    <bool name="config_dozeAlwaysOnEnabled">true</bool>
+
+
+
+
+
+
+
+    <!-- Override minimum brightness (framework default is 10/255=0.039 = 53 nits) -->
+    <!-- Lowering to 1 (0.0039 / ~6 nits). This is safe (> raw min 0.0013) and much dimmer than 53 nits. -->
+    <integer name="config_screenBrightnessSettingMinimum">1</integer>
+    <!-- Removed float override to avoid validation crashes. Integer 1 is sufficient. -->
 </resources>

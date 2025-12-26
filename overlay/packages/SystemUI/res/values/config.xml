@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Sony Xperia 1 VI (PDX245) SystemUI Overlay
+    AOD Brightness Configuration - Static dim value
+-->
+<resources>
+    <!-- Keep doze_brightness_sensor_type empty to disable sensor-based brightness -->
+    <string name="doze_brightness_sensor_type" translatable="false"></string>
+
+    <!-- Static AOD brightness - very dim for OLED
+         This will use config_screenBrightnessDoze from framework overlay
+         and defaultDozeBrightness in AlwaysOnDisplayPolicy -->
+</resources>

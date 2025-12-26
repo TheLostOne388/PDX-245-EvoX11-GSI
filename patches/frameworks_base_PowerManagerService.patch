@@ -1,0 +1,41 @@
+
+project frameworks/base/
+diff --git a/services/core/java/com/android/server/power/PowerManagerService.java b/services/core/java/com/android/server/power/PowerManagerService.java
+index 1234567..89abcdef 100644
+--- a/services/core/java/com/android/server/power/PowerManagerService.java
++++ b/services/core/java/com/android/server/power/PowerManagerService.java
+@@ -2880,6 +2880,11 @@ public final class PowerManagerService extends SystemService
+             if (mIsPowered != wasPowered || mPlugType != oldPlugType || mBatteryLevel != oldLevel) {
+                 mDirty |= DIRTY_IS_POWERED; // mIsPowered changed
++                // Force dream restart on power change during dozing
++                if (wakefulness == WAKEFULNESS_DOZING || wakefulness == WAKEFULNESS_DREAMING) {
++                    for (int idx = 0; idx < mPowerGroups.size(); idx++) {
++                        mPowerGroups.valueAt(idx).setSandmanSummonedLocked(true);
++                    }
++                }
+                 boolean dockedOnWireless = mDockState == Intent.EXTRA_DOCK_STATE_DESK
+                         || mDockState == Intent.EXTRA_DOCK_STATE_HE_DESK
+                         || mDockState == Intent.EXTRA_DOCK_STATE_LE_DESK;
+@@ -3624,10 +3629,12 @@ public final class PowerManagerService extends SystemService
+     @GuardedBy("mLock")
+     private boolean shouldNapAtBedTimeLocked(PowerGroup powerGroup) {
+         if (!powerGroup.supportsSandmanLocked()) {
+             return false;
+         }
+-        return mDreamsActivateOnSleepSetting
++        // Also nap (screensaver) when charging with screensaver enabled
++        boolean napForCharging = mIsPowered && mDreamsEnabledSetting
++                && (mDreamsActivateOnSleepSetting || mDreamsActivateOnDockSetting);
++        return napForCharging || mDreamsActivateOnSleepSetting
+                 || (mDreamsActivateOnDockSetting
+                         && mDockState != Intent.EXTRA_DOCK_STATE_UNDOCKED)
+                 || (mDreamsActivateWhilePosturedSetting && mDevicePostured);
+@@ -7581,6 +7588,9 @@ public final class PowerManagerService extends SystemService
+                     if (isNoDoze) {
+                         sleepPowerGroupLocked(powerGroup, eventTime, reason, uid);
++                    } else if (shouldNapAtBedTimeLocked(powerGroup)) {
++                        // When charging with screensaver enabled, start screensaver instead of AOD
++                        dreamPowerGroupLocked(powerGroup, eventTime, reason, uid);
+                     } else {
+                         dozePowerGroupLocked(powerGroup, eventTime, reason, uid);
+                     }

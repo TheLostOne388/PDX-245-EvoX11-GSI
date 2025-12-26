@@ -3,7 +3,7 @@
 # Last updated: Dec 21, 2025
 #
 # ==============================================================================
-# PATCHES REQUIRED AFTER REPO SYNC (2 patches)
+# PATCHES REQUIRED AFTER REPO SYNC (3 sets of patches)
 # ==============================================================================
 # Run these commands from ~/Evo16 after every repo sync:
 #
@@ -17,6 +17,13 @@
 # # 2. WiFi 6GHz Framework Support (enables WiFi 6E/7)
 # cd vendor/hardware_overlay
 # git apply ../../device/sony/pdx245/patches/wifi-6ghz-overlay.patch
+# cd ../..
+#
+# # 3. AOD Brightness & Screensaver Fixes (AOD too bright, screensaver priority)
+# cd frameworks/base
+# git apply ../../device/sony/pdx245/patches/frameworks_base_PowerManagerService.patch
+# git apply ../../device/sony/pdx245/patches/frameworks_base_DozeScreenBrightness.patch
+# git apply ../../device/sony/pdx245/patches/frameworks_base_EdgeLightViewController.patch
 # cd ../..
 #
 # Note: NavBar patch eliminated - works with qemu.hw.mainkeys=0 + Trebuchet
@@ -107,11 +114,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # We set them at build time since we don't have root to use resetprop_phh.
 #
 # Audio policy modification (add sysbta module) is done in rw-system.sh + vndk.rc
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.bluetooth.a2dp_offload.disabled=true \
-    ro.bluetooth.a2dp_offload.supported=false \
-    persist.bluetooth.bluetooth_audio_hal.disabled=true \
-    persist.bluetooth.system_audio_hal.enabled=true
 
 # ==============================================================================
 # Sony Stock Product Partition Properties
