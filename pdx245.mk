@@ -190,6 +190,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Re-enable QcRilAm for Qualcomm voice call audio routing
 PRODUCT_PACKAGES += QcRilAm
 
+# FIX: Disable IMS Feature Declaration to prevent SMS/RIL failures
+# GSI lacks the IMS implementation. Declaring the feature causes RIL/SMS failure.
+PRODUCT_COPY_FILES := $(filter-out frameworks/native/data/etc/android.hardware.telephony.ims.xml:system/etc/permissions/android.hardware.telephony.ims.xml,$(PRODUCT_COPY_FILES))
+
 # ==============================================================================
 # Sony Camera App (from XQ-EC72_Customized_SEA_69.2.A.2.30 firmware)
 # ==============================================================================
