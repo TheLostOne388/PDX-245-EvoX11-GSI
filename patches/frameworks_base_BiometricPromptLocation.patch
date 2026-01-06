@@ -1,0 +1,47 @@
+diff --git a/services/core/java/com/android/server/biometrics/sensors/fingerprint/aidl/FingerprintProvider.java b/services/core/java/com/android/server/biometrics/sensors/fingerprint/aidl/FingerprintProvider.java
+index 70c252917..630ff0f85 100644
+--- a/services/core/java/com/android/server/biometrics/sensors/fingerprint/aidl/FingerprintProvider.java
++++ b/services/core/java/com/android/server/biometrics/sensors/fingerprint/aidl/FingerprintProvider.java
+@@ -279,8 +279,20 @@ public class FingerprintProvider implements IBinder.DeathRecipient, ServiceProvi
+             @NonNull List<SensorLocationInternal> workaroundLocations,
+             boolean resetLockoutRequiresHardwareAuthToken) {
+         final int sensorId = prop.commonProps.sensorId;
++
++        // NUCLEAR FIX (RE-APPLIED): Force Sensor Type to POWER_BUTTON (4)
++        // This ensures SystemUI activates SideFpsController/SideFpsController logic.
++        Slog.e(TAG, "PDX245 Debug: Overriding HAL sensorType (" + prop.sensorType + ") to POWER_BUTTON (4)");
++        prop.sensorType = 4; // FingerprintSensorProperties.TYPE_POWER_BUTTON
++
++        // NUCLEAR FIX: Injected Hardcoded Location for PDX245 (X=1070 for visibility)
++        // Display ID must match the device's unique display ID "local:131"
++        List<SensorLocationInternal> fixedLocations = new ArrayList<>();
++        fixedLocations.add(new SensorLocationInternal("local:131", 1070, 1100, 100));
++        Slog.e(TAG, "PDX245 Debug: Injecting fixed location (1070, 1100) for display local:131");
++
+         final Sensor sensor = new Sensor(this, mContext, mHandler, prop, mBiometricContext,
+-                workaroundLocations, resetLockoutRequiresHardwareAuthToken);
++                fixedLocations, resetLockoutRequiresHardwareAuthToken);
+         sensor.init(gestureAvailabilityDispatcher, mLockoutResetDispatcher);
+         final int sessionUserId = sensor.getLazySession().get() == null ? UserHandle.USER_NULL :
+                 sensor.getLazySession().get().getUserId();
+@@ -976,11 +988,15 @@ public class FingerprintProvider implements IBinder.DeathRecipient, ServiceProvi
+         }
+ 
+         try {
+-            return new SensorLocationInternal(
+-                    array.getString(0),
+-                    array.getInt(1, 0),
+-                    array.getInt(2, 0),
+-                    array.getInt(3, 0));
++            String displayId = array.getString(0);
++            int x = array.getInt(1, 0);
++            int y = array.getInt(2, 0);
++            int radius = array.getInt(3, 0);
++
++            Slog.e(getTag(), "Parsed workaround sensor props: displayId='" + displayId
++                    + "', x=" + x + ", y=" + y + ", radius=" + radius);
++
++            return new SensorLocationInternal(displayId, x, y, radius);
+         } catch (Exception e) {
+             Slog.w(getTag(), "malformed sensor location", e);
+         }

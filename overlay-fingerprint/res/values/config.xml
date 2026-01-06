@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Side-mounted Fingerprint Sensor Configuration -->
+    <bool name="config_is_powerbutton_fps">true</bool>
+
+    <!-- Side Fingerprint Sensor Properties - array of array references -->
+    <array name="config_sfps_sensor_props" translatable="false">
+        <item>@array/config_sfps_sensor_props_0</item>
+    </array>
+
+    <!-- Properties for display 0:
+         [0] displayId (string) - use empty string "" for default/built-in display
+         [1] sensorLocationX (int)
+         [2] sensorLocationY (int)
+         [3] sensorRadius (int)
+    -->
+    <array name="config_sfps_sensor_props_0" translatable="false">
+        <item></item>      <!-- displayId (string) -->
+        <item>1080</item>  <!-- sensorLocationX (int) -->
+        <item>1170</item>  <!-- sensorLocationY (int) -->
+        <item>100</item>   <!-- sensorRadius (int) -->
+    </array>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sony Xperia 1 VI (PDX245) side-mounted fingerprint sensor location -->
+    <!-- These values position the fingerprint sensor indicator on the right edge -->
+    
+    <!-- X position: Adjusted to 1070px (just off the 1080px edge) for visibility -->
+    <dimen name="physical_fingerprint_sensor_center_screen_location_x">1070px</dimen>
+    
+    <!-- Y position: Vertically centered on the side power button -->
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">1170px</dimen>
+    
+    <!-- Power button Y position (same as fingerprint sensor on this device) -->
+    <dimen name="physical_power_button_center_screen_location_y">1170px</dimen>
+</resources>

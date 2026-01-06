@@ -9,6 +9,29 @@
     <!-- Enable automatic/adaptive brightness -->
     <bool name="config_automatic_brightness_available">true</bool>
 
+    <!-- Auto-brightness curve (Lux -> Brightness 0-255) -->
+    <!-- Essential for GSI to map light sensor values to screen brightness -->
+    <integer-array name="config_autoBrightnessLevels">
+        <item>5</item>
+        <item>20</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2500</item>
+        <item>5000</item>
+    </integer-array>
+
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>2</item>   <!-- 0-5 Lux -->
+        <item>8</item>   <!-- 5-20 Lux -->
+        <item>25</item>  <!-- 20-100 Lux -->
+        <item>70</item>  <!-- 100-500 Lux -->
+        <item>110</item> <!-- 500-1000 Lux -->
+        <item>150</item> <!-- 1000-2500 Lux -->
+        <item>210</item> <!-- 2500-5000 Lux -->
+        <item>255</item> <!-- 5000+ Lux -->
+    </integer-array>
+
     <!-- AOD (Doze) Brightness Configuration -->
     <!-- Screen brightness for AOD/doze mode
          Sony display minimum: 0.0013 = 2.0 nits (from vendor displayconfig)

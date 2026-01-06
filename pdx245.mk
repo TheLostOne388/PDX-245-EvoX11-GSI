@@ -26,6 +26,16 @@
 # git apply ../../device/sony/pdx245/patches/frameworks_base_EdgeLightViewController.patch
 # cd ../..
 #
+# # 4. Fix Security Patch Level Display (Prevents downgrade to vendor SPL)
+# cd device/phh/treble
+# git apply ../../../device/sony/pdx245/patches/device_phh_treble_rw-system.patch
+# cd ../../..
+#
+# # 5. Biometric Prompt Location (Side-mounted fingerprint sensor indicator)
+# cd frameworks/base
+# git apply ../../device/sony/pdx245/patches/frameworks_base_BiometricPromptLocation.patch
+# cd ../..
+#
 # Note: NavBar patch eliminated - works with qemu.hw.mainkeys=0 + Trebuchet
 # Note: WiFi 6GHz country list is now in PRODUCT_PRODUCT_PROPERTIES (no patch needed)
 #
@@ -50,6 +60,11 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 # ==============================================================================
 # Enables auto-brightness (curves from vendor displayconfig)
 PRODUCT_PACKAGE_OVERLAYS += device/sony/pdx245/overlay
+
+# Runtime Resource Overlay for Fingerprint Configuration (Ensures it overrides framework defaults)
+PRODUCT_PACKAGES += \
+    SonyFingerprintOverlay \
+    SonySystemUIOverlay
 
 # ==============================================================================
 # Product Identity

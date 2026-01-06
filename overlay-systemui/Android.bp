@@ -1,0 +1,13 @@
+// Copyright (C) 2024 The Evolution X Project
+// SPDX-License-Identifier: Apache-2.0
+
+android_app {
+    name: "SonySystemUIOverlay",
+
+    resource_dirs: ["res"],
+
+    platform_apis: true,
+    system_ext_specific: true,
+
+    aaptflags: ["--auto-add-overlay"],
+}
