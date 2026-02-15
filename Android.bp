@@ -1,6 +1,3 @@
-// Define the missing default module to satisfy dependencies in hardware/qcom-caf/common/Android.bp
-// This prevents the need to modify upstream source code.
-
-cc_defaults {
-    name: "generated_kernel_header_defaults",
-}
+// PDX245 Android.bp
+// Note: generated_kernel_header_defaults stub removed for QPR2 --
+// now provided by vendor/lineage/build/soong/Android.bp

@@ -1,0 +1,14 @@
+# Sony PDX245 Telephony SELinux Policy
+#
+# Allow platform_app domain (qcrilmsgtunnel, ims) access to telephony HAL
+# services. Stock Sony firmware grants these permissions in vendor/system_ext
+# sepolicy, but GSI replaces system_ext and loses them.
+#
+# Without this policy:
+# - qcrilmsgtunnel can't bind to IQtiOemHook AIDL service
+# - OEM hook code 1028 goes unhandled → RADIO_UNAVAILABLE
+# - AVC denials: "avc: denied { find } ... u:r:platform_app ... hal_telephony_hwservice"
+
+# Allow platform_app to find telephony HAL services
+# (qcrilmsgtunnel runs as platform_app in system_ext/priv-app)
+allow platform_app hal_telephony_hwservice:hwservice_manager { find };
