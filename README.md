@@ -12,12 +12,12 @@ Device tree for building Evolution X Android 16 QPR2 GSI for Sony Xperia 1 VI (P
 |---------|--------|-------|
 | Telephony | ✅ Working | Dual SIM, 5G/4G/LTE, voice, data. Requires stock boot priming (see below) |
 | WiFi 2.4/5GHz | ✅ Working | Full support |
-| WiFi 6GHz (WiFi 7) | ✅ Working | Requires WiFi patches (see below) |
+| WiFi 6GHz (WiFi 7) | ✅ Working | Region blocks removed
 | Bluetooth Pairing | ✅ Working | BT connections, SCO call audio |
-| Bluetooth A2DP | ❌ Not working | Media audio over BT inoperable on all GSI builds. See `documents/a2dp-bluetooth-troubleshooting.md` |
+| Bluetooth A2DP | ❌ Not working | Media audio over BT inoperable on all GSI builds.
 | Fingerprint | ✅ Working | Side-mounted sensor, biometric prompt location patched |
-| Navigation Bar | ✅ Working | 3-button navigation with Lawnchair |
-| Launcher | ✅ Working | Lawnchair (Trebuchet removed — crashes on A16 gesture nav) |
+| Navigation Bar | ✅ Working | all nav modes working |
+| Launcher | ✅ Working | Pixel / Lawnchair included (or use your own) |
 | Speaker Audio | ✅ Working | Stereo speakers |
 | Display | ✅ Working | Full resolution, HDR, 120Hz |
 | Auto-Brightness | ✅ Working | Brightness curves via overlay |
@@ -32,8 +32,7 @@ Device tree for building Evolution X Android 16 QPR2 GSI for Sony Xperia 1 VI (P
 
 - **Bluetooth A2DP:** Media audio over Bluetooth does not work on any GSI for
   this device. BT call audio (SCO) works. This is a community-wide issue with
-  SM8650 GSI builds — no known fix exists. Extensively documented in
-  `documents/a2dp-bluetooth-troubleshooting.md`.
+  SM8650 GSI builds — no known fix exists.
 
 - **Telephony requires stock boot priming:** After a clean flash (wiped
   userdata), you must boot into stock Sony firmware once before flashing the GSI.
@@ -173,15 +172,6 @@ fastboot reboot
 | `bka` | 16 | QPR1 | `android-16.0.0_r3` (BP3A) | Previous — working |
 | `bq2` | 16 | QPR2 | `android-16.0.0_r4` (BP4A) | **Current** |
 
-## Documentation
-
-Detailed troubleshooting and fix history is in `documents/`:
-
-| Document | Content |
-|----------|---------|
-| `qpr2-build-fixes.md` | All build errors and fixes (1-14) with root causes |
-| `a2dp-bluetooth-troubleshooting.md` | Complete A2DP investigation (QPR1 + QPR2, 20+ attempts) |
-| `stock-reference-fw69.2.A.4.1.md` | Stock firmware snapshot for comparison |
 
 ## Credits
 
