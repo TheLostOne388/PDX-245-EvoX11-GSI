@@ -223,80 +223,73 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Re-enable QcRilAm for Qualcomm voice call audio routing
 PRODUCT_PACKAGES += QcRilAm
 
-# FIX: Disable IMS Feature Declaration to prevent SMS/RIL failures
-# GSI lacks the IMS implementation. Declaring the feature causes RIL/SMS failure.
+# IMS Feature Declaration: filter-out DOES NOT WORK (inherit-product timing)
+# The IMS feature XML is added by device/phh/treble/base.mk via
+# inherit-product. Android's inherit-product stores variables in a
+# separate namespace (PRODUCTS.<product>.PRODUCT_COPY_FILES) and merges
+# them AFTER all product makefiles finish loading. So this filter-out
+# runs before the inherited entries are merged and has no effect.
+# The file still appears at /system/etc/permissions/android.hardware.telephony.ims.xml.
+#
+# This is harmless now that StockIms is removed: without an IMS service APK,
+# the feature declaration has no effect (no ImsService to bind to).
+# If we ever need to truly remove this feature, modify base.mk directly
+# (fragile -- reverted by repo sync).
 PRODUCT_COPY_FILES := $(filter-out frameworks/native/data/etc/android.hardware.telephony.ims.xml:system/etc/permissions/android.hardware.telephony.ims.xml,$(PRODUCT_COPY_FILES))
 
 # ==============================================================================
-# Stock Qualcomm Telephony Stack (from Sony firmware 69.2.A.4.1)
+# Stock Qualcomm Telephony Stack -- DISABLED (QPR2 regression revert)
 # ==============================================================================
-# GSI replaces the product and system_ext partitions, removing Qualcomm's
-# telephony framework JARs, permissions, and service APKs. Without these:
-#   - Code 1028 (OEM hook) goes unhandled → RADIO_UNAVAILABLE
-#   - IMS feature declared without implementation → modem panic
-#   - Framework can't communicate with vendor telephony HALs
+# These QPR2 additions (framework JARs, permissions, qcrilmsgtunnel, StockIms,
+# SELinux policy) were extracted from Sony firmware and added to provide
+# Qualcomm's telephony stack on the GSI. However, they cause a critical
+# regression: the vendor IMS daemons partially initialize and tell the modem
+# to route incoming SMS through IMS. Since IMS never fully registers on the
+# GSI (CODE_REGISTRATION_ERROR), incoming SMS is silently dropped at the
+# modem level before it reaches Android.
 #
-# These files are extracted from stock firmware and are byte-identical
-# between firmware 69.2.A.2.41 and 69.2.A.4.1.
-
+# On QPR1 (none of these additions present), CS (circuit-switched) SMS
+# worked perfectly. Reverting to QPR1 state restores SMS receive.
+#
+# Disabled: Feb 16, 2026
+# See documents/qpr2-build-fixes.md Fix 16 for full analysis.
+#
 # --- Qualcomm Telephony Framework (built from source) ---
-# These modules are defined in vendor/codeaurora/telephony/ with
-# installable: true, but they must be in PRODUCT_PACKAGES to actually
-# get installed to the system image. Without them, IMS crashes with
-# ClassNotFoundException: org.codeaurora.ims.utils.QtiCarrierConfigHelper
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml \
-    extphonelib-product \
-    extphonelib_product.xml \
-    qti-telephony-hidl-wrapper-prd \
-    qti_telephony_hidl_wrapper_prd.xml \
-    qti-telephony-utils-prd \
-    qti_telephony_utils_prd.xml
-
-# Also include the system_ext variants (used by system_ext apps)
-PRODUCT_PACKAGES += \
-    extphonelib \
-    extphonelib.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml
-
-# --- Product Framework JARs (stock prebuilts, NOT built from source) ---
-# Only include JARs not provided by vendor/codeaurora/telephony.
-PRODUCT_COPY_FILES += \
-    device/sony/pdx245/stock_telephony/product_framework/uimgbalibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbalibrary.jar \
-    device/sony/pdx245/stock_telephony/product_framework/uimgbamanagerlibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimgbamanagerlibrary.jar \
-    device/sony/pdx245/stock_telephony/product_framework/uimlpalibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimlpalibrary.jar \
-    device/sony/pdx245/stock_telephony/product_framework/uimremoteclientlibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimremoteclientlibrary.jar \
-    device/sony/pdx245/stock_telephony/product_framework/uimremoteserverlibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimremoteserverlibrary.jar \
-    device/sony/pdx245/stock_telephony/product_framework/uimremotesimlocklibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimremotesimlocklibrary.jar \
-    device/sony/pdx245/stock_telephony/product_framework/uimservicelibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/uimservicelibrary.jar \
-    device/sony/pdx245/stock_telephony/product_framework/remotesimlockmanagerlibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/remotesimlockmanagerlibrary.jar \
-    device/sony/pdx245/stock_telephony/product_framework/vendor.qti.hardware.radio.qtiradio-V1-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.radio.qtiradio-V1-java.jar
-
-# --- Product Permissions (registers the JARs as shared libraries) ---
-# NOTE: ims_ext_common.xml, extphonelib_product.xml, qti_telephony_hidl_wrapper_prd.xml,
-# and qti_telephony_utils_prd.xml are already provided by vendor/codeaurora/telephony/.
-PRODUCT_COPY_FILES += \
-    device/sony/pdx245/stock_telephony/product_permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
-    device/sony/pdx245/stock_telephony/product_permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
-    device/sony/pdx245/stock_telephony/product_permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
-    device/sony/pdx245/stock_telephony/product_permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
-    device/sony/pdx245/stock_telephony/product_permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
-    device/sony/pdx245/stock_telephony/product_permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
-    device/sony/pdx245/stock_telephony/product_permissions/vendor.qti.hardware.data.connectionaidl-V1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connectionaidl-V1-java.xml
-
-# --- System_ext APKs (IMS service + OEM hook handler) ---
-# qcrilmsgtunnel handles OEM hook code 1028 which causes RADIO_UNAVAILABLE if unhandled.
-# ims.apk provides the IMS service implementation expected by the vendor modem.
-# Note: ims.apk requires ro.boot.vendor.qspa.modem=enabled (set in fixup script).
-# Note: qcrilmsgtunnel requires SELinux access to hal_telephony_hwservice (see sepolicy/).
-# Note: APKs must use BUILD_PREBUILT (Android.mk), not PRODUCT_COPY_FILES.
-PRODUCT_PACKAGES += \
-    StockIms \
-    StockQcrilMsgTunnel
+# PRODUCT_PACKAGES += \
+#     ims-ext-common \
+#     ims_ext_common.xml \
+#     extphonelib-product \
+#     extphonelib_product.xml \
+#     qti-telephony-hidl-wrapper-prd \
+#     qti_telephony_hidl_wrapper_prd.xml \
+#     qti-telephony-utils-prd \
+#     qti_telephony_utils_prd.xml
+#
+# --- System_ext variants ---
+# PRODUCT_PACKAGES += \
+#     extphonelib \
+#     extphonelib.xml \
+#     qti-telephony-hidl-wrapper \
+#     qti_telephony_hidl_wrapper.xml \
+#     qti-telephony-utils \
+#     qti_telephony_utils.xml
+#
+# --- Product Framework JARs (stock prebuilts) ---
+# PRODUCT_COPY_FILES += \
+#     device/sony/pdx245/stock_telephony/product_framework/*.jar (9 JARs)
+#
+# --- Product Permissions ---
+# PRODUCT_COPY_FILES += \
+#     device/sony/pdx245/stock_telephony/product_permissions/*.xml (7 XMLs)
+#
+# --- StockQcrilMsgTunnel (OEM hook handler) ---
+# PRODUCT_PACKAGES += StockQcrilMsgTunnel
+#
+# --- StockIms (IMS service APK) ---
+# PRODUCT_PACKAGES += StockIms
+#
+# --- libimsmedia_jni.so (native lib for StockIms) ---
+# PRODUCT_COPY_FILES += ...libimsmedia_jni.so
 
 # ==============================================================================
 # Sony Camera App (from XQ-EC72_Customized_SEA_69.2.A.2.30 firmware)

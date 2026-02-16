@@ -180,12 +180,10 @@ sleep 1
 killall audioserver 2>/dev/null || true
 echo "Audioserver killed (init will auto-restart with sysbta)"
 
-# --- Telephony: Enable IMS overlay APK loading ---
-# The stock ims.apk has an overlay manifest that requires this property to be
-# set before package manager scans. Without it, the APK is ignored:
-#   "overlay ignored due to required system property: ro.boot.vendor.qspa.modem"
-# Also set at build time in pdx245.mk, but resetprop here ensures it persists.
-resetprop_phh ro.boot.vendor.qspa.modem enabled
+# --- Telephony: IMS overlay property DISABLED (QPR2 regression revert) ---
+# ro.boot.vendor.qspa.modem=enabled was needed for StockIms overlay APK.
+# Removed along with entire QPR2 telephony stack to restore QPR1 SMS behavior.
+# resetprop_phh ro.boot.vendor.qspa.modem enabled
 
 # --- WiFi 6GHz / WiFi 7 Country Lists ---
 # ro.vendor.* namespace is restricted to vendor partition by SELinux.
@@ -223,7 +221,7 @@ echo "A2DP offload supported: $(getprop ro.bluetooth.a2dp_offload.supported)"
 echo "WiFi 6E: $(getprop ro.vendor.sony.wlan.6e_cc_list | head -c 20)..."
 echo "SPL (real): $(getprop ro.build.version.security_patch)"
 echo "SPL (pihooks): $(getprop persist.sys.pihooks_SECURITY_PATCH)"
-echo "Modem: $(getprop ro.boot.vendor.qspa.modem)"
+# echo "Modem: $(getprop ro.boot.vendor.qspa.modem)"  # QPR2 telephony removed
 # Check if sysbta was inlined into audio policy configs
 for f in /data/local/tmp/audio_policy_sysbta_sku.xml /data/local/tmp/audio_policy_sysbta_generic.xml; do
     if [ -f "$f" ]; then

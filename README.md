@@ -10,8 +10,9 @@ Device tree for building Evolution X Android 16 QPR2 GSI for Sony Xperia 1 VI (P
 
 | Feature | Status | Notes |
 |---------|--------|-------|
-| Telephony | ✅ Working | Dual SIM, 5G/4G/LTE, voice, data. Requires stock boot priming (see below) |
+| Telephony | ✅ Working | Dual SIM, 5G/4G/LTE, voice, data. May require stock boot priming (see below) |
 | WiFi 2.4/5GHz | ✅ Working | Full support |
+| SMS Messaging| ✅ Working | May require single boot into safe mode - see note below |
 | WiFi 6GHz (WiFi 7) | ✅ Working | Region blocks removed
 | Bluetooth Pairing | ✅ Working | BT connections, SCO call audio |
 | Bluetooth A2DP | ❌ Not working | Media audio over BT inoperable on all GSI builds.
@@ -35,9 +36,11 @@ Device tree for building Evolution X Android 16 QPR2 GSI for Sony Xperia 1 VI (P
   SM8650 GSI builds — no known fix exists.
 
 - **Telephony requires stock boot priming:** After a clean flash (wiped
-  userdata), you must boot into stock Sony firmware once before flashing the GSI.
+  userdata), you may need to boot into stock Sony firmware once before flashing the GSI.
   This initializes modem NV data in `/data/vendor/` that the telephony stack
-  requires. Dirty flashing over a working stock install also works.
+  requires. This is only required if the telephony stack does not come up after flashing the GSI. Dirty flashing over a working stock install also works.
+
+- **Unable to receive SMS:** Some users may experience issues receiving SMS messages (sending works) The fix is a one-time boot into safe mode to reset the modem's IMS state. Long press physical power button, long press reboot soft button and select safe mode. One in safe mode, reboot to normal. Inbound SMS messages should then work.
 
 ## Patches Required After Repo Sync
 
@@ -90,7 +93,7 @@ device/sony/pdx245/
 ├── system_ext.prop               # Custom system_ext properties (secure ADB)
 ├── apns/                         # Custom APN configurations
 ├── documents/                    # Build fixes, troubleshooting docs
-│   ├── qpr2-build-fixes.md       # All build & runtime fixes (Fixes 1-14)
+│   ├── qpr2-build-fixes.md       # All build & runtime fixes (Fixes 1-16)
 │   ├── a2dp-bluetooth-troubleshooting.md  # Comprehensive A2DP history
 │   └── stock-reference-fw69.2.A.4.1.md    # Stock firmware reference
 ├── files/
@@ -105,13 +108,13 @@ device/sony/pdx245/
 │   ├── Lawnchair/                # Default launcher APK
 │   ├── SonyCameraApp/            # Stock Sony camera + dependencies
 │   └── SmartCharger/             # Battery care app + framework JARs
-├── sepolicy/                     # Vendor SELinux policy extensions
-├── sepolicy_system_ext/          # System_ext SELinux policy (telephony HAL access)
-│   └── telephony.te              # typeattribute platform_app hal_telephony_client
-└── stock_telephony/              # Qualcomm telephony stack from stock firmware
-    ├── product_framework/        # Framework JARs (UIM, radio, etc.)
-    ├── product_permissions/      # Permission XMLs for shared libraries
-    └── system_ext_apks/          # IMS + qcrilmsgtunnel APKs (BUILD_PREBUILT)
+├── sepolicy/                     # Vendor SELinux policy extensions (bluetooth)
+├── sepolicy_system_ext/          # System_ext SELinux policy (telephony rules disabled)
+│   └── telephony.te              # QPR2 telephony HAL access (commented out -- caused SMS regression)
+└── stock_telephony/              # Qualcomm telephony files from stock firmware (DISABLED)
+    ├── product_framework/        # Framework JARs (not installed -- QPR2 revert)
+    ├── product_permissions/      # Permission XMLs (not installed -- QPR2 revert)
+    └── system_ext_apks/          # IMS + qcrilmsgtunnel APKs (not installed -- QPR2 revert)
 ```
 
 ## Runtime Fixup Script
@@ -122,7 +125,6 @@ from build.prop. It handles:
 
 - **Bluetooth:** sysbta properties, audio policy patching (A2DP attempt)
 - **WiFi 6GHz:** `ro.vendor.sony.wlan.6e_cc_list` / `11be_cc_list`
-- **Telephony:** `ro.boot.vendor.qspa.modem=enabled` (IMS overlay loading)
 - **SPL:** Restores correct platform security patch level + PIHooks override
 
 Log output: `/data/local/tmp/pdx245-fixup.log` (readable via `adb shell`)
@@ -163,6 +165,10 @@ fastboot flash system system.img
 
 # 3. Reboot
 fastboot reboot
+
+# 4. Safe mode cycle (one-time, fixes SMS receive)
+#    Hold Power > long-press "Power off" > confirm Safe Mode
+#    Once booted in safe mode, reboot back to normal
 ```
 
 ## Branch History

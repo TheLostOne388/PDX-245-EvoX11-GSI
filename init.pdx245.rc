@@ -4,11 +4,11 @@
 # namespaces (ro.vendor.*, persist.bluetooth.*) from being loaded via
 # build.prop when set from the system/product partition.
 
-# --- Early telephony property (before package manager scans) ---
-# ims.apk overlay requires ro.boot.vendor.qspa.modem=enabled to load.
-# Must be set before zygote/system_server starts scanning packages.
-on post-fs-data
-    exec u:r:phhsu_daemon:s0 root -- /system/bin/resetprop_phh ro.boot.vendor.qspa.modem enabled
+# --- Early telephony property: DISABLED (QPR2 regression revert) ---
+# ro.boot.vendor.qspa.modem=enabled was needed for StockIms overlay APK loading.
+# Removed along with entire QPR2 telephony stack to restore QPR1 SMS behavior.
+# on post-fs-data
+#     exec u:r:phhsu_daemon:s0 root -- /system/bin/resetprop_phh ro.boot.vendor.qspa.modem enabled
 
 # --- Main fixup script (runs after boot completes) ---
 service pdx245_fixup /system/bin/pdx245-fixup-props.sh

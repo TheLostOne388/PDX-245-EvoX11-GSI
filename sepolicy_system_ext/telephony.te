@@ -1,39 +1,17 @@
 # Sony PDX245 Telephony SELinux Policy (system_ext)
 #
-# Allow platform_app domain (qcrilmsgtunnel, ims) access to telephony HAL
-# services. Stock Sony firmware grants these permissions in system_ext sepolicy,
-# but GSI replaces system_ext and loses them.
+# DISABLED: QPR2 regression revert (Feb 16, 2026)
 #
-# NOTE: This MUST be in SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS, not BOARD_SEPOLICY_DIRS.
-# BOARD_SEPOLICY_DIRS compiles as vendor policy which is on the vendor partition
-# (not modified by GSI). Only SYSTEM_EXT policies are compiled into the system image.
+# This policy added platform_app to hal_telephony_client attribute and
+# allowed access to hal_telephony_hwservice. It was needed for
+# qcrilmsgtunnel and ims.apk to communicate with vendor telephony HALs.
 #
-# Without this policy:
-# - qcrilmsgtunnel can't bind to IQtiOemHook AIDL service
-# - OEM hook code 1028 goes unhandled -> RADIO_UNAVAILABLE
+# However, this (along with the telephony framework JARs) enabled vendor
+# IMS daemons to partially initialize, causing the modem to route incoming
+# SMS through IMS. Since IMS never fully registers on the GSI, SMS was
+# silently dropped at the modem level.
 #
-# Observed AVC denials:
-#   avc: denied { find } for name=vendor.qti.hardware.radio.qcrilhook.IQtiOemHook/oemhook0
-#     scontext=u:r:platform_app  tcontext=u:object_r:vendor_hal_telephony_service2
-#     tclass=service_manager
+# On QPR1 (no telephony SELinux policy), CS SMS worked perfectly.
 #
-#   avc: denied { find } for ... tcontext=u:object_r:hal_telephony_hwservice
-#     tclass=hwservice_manager
-#
-# APPROACH: We cannot directly reference vendor_hal_telephony_service2 from
-# system_ext policy (Treble policy split prevents it). Instead, we add
-# platform_app to the hal_telephony_client attribute, which the VENDOR policy
-# already grants access to vendor_hal_telephony_service2 through:
-#   (allow hal_telephony_client vendor_hal_telephony_service2 (service_manager (find)))
-# This is the Treble-correct way to bridge the system/vendor policy boundary.
-
-# Add platform_app to hal_telephony_client attribute.
-# Vendor policy already allows hal_telephony_client to find
-# vendor_hal_telephony_service2 on service_manager and make binder calls
-# to hal_telephony_server. On stock, ims/qcrilmsgtunnel run as
-# vendor_qtelephony (which is in this attribute); on GSI they run as
-# platform_app, so we need this bridge.
-typeattribute platform_app hal_telephony_client;
-
-# Also allow the legacy HIDL hwservice_manager path
-allow platform_app hal_telephony_hwservice:hwservice_manager { find };
+# typeattribute platform_app hal_telephony_client;
+# allow platform_app hal_telephony_hwservice:hwservice_manager { find };
