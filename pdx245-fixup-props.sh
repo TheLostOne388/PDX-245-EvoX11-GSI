@@ -200,16 +200,10 @@ resetprop_phh ro.vendor.sony.wlan.11be_cc_list "US,HK,JP,AT,BE,BG,HR,CY,CZ,DK,EE
 # overwrote it) and restore it. This way both values display correctly in
 # Settings without hardcoding dates.
 #
-# THREE properties must be updated:
-#   1. ro.build.version.security_patch      - the real AOSP property
-#   2. persist.sys.pihooks_SECURITY_PATCH   - Evolution X / Play Integrity hooks
-#      override; Settings UI reads THIS instead of #1
-#   3. ro.build.version.security_patch_orig - some frameworks cache the original
+# Keep the platform SPL in sync with system build metadata.
 PLATFORM_SPL=$(grep -m1 'ro.build.version.security_patch=' /system/build.prop 2>/dev/null | cut -d= -f2)
 if [ -n "$PLATFORM_SPL" ]; then
     resetprop_phh ro.build.version.security_patch "$PLATFORM_SPL"
-    # EvoX PIHooks overrides what Settings displays -- must match platform SPL
-    resetprop_phh persist.sys.pihooks_SECURITY_PATCH "$PLATFORM_SPL"
 fi
 
 echo "=== pdx245-fixup-props.sh completed at $(date) ==="
@@ -220,7 +214,6 @@ echo "BT audio HAL disabled: $(getprop persist.bluetooth.bluetooth_audio_hal.dis
 echo "A2DP offload supported: $(getprop ro.bluetooth.a2dp_offload.supported)"
 echo "WiFi 6E: $(getprop ro.vendor.sony.wlan.6e_cc_list | head -c 20)..."
 echo "SPL (real): $(getprop ro.build.version.security_patch)"
-echo "SPL (pihooks): $(getprop persist.sys.pihooks_SECURITY_PATCH)"
 # echo "Modem: $(getprop ro.boot.vendor.qspa.modem)"  # QPR2 telephony removed
 # Check if sysbta was inlined into audio policy configs
 for f in /data/local/tmp/audio_policy_sysbta_sku.xml /data/local/tmp/audio_policy_sysbta_generic.xml; do

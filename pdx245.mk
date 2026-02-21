@@ -44,16 +44,8 @@
 # ==============================================================================
 # Base GSI Target
 # ==============================================================================
-$(call inherit-product, device/phh/treble/treble_arm64_bgN.mk)
-
-# Include GApps Pico (smaller footprint)
-$(call inherit-product, vendor/gms/gms_pico.mk)
-
-# Flag to indicate GApps build (removes "-Vanilla" suffix from version string)
-WITH_GMS := true
-
-# Bypass strict <uses-library> checks for GApps prebuilts
-PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+# Vanilla (no GApps) arm64 AB target.
+$(call inherit-product, device/phh/treble/treble_arm64_bvN.mk)
 
 # ==============================================================================
 # Device-Specific Overlays
@@ -181,14 +173,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.bluetooth.leaudio.bypass_allow_list=true \
     persist.bluetooth.leaudio.notify.idle.during.call=true \
     persist.enable.bluetooth.voipleawar=true
-
-# PIHooks Security Patch Override
-# evolution.mk sets persist.sys.pihooks_SECURITY_PATCH?=2026-01-05 (Pixel spoofed date).
-# post_process_props.py deletes the ?= when an unconditional = exists, so this
-# cleanly replaces the stale default with the actual platform security patch date.
-# Without this, first boot after data wipe shows January in Settings.
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.pihooks_SECURITY_PATCH=$(PLATFORM_SECURITY_PATCH)
 
 # Window Manager
 PRODUCT_PRODUCT_PROPERTIES += \
