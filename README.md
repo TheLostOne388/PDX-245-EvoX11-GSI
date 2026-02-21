@@ -1,8 +1,8 @@
-# Sony Xperia 1 VI (PDX245) - Evolution X GSI Device Tree
+# Sony Xperia 1 VI (PDX245) - LineageOS 23.2 GSI Device Tree
 
-Device tree for building Evolution X Android 16 QPR2 GSI for Sony Xperia 1 VI (PDX245 / XQ-EC72).
+Device tree for building LineageOS 23.2 Android 16 QPR2 GSI for Sony Xperia 1 VI (PDX245 / XQ-EC72).
 
-**Branch:** `bq2` (Android 16 QPR2, `android-16.0.0_r4`, BP4A)
+**Branch:** `lineage-23.2` (Android 16 QPR2, `android-16.0.0_r4`, BP4A)
 **Base firmware:** Sony 69.2.A.4.1 (SEA)
 **SoC:** Snapdragon 8 Gen 3 (SM8650 / pineapple)
 
@@ -13,7 +13,7 @@ Device tree for building Evolution X Android 16 QPR2 GSI for Sony Xperia 1 VI (P
 | Telephony | ✅ Working | Dual SIM, 5G/4G/LTE, voice, data. May require stock boot priming (see below) |
 | WiFi 2.4/5GHz | ✅ Working | Full support |
 | SMS Messaging| ✅ Working | May require single boot into safe mode - see note below |
-| WiFi 6GHz (WiFi 7) | ✅ Working | Region blocks removed
+| WiFi 6GHz (WiFi 7) | ✅ Working | Region blocks removed |
 | Bluetooth Pairing | ✅ Working | BT connections, SCO call audio |
 | Bluetooth A2DP | ❌ Not working | Media audio over BT inoperable on all GSI builds.
 | Fingerprint | ✅ Working | Side-mounted sensor, biometric prompt location patched |
@@ -44,7 +44,7 @@ Device tree for building Evolution X Android 16 QPR2 GSI for Sony Xperia 1 VI (P
 
 ## Patches Required After Repo Sync
 
-Run these commands from your build root (e.g. `~/Evo16Q2`) after every
+Run these commands from your build root (e.g. `~/Lin16`) after every
 `repo sync`. All patches are stored in `device/sony/pdx245/patches/`.
 
 ```bash
@@ -59,10 +59,13 @@ git apply ../../device/sony/pdx245/patches/wifi-6ghz-overlay.patch
 cd ../..
 
 # 3. AOD Brightness & Screensaver Fixes
+# NOTE: On lineage-23.2 these patch files are in legacy format and do not
+# apply cleanly with `git apply`. Keep them as references and port manually
+# when rebasing after sync.
 cd frameworks/base
-git apply ../../device/sony/pdx245/patches/frameworks_base_PowerManagerService.patch
-git apply ../../device/sony/pdx245/patches/frameworks_base_DozeScreenBrightness.patch
-git apply ../../device/sony/pdx245/patches/frameworks_base_EdgeLightViewController.patch
+# git apply ../../device/sony/pdx245/patches/frameworks_base_PowerManagerService.patch
+# git apply ../../device/sony/pdx245/patches/frameworks_base_DozeScreenBrightness.patch
+# git apply ../../device/sony/pdx245/patches/frameworks_base_EdgeLightViewController.patch
 cd ../..
 
 # 4. Security Patch Level Display Fix (prevents rw-system.sh from overwriting platform SPL)
@@ -125,27 +128,33 @@ from build.prop. It handles:
 
 - **Bluetooth:** sysbta properties, audio policy patching (A2DP attempt)
 - **WiFi 6GHz:** `ro.vendor.sony.wlan.6e_cc_list` / `11be_cc_list`
-- **SPL:** Restores correct platform security patch level + PIHooks override
+- **SPL:** Restores correct platform security patch level
 
 Log output: `/data/local/tmp/pdx245-fixup.log` (readable via `adb shell`)
 
 ## Build Instructions
 
 ```bash
-# 1. Initialize repo (QPR2 branch)
-repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs
-repo sync -c -j$(nproc --all)
+# 1. Initialize repo (LineageOS 23.2 / Android 16 QPR2)
+repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
+repo sync -c -j$(nproc --all) --no-tags
 
-# 2. Clone this device tree (bq2 branch)
-git clone -b bq2 https://github.com/TheLostOne388/PDX-245-EvoX11-GSI.git \
+# 2. Clone this device tree (lineage-23.2 branch)
+git clone -b lineage-23.2 https://github.com/TheLostOne388/PDX-245-EvoX11-GSI.git \
     device/sony/pdx245
 
-# 3. Apply patches (REQUIRED after every repo sync)
+# 3. Add TrebleDroid local manifests (same setup as Evo16Q2)
+# Copy your local manifests into .repo/local_manifests before syncing Treble repos.
+
+# 4. Apply patches/fixes (REQUIRED after every repo sync)
 # See "Patches Required After Repo Sync" section above
 
-# 4. Build
+# 5. Build (vanilla / no GApps)
+cd device/phh/treble
+bash generate.sh lineage-gsi
+cd ../../
 source build/envsetup.sh
-lunch pdx245-userdebug
+lunch pdx245-bp4a-userdebug
 mka systemimage
 ```
 
@@ -176,7 +185,8 @@ fastboot reboot
 | Branch | Android | QPR | Base | Status |
 |--------|---------|-----|------|--------|
 | `bka` | 16 | QPR1 | `android-16.0.0_r3` (BP3A) | Previous — working |
-| `bq2` | 16 | QPR2 | `android-16.0.0_r4` (BP4A) | **Current** |
+| `bq2` | 16 | QPR2 | `android-16.0.0_r4` (BP4A) | EvoX baseline |
+| `lineage-23.2` | 16 | QPR2 | `android-16.0.0_r4` (BP4A) | **Current** |
 
 
 ## Credits
