@@ -193,5 +193,5 @@ fastboot reboot
 
 - **phhusson** - Treble GSI framework, resetprop_phh, sysbta
 - **TrebleDroid Team** - Android 16 GSI support, phh-prop-handler
-- **Evolution X Team** - ROM base, Play Integrity hooks
-- **Qualcomm / CodeAurora** - Telephony framework (vendor/codeaurora/telephony)
+- **Lineage Team** - ROM base, Play Integrity hooks
+
